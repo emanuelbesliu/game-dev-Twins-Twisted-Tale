@@ -10,4 +10,4 @@ RO: Tom Thumb sau Snow White and Rose Red care pot sa ia la inceput 2 drumuri, o
 
 2D OR 3D? 
 
-1 vote for 2D [EMI]
+Preffer 2D [EMI]
