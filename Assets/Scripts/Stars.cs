@@ -9,7 +9,7 @@ public class Stars : MonoBehaviour
 
     void Start()
     {
-        directions = new bool[12];
+        directions = new bool[21];
         for(int i=0; i<star1.Length; i++)
 		{
             directions[i] = true;
@@ -36,12 +36,18 @@ public class Stars : MonoBehaviour
 
      void UpdateStar()
     {
-        for(int i=0; i<star1.Length-1; i++){
+        for(int i=0; i<star1.Length; i++){
             directions[i] = updateLight(star1[i], directions[i], false);
-            if(directions[i]){
-                star1[i].intensity += 0.038f;
-            }else{
-                star1[i].intensity -= 0.038f;
+            if (i != 11)
+            {
+                if (directions[i])
+                {
+                    star1[i].intensity += 0.038f;
+                }
+                else
+                {
+                    star1[i].intensity -= 0.038f;
+                }
             }
          }
     }
@@ -49,9 +55,9 @@ public class Stars : MonoBehaviour
     void UpdateLantern(){
         directions[11] = updateLight(star1[11], directions[11], true);
         if(directions[11]){
-            star1[11].intensity += 0.02f;
+            star1[11].intensity += 0.025f;
         }else{
-            star1[11].intensity -= 0.02f;
+            star1[11].intensity -= 0.025f;
         }
 
     }
