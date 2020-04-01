@@ -5,10 +5,13 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
 	public GameObject platform;
+    public Animator animator;
+
 	public int rows;
 	public int columns;
 	public float distance;
 
+    float horizontalMove = 0f;
 
 	private int startC;
 	private int startR;
@@ -25,6 +28,9 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        horizontalMove = Input.GetAxisRaw("Horizontal");
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+
     	Vector3 pos = platform.transform.position;
 
         if(Input.GetButtonDown("Up") && startR > 0){

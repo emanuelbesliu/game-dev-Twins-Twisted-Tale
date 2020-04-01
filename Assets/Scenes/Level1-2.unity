@@ -51,7 +51,7 @@ LightmapSettings:
     m_IndirectOutputScale: 1
     m_AlbedoBoost: 1
     m_EnvironmentLightingMode: 0
-    m_EnableBakedLightmaps: 0
+    m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
     serializedVersion: 12
@@ -131,7 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4928931}
   - component: {fileID: 4928930}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: background1-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -212,7 +212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 267481526}
   - component: {fileID: 267481525}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Global Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.6
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 000000005ff50ec0e996ca14
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -284,7 +284,7 @@ GameObject:
   m_Component:
   - component: {fileID: 406044167}
   - component: {fileID: 406044166}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Point Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2929,7 +2929,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1694356712}
   - component: {fileID: 1694356711}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Point Light 2D (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
