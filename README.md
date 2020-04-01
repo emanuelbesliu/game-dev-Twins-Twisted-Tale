@@ -14,6 +14,10 @@ RO: Tom Thumb sau Snow White and Rose Red care pot sa ia la inceput 2 drumuri, o
 
 Preffer 2D [EMI]
 
+# Mechanics
+
+No idea yet [EMI]
+
 # Sketches
 
 @ make some models [EMI]
