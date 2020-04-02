@@ -8,6 +8,10 @@ RO: Tom Thumb sau Snow White and Rose Red care pot sa ia la inceput 2 drumuri, o
 
 - Snow White and Rose Red, level 1 ursul, level 2, 3, ... obstacole si sa ajute animale, animalele ajutate o sa le ajute pe parcurs si pe ele, ursul e necesar pentru ultimul level, altfel o sa treaca foarte foarte greu.[EMI]
 
+NEW
+
+Coming soon:
+
 # Main platform
 
 2D OR 3D? 
