@@ -55,14 +55,44 @@ In tranzitia dintre Level 4 si Level 5, care este ultimul nivel, nu se mai pierd
 
 [SPACE]
 
-- Level 2
-
 In tranzitia de la Level 1 catre Level 2 introducem conceptul de a merge catre spatiu, unul dintre personaje va spune ceva legat de "Uite, putem sa vedem cum rasare soarele din aceasta directie", este vorba despre acelasi personaj care a ales path-ul. Celalalt personaj dandu-i replica "Nu sunt sigur ca suntem pe drumul ce bun". Replica celuilalt "Mergem pe aici pentru ca e mai multa lumina si putem vedea exact drumul corect catre casa". Aici Level 2 o sa arate cum ar fi in nori, pe cer, iar soarele care rasare. Unul dintre personaje se pierde prin prin nori si replica celuilalt este "Te vad. Cum ai ajuns acolo?". Primul personaj ar fi in stanga mapei iar celelalt ar fi la mijloc, ideea de a se gasi unul pe altul si scopul de a ajunge acasa se pastreaza. [EMI]
 
-Ma gandeam sa pastram aceeasi poveste ca si la FOREST doar ca inamicii si caracterele vor fi diferite, abilitatiele prezentate la mechanics sa ramana aceleasi. O sa introducem fiecare mecanica gradual exact ca si la forest. Propun urmatoarele scenarii:
+Ma gandeam sa pastram aceeasi poveste ca si la FOREST doar ca inamicii si caracterele vor fi diferite, abilitatiele prezentate la mechanics sa ramana aceleasi. O sa introducem fiecare mecanica gradual exact ca si la forest, tranzitiile fiind adaptate aferent. Propun urmatoarele scenarii:
 [EMI]
 
--
+- Level 2
+
+Prapastia va fi un gol de aer, personajul mergand doar pe nori
+
+Caracter: pasare care ii invata pe pui sa zboare insa acestia nu pot zbura asa mult deoarece sunt mici, ei se afla departe de locul de intalnire stabilit de mama pasare. Trebuie sa completezi norul cu 2-3 bucati pentru a a-i ajuta pe pui sa se deplaseze inapoi la mama, ei aterizand prea departe.
+
+Colectat: bucati de nori, la fel daca nu sunt sunt bucatile, respectiv path-ul contruit complet nu poti calca pe el [O][X][X][O], [X]-urile trebuie completate ambele controland ambele personanje (vezi FOREST Level 2)
+
+- Level 3
+
+Introducem ca si in Level 3 din FOREST lupta contra timp
+
+Caracter: [NEED HELP] gasit un caracter pe care sa il ajuti si acesta sa te ajute pe tine in lupta cu satelitii de la level 4
+
+Inamic: transformatoare de electricitate care aplica curent in toate cele 4 directii si pasarea pe care au ajutat-o cu un level, daca u ajutat-o inainte poate distrage transformatoarele sa directioneze curentul catre ea, trecand astfel mult mai usor. Altfel drumul va fi mult mai dificil, exact ca in Level 3 din FOREST
+
+Colectat: bucati de nori
+
+- Level 4
+
+Caracterele vor avea masti de oxigen deoarece vor fi fiind in stratosfera. In scena de tranzitie se poate evidentia gasirea costumelor printr-un dialog si o animatie.
+
+Inamic: sateliti care se deplaseaza pe o traiectorie fixa si care pot ataca numai cu laserul din fata, considerandu-le pe personaje obiecte neidentificate si distrugandu-le
+
+Colectat: bucati de meteorit + bucati de nori + reset de timp
+
+- Level 5
+
+Caracterele vor fi imbracate in costume de astronaut fiind in spatiu. In scena de tranzitie se poate evidentia gasirea mastilor printr-un dialog si o animatie.
+
+Se vor aplica toate mecanicile invatate plus piticul imbracat in costum de astronaut impreuna cu inamicii de la celelalte nivele
+
+Se termina cu un portal in care personajele intra si vor fi teleportate catre casa lor pamanteasca
 
 # Main platform
 
