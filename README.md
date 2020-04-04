@@ -111,7 +111,7 @@ Preffer 2D [EMI]
 
 [5] have an inventory with collected items and switch between them using number buttons, correspoinding with item's position in inventory (1,2,3,4,5,...) [EMI]
 
-[6] time reset, collectable [EMI]
+[6] time addition, collectable [EMI]
 
 # Sketches
 
