@@ -62,37 +62,37 @@ Ma gandeam sa pastram aceeasi poveste ca si la FOREST doar ca inamicii si caract
 
 - Level 2
 
-Prapastia va fi un gol de aer, personajul mergand doar pe nori
+Prapastia va fi un gol de aer, personajul mergand doar pe nori [EMI]
 
-Caracter: pasare care ii invata pe pui sa zboare insa acestia nu pot zbura asa mult deoarece sunt mici, ei se afla departe de locul de intalnire stabilit de mama pasare. Trebuie sa completezi norul cu 2-3 bucati pentru a a-i ajuta pe pui sa se deplaseze inapoi la mama, ei aterizand prea departe.
+Caracter: pasare care ii invata pe pui sa zboare insa acestia nu pot zbura asa mult deoarece sunt mici, ei se afla departe de locul de intalnire stabilit de mama pasare. Trebuie sa completezi norul cu 2-3 bucati pentru a a-i ajuta pe pui sa se deplaseze inapoi la mama, ei aterizand prea departe. [EMI]
 
-Colectat: bucati de nori, la fel daca nu sunt sunt bucatile, respectiv path-ul contruit complet nu poti calca pe el [O][X][X][O], [X]-urile trebuie completate ambele controland ambele personanje (vezi FOREST Level 2)
+Colectat: bucati de nori, la fel daca nu sunt sunt bucatile, respectiv path-ul contruit complet nu poti calca pe el [O][X][X][O], [X]-urile trebuie completate ambele controland ambele personanje (vezi FOREST Level 2) [EMI]
 
 - Level 3
 
-Introducem ca si in Level 3 din FOREST lupta contra timp
+Introducem ca si in Level 3 din FOREST lupta contra timp [EMI]
 
-Caracter: [NEED HELP] gasit un caracter pe care sa il ajuti si acesta sa te ajute pe tine in lupta cu satelitii de la level 4
+Caracter: [NEED HELP] gasit un caracter pe care sa il ajuti si acesta sa te ajute pe tine in lupta cu satelitii de la level 4 [EMI]
 
-Inamic: transformatoare de electricitate care aplica curent in toate cele 4 directii si pasarea pe care au ajutat-o cu un level, daca u ajutat-o inainte poate distrage transformatoarele sa directioneze curentul catre ea, trecand astfel mult mai usor. Altfel drumul va fi mult mai dificil, exact ca in Level 3 din FOREST
+Inamic: transformatoare de electricitate care aplica curent in toate cele 4 directii si pasarea pe care au ajutat-o cu un level, daca u ajutat-o inainte poate distrage transformatoarele sa directioneze curentul catre ea, trecand astfel mult mai usor. Altfel drumul va fi mult mai dificil, exact ca in Level 3 din FOREST [EMI]
 
-Colectat: bucati de nori
+Colectat: bucati de nori [EMI]
 
 - Level 4
 
-Caracterele vor avea masti de oxigen deoarece vor fi fiind in stratosfera. In scena de tranzitie se poate evidentia gasirea costumelor printr-un dialog si o animatie.
+Caracterele vor avea masti de oxigen deoarece vor fi fiind in stratosfera. In scena de tranzitie se poate evidentia gasirea costumelor printr-un dialog si o animatie. [EMI]
 
-Inamic: sateliti care se deplaseaza pe o traiectorie fixa si care pot ataca numai cu laserul din fata, considerandu-le pe personaje obiecte neidentificate si distrugandu-le
+Inamic: sateliti care se deplaseaza pe o traiectorie fixa si care pot ataca numai cu laserul din fata, considerandu-le pe personaje obiecte neidentificate si distrugandu-le [EMI]
 
-Colectat: bucati de meteorit + bucati de nori + reset de timp
+Colectat: bucati de meteorit + bucati de nori + reset de timp [EMI]
 
 - Level 5
 
-Caracterele vor fi imbracate in costume de astronaut fiind in spatiu. In scena de tranzitie se poate evidentia gasirea mastilor printr-un dialog si o animatie.
+Caracterele vor fi imbracate in costume de astronaut fiind in spatiu. In scena de tranzitie se poate evidentia gasirea mastilor printr-un dialog si o animatie. [EMI]
 
-Se vor aplica toate mecanicile invatate plus piticul imbracat in costum de astronaut impreuna cu inamicii de la celelalte nivele
+Se vor aplica toate mecanicile invatate plus piticul imbracat in costum de astronaut impreuna cu inamicii de la celelalte nivele. [EMI]
 
-Se termina cu un portal in care personajele intra si vor fi teleportate catre casa lor pamanteasca
+Se termina cu un portal in care personajele intra si vor fi teleportate catre casa lor pamanteasca. [EMI]
 
 # Main platform
 
