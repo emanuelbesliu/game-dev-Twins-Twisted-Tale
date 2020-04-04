@@ -113,8 +113,6 @@ Preffer 2D [EMI]
 
 [6] time reset, collectable [EMI]
 
-No idea yet [EMI]
-
 # Sketches
 
 @ make some models [EMI]
