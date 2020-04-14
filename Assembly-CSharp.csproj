@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\Stars.cs" />
      <Compile Include="Assets\Scripts\TransitionAnimation.cs" />
+     <None Include="Assets\Asset Store\Tileset 16X16\read me.txt" />
      <None Include="Assets\Asset Store\prehistoric-platformer-2\README.txt" />
  <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
  <HintPath>/Users/emanuelbesliu/Documents/University of Southampton DOCS/3rd Year/COMP3218/Coursework2/game-dev-coursework/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
