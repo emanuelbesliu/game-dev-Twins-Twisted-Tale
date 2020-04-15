@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\LoadLevel.cs" />
      <Compile Include="Assets\Scripts\MainMenuAnim.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
+     <Compile Include="Assets\Scripts\MovementPlatformer.cs" />
      <Compile Include="Assets\Scripts\Stars.cs" />
      <Compile Include="Assets\Scripts\TransitionAnimation.cs" />
      <None Include="Assets\Asset Store\Tileset 16X16\read me.txt" />
