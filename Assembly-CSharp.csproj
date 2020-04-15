@@ -55,13 +55,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Animations.cs" />
      <Compile Include="Assets\Scripts\CameraSettings.cs" />
+     <Compile Include="Assets\Scripts\Collision.cs" />
+     <Compile Include="Assets\Scripts\ControllersLightController.cs" />
+     <Compile Include="Assets\Scripts\Level0.cs" />
+     <Compile Include="Assets\Scripts\LightController.cs" />
      <Compile Include="Assets\Scripts\LoadLevel.cs" />
      <Compile Include="Assets\Scripts\MainMenuAnim.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\MovementPlatformer.cs" />
      <Compile Include="Assets\Scripts\Stars.cs" />
      <Compile Include="Assets\Scripts\TransitionAnimation.cs" />
+     <None Include="Assets\Asset Store\Gerald&apos;s Keys\Readme.txt" />
      <None Include="Assets\Asset Store\Tileset 16X16\read me.txt" />
      <None Include="Assets\Asset Store\prehistoric-platformer-2\README.txt" />
  <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">

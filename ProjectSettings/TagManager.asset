@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ladder
   - Ladder2
+  - INFO
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - 
   - 
   - Ladder
-  - 
+  - Ground
   - 
   - 
   - 
