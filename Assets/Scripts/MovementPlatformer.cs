@@ -131,6 +131,7 @@ public class MovementPlatformer : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ladder"))
         {
+            //Debug.Log("aici");
             ladderCollision = true;
             firstBear.SetActive(true);
         }else if (collision.gameObject.CompareTag("Ladder2"))

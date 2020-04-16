@@ -56,15 +56,19 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Animations.cs" />
+     <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CameraSettings.cs" />
      <Compile Include="Assets\Scripts\Collision.cs" />
      <Compile Include="Assets\Scripts\ControllersLightController.cs" />
+     <Compile Include="Assets\Scripts\GreenLevel0.cs" />
      <Compile Include="Assets\Scripts\Level0.cs" />
+     <Compile Include="Assets\Scripts\Level0Trans.cs" />
      <Compile Include="Assets\Scripts\LightController.cs" />
      <Compile Include="Assets\Scripts\LoadLevel.cs" />
      <Compile Include="Assets\Scripts\MainMenuAnim.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\MovementPlatformer.cs" />
+     <Compile Include="Assets\Scripts\RedLevel0.cs" />
      <Compile Include="Assets\Scripts\Stars.cs" />
      <Compile Include="Assets\Scripts\TransitionAnimation.cs" />
      <None Include="Assets\Asset Store\Gerald&apos;s Keys\Readme.txt" />

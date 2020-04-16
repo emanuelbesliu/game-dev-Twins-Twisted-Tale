@@ -50,3 +50,6 @@ TagManager:
   - name: Foreground
     uniqueID: 348821225
     locked: 0
+  - name: Speech
+    uniqueID: 1531489909
+    locked: 0
