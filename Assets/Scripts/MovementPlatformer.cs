@@ -111,7 +111,7 @@ public class MovementPlatformer : MonoBehaviour
             animator.SetBool("Climb", false);
         }
 
-        if (x < 0 || x > 0 && canMove)
+        if ((x < 0 || x > 0) && canMove)
         {
             if(x > 0)   side = true;
             if(x < 0)   side = false;
