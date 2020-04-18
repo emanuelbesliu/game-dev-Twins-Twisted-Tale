@@ -669,7 +669,7 @@ TextureImporter:
       name: wateranimate2_24
       rect:
         serializedVersion: 2
-        x: 512
+        x: 511
         y: 28
         width: 33
         height: 33
