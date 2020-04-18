@@ -1,0 +1,1187 @@
+fileFormatVersion: 2
+guid: f975cabd450f24985910f1d9d3b8039d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9179232508058574776
+    second: girl copy_37
+  - first:
+      213: -268023821716039105
+    second: girl copy_0
+  - first:
+      213: -223119047236899769
+    second: girl copy_1
+  - first:
+      213: 2468403186573317205
+    second: girl copy_2
+  - first:
+      213: -3567916801111628903
+    second: girl copy_3
+  - first:
+      213: 4458638957092396540
+    second: girl copy_4
+  - first:
+      213: 2224087949166293427
+    second: girl copy_5
+  - first:
+      213: 5940665224006958950
+    second: girl copy_6
+  - first:
+      213: 6586351598803098378
+    second: girl copy_7
+  - first:
+      213: -1079536458761412656
+    second: girl copy_8
+  - first:
+      213: 246170604378970514
+    second: girl copy_9
+  - first:
+      213: -7122519175168670361
+    second: girl copy_10
+  - first:
+      213: -8889473776864273537
+    second: girl copy_11
+  - first:
+      213: -8081937297999829467
+    second: girl copy_12
+  - first:
+      213: 8906456156867143258
+    second: girl copy_13
+  - first:
+      213: -5705454728686175870
+    second: girl copy_14
+  - first:
+      213: 7523192068953296914
+    second: girl copy_15
+  - first:
+      213: 6650091734953446332
+    second: girl copy_16
+  - first:
+      213: -5023021094365484405
+    second: girl copy_17
+  - first:
+      213: -7978714823415590785
+    second: girl copy_18
+  - first:
+      213: -5462600607538037453
+    second: girl copy_19
+  - first:
+      213: 920598641185550443
+    second: girl copy_20
+  - first:
+      213: -7423683018775680330
+    second: girl copy_21
+  - first:
+      213: 6570811265230882546
+    second: girl copy_22
+  - first:
+      213: -2353763960539224514
+    second: girl copy_23
+  - first:
+      213: 6459431918927985460
+    second: girl copy_24
+  - first:
+      213: 2820091083616128230
+    second: girl copy_25
+  - first:
+      213: -7676943978882932040
+    second: girl copy_26
+  - first:
+      213: 4936910768529528350
+    second: girl copy_27
+  - first:
+      213: -8867821571284919624
+    second: girl copy_28
+  - first:
+      213: 6999270521709975506
+    second: girl copy_29
+  - first:
+      213: 935884446406585505
+    second: girl copy_30
+  - first:
+      213: 277043266118916288
+    second: girl copy_31
+  - first:
+      213: 9104473052137487060
+    second: girl copy_32
+  - first:
+      213: -3774172437716687225
+    second: girl copy_33
+  - first:
+      213: 3882701807967473156
+    second: girl copy_34
+  - first:
+      213: -6014724247043781882
+    second: girl copy_35
+  - first:
+      213: -2014900869470243449
+    second: girl copy_36
+  - first:
+      213: 302150342115496130
+    second: girl copy_0
+  - first:
+      213: -4151651439801568797
+    second: girl copy_1
+  - first:
+      213: 8617604645738188272
+    second: girl copy_2
+  - first:
+      213: -9059926348673865844
+    second: girl copy_3
+  - first:
+      213: 4192309711221631833
+    second: girl copy_4
+  - first:
+      213: -4891516939964194036
+    second: girl copy_5
+  - first:
+      213: 987648034631525112
+    second: girl copy_6
+  - first:
+      213: -8026949893246248672
+    second: girl copy_7
+  - first:
+      213: -3539969429930739221
+    second: girl copy_8
+  - first:
+      213: 1248263235409089788
+    second: girl copy_9
+  - first:
+      213: 5401520991616986063
+    second: girl copy_10
+  - first:
+      213: -7985142617074338571
+    second: girl copy_11
+  - first:
+      213: -965119601983127719
+    second: girl copy_12
+  - first:
+      213: -1165887001546403538
+    second: girl copy_13
+  - first:
+      213: -4508606939456476121
+    second: girl copy_14
+  - first:
+      213: 1128422508058616713
+    second: girl copy_15
+  - first:
+      213: -1853585666660813780
+    second: girl copy_16
+  - first:
+      213: -2937433386392060987
+    second: girl copy_17
+  - first:
+      213: 5068371151217217948
+    second: girl copy_18
+  - first:
+      213: 4818792538748805411
+    second: girl copy_19
+  - first:
+      213: 3456654369385883928
+    second: girl copy_20
+  - first:
+      213: -2022917740795967745
+    second: girl copy_21
+  - first:
+      213: 5750490387103026505
+    second: girl copy_22
+  - first:
+      213: 4447746185887446193
+    second: girl copy_23
+  - first:
+      213: 3023482049327753648
+    second: girl copy_24
+  - first:
+      213: 4605250283735268755
+    second: girl copy_25
+  - first:
+      213: 3754526627152404805
+    second: girl copy_26
+  - first:
+      213: 276273800506819481
+    second: girl copy_27
+  - first:
+      213: -583786151130535097
+    second: girl copy_28
+  - first:
+      213: 7217538216415099212
+    second: girl copy_29
+  - first:
+      213: -438940905083582885
+    second: girl copy_30
+  - first:
+      213: 7371692478246825928
+    second: girl copy_31
+  - first:
+      213: 3401614921313406784
+    second: girl copy_32
+  - first:
+      213: -3488143294984861418
+    second: girl copy_33
+  - first:
+      213: -1246837991897314399
+    second: girl copy_34
+  - first:
+      213: 7269534873903263980
+    second: girl copy_35
+  - first:
+      213: -72909512519604517
+    second: girl copy_36
+  - first:
+      213: 1049703523724755668
+    second: girl copy_38
+  - first:
+      213: 6559907129442705676
+    second: girl copy_39
+  - first:
+      213: -3308948393800529459
+    second: girl copy_40
+  - first:
+      213: 3562480513478533965
+    second: girl copy_41
+  - first:
+      213: 3574682793148225080
+    second: girl copy_42
+  - first:
+      213: -2396250566788786657
+    second: girl copy_43
+  - first:
+      213: -3242532793730120761
+    second: girl copy_44
+  - first:
+      213: 9108336773803199502
+    second: girl copy_45
+  - first:
+      213: -7770111524608294055
+    second: girl copy_46
+  - first:
+      213: -3508080116304842449
+    second: girl copy_47
+  - first:
+      213: 4275635546006504530
+    second: girl copy_48
+  - first:
+      213: -5225307481336186902
+    second: girl copy_49
+  - first:
+      213: -7474017909537385676
+    second: girl copy_50
+  - first:
+      213: 2720253394645761850
+    second: girl copy_51
+  - first:
+      213: -2768447165099788354
+    second: girl copy_52
+  - first:
+      213: 7277198662030809103
+    second: girl copy_53
+  - first:
+      213: 4294311558533036971
+    second: girl copy_54
+  - first:
+      213: 3281951310617296618
+    second: girl copy_55
+  - first:
+      213: -5519736813073424115
+    second: girl copy_56
+  - first:
+      213: 7312115974192376585
+    second: girl copy_57
+  - first:
+      213: -3084970878449548433
+    second: girl copy_58
+  - first:
+      213: 4551474505174543121
+    second: girl copy_59
+  - first:
+      213: -5039246948095764853
+    second: girl copy_60
+  - first:
+      213: -465541977418412893
+    second: girl copy_61
+  - first:
+      213: 658964433372028431
+    second: girl copy_62
+  - first:
+      213: -2129224965705065692
+    second: girl copy_63
+  - first:
+      213: -2642470317126189438
+    second: girl copy_64
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: girl copy_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 444
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c09e82a224713400800000000000000
+      internalID: 302150342115496130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_1
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 444
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e1736b030f5266c0800000000000000
+      internalID: -4151651439801568797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_2
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 444
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd0bfb64c1e79770800000000000000
+      internalID: 8617604645738188272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_3
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 444
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87a718ccfca44280800000000000000
+      internalID: -9059926348673865844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_4
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 444
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b29c578731e2a30800000000000000
+      internalID: 4192309711221631833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_5
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 444
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03e0ac6247dd1cb0800000000000000
+      internalID: -4891516939964194036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 370
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2235b97a4d4bd00800000000000000
+      internalID: 987648034631525112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_7
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 370
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0299237c99b8a9090800000000000000
+      internalID: -8026949893246248672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_8
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 370
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be97c3d1f808fdec0800000000000000
+      internalID: -3539969429930739221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_9
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 370
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf41dbc8cc8b25110800000000000000
+      internalID: 1248263235409089788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_10
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 370
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb652039be06fa40800000000000000
+      internalID: 5401520991616986063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_11
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 370
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4737cc8131f2190800000000000000
+      internalID: -7985142617074338571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 296
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f770ed5d43b92f0800000000000000
+      internalID: -965119601983127719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_13
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 296
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21d49003ffe1dfe0800000000000000
+      internalID: -1165887001546403538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_14
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 296
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ce5dd40e53e61c0800000000000000
+      internalID: -4508606939456476121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_15
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 296
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 983a36dda46f8af00800000000000000
+      internalID: 1128422508058616713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_16
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 296
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c243de928adb646e0800000000000000
+      internalID: -1853585666660813780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_17
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 296
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb7ab4f5e32c37d0800000000000000
+      internalID: -2937433386392060987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 222
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91d32a65b8765640800000000000000
+      internalID: 5068371151217217948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_19
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 222
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321ec6e684acfd240800000000000000
+      internalID: 4818792538748805411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_20
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 222
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8192c86b5d088ff20800000000000000
+      internalID: 3456654369385883928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_21
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 222
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6450a58072de3e0800000000000000
+      internalID: -2022917740795967745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_22
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 222
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d03972a88ddcf40800000000000000
+      internalID: 5750490387103026505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_23
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 222
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b47be4479199bd30800000000000000
+      internalID: 4447746185887446193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 148
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b963fe97e095f920800000000000000
+      internalID: 3023482049327753648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_25
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 148
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39dbecfbbb229ef30800000000000000
+      internalID: 4605250283735268755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_26
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 148
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5412a273312ca1430800000000000000
+      internalID: 3754526627152404805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_27
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 148
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993c4fbce8585d300800000000000000
+      internalID: 276273800506819481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_28
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 148
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b621da699f5e7f0800000000000000
+      internalID: -583786151130535097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_29
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 148
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c497a3684c8d92460800000000000000
+      internalID: 7217538216415099212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 74
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56ca1b829198e9f0800000000000000
+      internalID: -438940905083582885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_31
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 74
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf225780438d4660800000000000000
+      internalID: 7371692478246825928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_32
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 74
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04fcd879fb6f43f20800000000000000
+      internalID: 3401614921313406784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_33
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 74
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61944c87720a79fc0800000000000000
+      internalID: -3488143294984861418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_34
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 74
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1abcf70d37752bee0800000000000000
+      internalID: -1246837991897314399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_35
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 74
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce07151c37392e460800000000000000
+      internalID: 7269534873903263980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl copy_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 99
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6a5854f29fcfef0800000000000000
+      internalID: -72909512519604517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

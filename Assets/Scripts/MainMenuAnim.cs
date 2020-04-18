@@ -37,7 +37,7 @@ public class MainMenuAnim : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float h = Input.GetAxis("Horizontal");
+        //float h = Input.GetAxis("Horizontal");
         //Debug.Log(h);
 
         if(play){
@@ -47,7 +47,8 @@ public class MainMenuAnim : MonoBehaviour
         if(walking){
             //GetComponent<Rigidbody2D>().velocity = new Vector2(1, 0) * Speed;
             transform.position += Vector3.right * Time.deltaTime * Speed ;
-            animator.SetFloat("Speed", Mathf.Abs(1));
+            //animator.SetFloat("Speed", Mathf.Abs(1));
+            animator.SetFloat("HorizontalAxis", Mathf.Abs(1));
         }
 
 
