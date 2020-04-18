@@ -57,6 +57,7 @@
   <ItemGroup>
      <Compile Include="Assets\Asset Store\Free Asset - 2D Handcrafted Art\Scripts\CamerController.cs" />
      <Compile Include="Assets\Scripts\Animations.cs" />
+     <Compile Include="Assets\Scripts\Breakable.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CameraSettings.cs" />
      <Compile Include="Assets\Scripts\Collision.cs" />
@@ -70,6 +71,7 @@
      <Compile Include="Assets\Scripts\MainMenuAnim.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\MovementPlatformer.cs" />
+     <Compile Include="Assets\Scripts\MovingObject.cs" />
      <Compile Include="Assets\Scripts\OnTriggerEnter.cs" />
      <Compile Include="Assets\Scripts\Parralaxing.cs" />
      <Compile Include="Assets\Scripts\RedLevel0.cs" />
