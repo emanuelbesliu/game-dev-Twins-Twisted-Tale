@@ -5,6 +5,8 @@ using UnityEngine;
 public class RedLevel0 : MonoBehaviour
 {
     public Level0Trans script;
+    public GameObject rocket1;
+    public GameObject rocket2;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,6 +21,8 @@ public class RedLevel0 : MonoBehaviour
             script.ladderCollision = false;
             script.ladderCollision2 = true;
             this.gameObject.SetActive(false);
+            rocket1.gameObject.SetActive(false);
+            rocket2.gameObject.SetActive(true);
         }
     }
 }

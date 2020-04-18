@@ -15,6 +15,8 @@ public class Level0Trans : MonoBehaviour
     public GameObject speechRed2;
 
     public Sprite climbGreen;
+    public GameObject rocket2;
+    public GameObject rocket3;
 
     public GameObject text1;
     public GameObject text2;
@@ -65,6 +67,8 @@ public class Level0Trans : MonoBehaviour
                 speechGreen2.SetActive(false);
                 text3.SetActive(false);
                 runGreen = false;
+                rocket2.SetActive(false);
+                rocket3.SetActive(true);
                 lc.FadeToLevel(nextLevel);
             }else if(green.transform.position.x >= 13.65f && green.transform.position.y >= -4.16f && no != true){
                 red.transform.position += Vector3.right * Time.deltaTime * Speed ;
