@@ -7,6 +7,7 @@ TagManager:
   - Ladder
   - Ladder2
   - INFO
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - 
   - Ladder
   - Ground
-  - 
+  - BlockingLayer
   - 
   - 
   - 
@@ -55,4 +56,7 @@ TagManager:
     locked: 0
   - name: Speech
     uniqueID: 1531489909
+    locked: 0
+  - name: Characters
+    uniqueID: 410919071
     locked: 0
