@@ -21,7 +21,7 @@ public class Breakable : MonoBehaviour
     {
         spriteRenderer.sprite = dmgSprite;
         hp -= loss;
-        if (hp <= 0) gameObject.setActive(false);
+        if (hp <= 0) gameObject.SetActive(false);
     }
 
 }
