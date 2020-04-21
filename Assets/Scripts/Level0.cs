@@ -24,6 +24,10 @@ public class Level0 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(red.transform.position.x > 34){
+            red.SetActive(false);
+        }
+
         if(run){
             red.transform.position += Vector3.right * Time.deltaTime * Speed ;
             animator.SetFloat("HorizontalAxis", Mathf.Abs(1));

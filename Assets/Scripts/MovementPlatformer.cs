@@ -39,6 +39,7 @@ public class MovementPlatformer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
 
@@ -72,23 +73,25 @@ public class MovementPlatformer : MonoBehaviour
 
         if(ladderCollision && Input.GetButton("Up")){
             rb.velocity = Vector2.Lerp(rb.velocity, (new Vector2(rb.velocity.x, direction.y * speed)), wallLerp * Time.deltaTime);
-            animator.SetBool("isWalking", true);
             rb.velocity = new Vector2(0, rb.velocity.y);
             rb.gravityScale = 0;
+            animator.SetBool("isWalking", true);
+            animator.SetBool("Climb", false);
         }
 
-        if(ladderCollision && Input.GetButton("Down")){
+        if(ladderCollision && Input.GetButton("Down") && !coll.onGround){
             rb.velocity = Vector2.Lerp(rb.velocity, (new Vector2(rb.velocity.x, direction.y * speed)), wallLerp * Time.deltaTime);
-            animator.SetBool("isWalking", true);
             rb.velocity = new Vector2(0, rb.velocity.y);
             rb.gravityScale = 0;
+            animator.SetBool("isWalking", true);
+            animator.SetBool("Climb", false);
         }
 
-        if(ladderCollision && (!Input.GetButton("Down") && !Input.GetButton("Up"))){
-            animator.SetBool("isWalking", false);
-            if(coll.onGround) animator.SetBool("Climb", false);
+        //if(ladderCollision && (!Input.GetButton("Down") && !Input.GetButton("Up"))){
+        //    animator.SetBool("isWalking", false);
+        //    if(coll.onGround) animator.SetBool("Climb", false);
            //Debug.Log("AICI");
-        }
+        //}
 
 
         if(infoSign && Input.GetButton("Info")){
@@ -98,17 +101,36 @@ public class MovementPlatformer : MonoBehaviour
            //Debug.Log("AICI");
         }
 
-        if(!ladderCollision && (Input.GetButton("Down") || Input.GetButton("Up"))){
-            animator.SetBool("isWalking", false);
-        }
-
-        if(!coll.onGround){
-            rb.velocity = new Vector2(0, rb.velocity.y);
-            animator.SetBool("Climb", true);
-           // animator.Stop("idle-green");
-        }else{
+        /*if(!ladderCollision && (Input.GetButton("Down") || Input.GetButton("Up"))){
             animator.SetBool("isWalking", false);
             animator.SetBool("Climb", false);
+        }*/
+
+        if(!Input.GetButton("Down") && !Input.GetButton("Up")){
+            if(!coll.onGround){
+                rb.velocity = new Vector2(0, rb.velocity.y);
+                animator.SetBool("Climb", true);
+                animator.SetBool("isWalking", false);
+            }else{
+                animator.SetBool("isWalking", false);
+                animator.SetBool("Climb", false);
+            }
+           // animator.Stop("idle-green");
+        }else{
+            if(coll.onGround && !Input.GetButton("Up")){
+                animator.SetBool("isWalking", false);
+                animator.SetBool("Climb", false);
+            }
+
+            if(coll.onGround && Input.GetButton("Up") && ladder2Collision){
+                animator.SetBool("isWalking", false);
+                animator.SetBool("Climb", false);
+            }
+
+            if(coll.onGround && Input.GetButton("Down") && ladderCollision){
+                animator.SetBool("isWalking", false);
+                animator.SetBool("Climb", false);
+            }
         }
 
         if ((x < 0 || x > 0) && canMove)
@@ -122,7 +144,7 @@ public class MovementPlatformer : MonoBehaviour
     }
 
     void Walk(Vector2 dir){
-        if(!canMove)
+        if(!canMove || (this.gameObject.transform.position.x < -25f && dir.x < 0))
             return;
         rb.velocity = Vector2.Lerp(rb.velocity, (new Vector2(dir.x * speed, rb.velocity.y)), wallLerp * Time.deltaTime);
     }
