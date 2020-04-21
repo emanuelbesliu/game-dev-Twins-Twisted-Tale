@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MovingObject
 
@@ -91,12 +92,12 @@ public class Player : MovingObject
     {
 
         Vector3 localScale = transform.localScale;
-        if (Input.GetAxisRaw("Horizontal") > 0)
+        if (Input.GetAxisRaw("Horizontal") < 0)
         { lookleft = true; }
-        else if (Input.GetAxisRaw("Horizontal") < 0)
+        else if (Input.GetAxisRaw("Horizontal") > 0)
         { lookleft = false; }
 
-        if (((lookleft) && (localScale.x < 0)) || ((!lookleft) && (localScale.x > 0)))
+        if (((lookleft) && (localScale.x > 0)) || ((!lookleft) && (localScale.x < 0)))
         {
             localScale.x *= -1;
         }
@@ -108,12 +109,40 @@ public class Player : MovingObject
     {
         if (other.tag == "clouds")
         {
-            other.gameObject.SetActive(false);
+            other.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, .5f);
 
         }
+        if (other.tag == "sleeping_ptero")
+        {
+            other.GetComponent<Animator>().SetTrigger("Wake_up");
+            StartCoroutine(ptero_green_runtime(5f));
             
+        }
+        if (other.tag == "Finish")
+        {
+            SceneManager.LoadScene("Level2-3");
+        }
 
-}
+        IEnumerator ptero_green_runtime(float seconds)
+        {
+            while (true)
+            {
+                Debug.Log("waiting...");
+                yield return new WaitForSeconds(seconds);
+                SceneManager.LoadScene("Level2-2");
+            }
+        }
+    }
+
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "clouds")
+        {
+            other.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1f);
+
+        }
+    }
 
     protected override void OnCantMove <T> (T component)
     {

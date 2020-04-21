@@ -9,6 +9,8 @@ TagManager:
   - INFO
   - Enemy
   - Object
+  - clouds
+  - sleeping_ptero
   layers:
   - Default
   - TransparentFX
