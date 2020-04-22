@@ -47,15 +47,21 @@ TagManager:
   - name: Background
     uniqueID: 3222205791
     locked: 0
-  - name: Water2
-    uniqueID: 1694823321
-    locked: 0
   - name: Water
     uniqueID: 3295247203
     locked: 0
   - name: Foreground
     uniqueID: 348821225
     locked: 0
+  - name: Moss
+    uniqueID: 295987731
+    locked: 0
   - name: Speech
     uniqueID: 1531489909
+    locked: 0
+  - name: Collectible
+    uniqueID: 422852369
+    locked: 0
+  - name: Player
+    uniqueID: 2979807021
     locked: 0
