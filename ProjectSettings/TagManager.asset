@@ -48,11 +48,11 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Trees
+    uniqueID: 3952581729
+    locked: 0
   - name: Background
     uniqueID: 3222205791
-    locked: 0
-  - name: Water2
-    uniqueID: 1694823321
     locked: 0
   - name: Water
     uniqueID: 3295247203
@@ -60,12 +60,23 @@ TagManager:
   - name: Foreground
     uniqueID: 348821225
     locked: 0
+  - name: Moss
+    uniqueID: 295987731
+    locked: 0
   - name: Speech
     uniqueID: 1531489909
     locked: 0
+<<<<<<< HEAD
   - name: Characters
     uniqueID: 410919071
     locked: 0
   - name: Overlay
     uniqueID: 1624863555
+=======
+  - name: Collectible
+    uniqueID: 422852369
+    locked: 0
+  - name: Player
+    uniqueID: 2979807021
+>>>>>>> master
     locked: 0
