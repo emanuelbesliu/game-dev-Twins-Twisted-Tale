@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2285,7 +2285,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 513079710}
-  m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.9998644, w: -0.016469106}
   m_LocalPosition: {x: 21.336893, y: 16.437757, z: 147.71173}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2308,7 +2308,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 0.8588734, b: 0.41037738, a: 1}
-  m_Intensity: 0.3
+  m_Intensity: 0.7
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 5ff50ec0e996ca1400000000
   m_LightCookieSprite: {fileID: 0}
@@ -2320,7 +2320,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 27.031933
+  m_PointLightOuterRadius: 41.931637
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -4204,7 +4204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &621601070
 Transform:
   m_ObjectHideFlags: 0
@@ -9584,7 +9584,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1815160075}
-  m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.99998844, w: 0.004812518}
   m_LocalPosition: {x: 21.466894, y: 15.507756, z: 147.71173}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -9607,7 +9607,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 0.9811321, g: 0.68349165, b: 0.17123532, a: 1}
-  m_Intensity: 0.65
+  m_Intensity: 0.4
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 5ff50ec0e996ca1400000000
   m_LightCookieSprite: {fileID: 0}
@@ -9618,8 +9618,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 6.0070086
-  m_PointLightOuterRadius: 19.848791
+  m_PointLightInnerRadius: 4.206974
+  m_PointLightOuterRadius: 14.557985
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
