@@ -7,6 +7,7 @@ TagManager:
   - Ladder
   - Ladder2
   - INFO
+  - Collect
   layers:
   - Default
   - TransparentFX

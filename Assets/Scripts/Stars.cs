@@ -9,12 +9,12 @@ public class Stars : MonoBehaviour
 
     void Start()
     {
-        directions = new bool[21];
+        directions = new bool[26];
         for(int i=0; i<star1.Length; i++)
 		{
             directions[i] = true;
 		}
-        
+
         InvokeRepeating("UpdateStar", 0.11f, 0.11f);
         InvokeRepeating("UpdateLantern", 0.25f, 0.25f);
     }
