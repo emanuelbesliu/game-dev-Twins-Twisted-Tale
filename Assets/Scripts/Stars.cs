@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Stars : MonoBehaviour
 {
@@ -16,7 +17,9 @@ public class Stars : MonoBehaviour
 		}
 
         InvokeRepeating("UpdateStar", 0.11f, 0.11f);
-        InvokeRepeating("UpdateLantern", 0.25f, 0.25f);
+        if(SceneManager.GetActiveScene().buildIndex == 0){
+            InvokeRepeating("UpdateLantern", 0.25f, 0.25f);
+        }
     }
 
     bool updateLight(UnityEngine.Experimental.Rendering.Universal.Light2D star, bool direction, bool last)
