@@ -15,6 +15,12 @@ public class MovementPlatformer : MonoBehaviour
     public GameObject firstBear;
     public LoadLevel level;
 
+    public GameObject decisionLevel0;
+    public GameObject[] bearSpeech;
+    public GameObject cherry;
+    private int speechIndex = 0;
+    private bool continueSpeech = false;
+
     private Collision coll;
 
     public bool canMove = false;
@@ -94,11 +100,50 @@ public class MovementPlatformer : MonoBehaviour
         //}
 
 
-        if(infoSign && Input.GetButton("Info")){
+        if(infoSign && Input.GetButtonDown("Info")){
             if(SceneManager.GetActiveScene().name == "Level0"){
-                Debug.Log("Level0");
+                if(speechIndex == 1 && !continueSpeech){
+                    return;
+                }
+                if(firstBear.activeSelf == true){
+                    firstBear.SetActive(false);
+                    speechIndex = 0;
+                    bearSpeech[0].SetActive(true);
+                }else{
+                    if(speechIndex == bearSpeech.Length -1){
+                        return;
+                        //speechIndex = -1;
+                        //bearSpeech[bearSpeech.Length-1].SetActive(false);
+                    }else{
+                        if(speechIndex >= 0)
+                            bearSpeech[speechIndex].SetActive(false);
+                    }
+                    speechIndex ++;
+                    if(speechIndex == 1 && !continueSpeech){
+                        decisionLevel0.SetActive(true);
+                        info.SetActive(false);
+                    }
+                    bearSpeech[speechIndex].SetActive(true);
+                }
             }
            //Debug.Log("AICI");
+        }
+
+        if(decisionLevel0.activeSelf){
+            if(infoSign && Input.GetButtonDown("Yes")){
+                continueSpeech = true;
+                cherry.SetActive(true);
+                speechIndex ++;
+                bearSpeech[speechIndex-1].SetActive(false);
+                bearSpeech[speechIndex].SetActive(true);
+                decisionLevel0.SetActive(false);
+                info.SetActive(true);
+            }
+
+            if(Input.GetButtonDown("No")){
+                decisionLevel0.SetActive(false);
+                info.SetActive(true);
+            }
         }
 
         /*if(!ladderCollision && (Input.GetButton("Down") || Input.GetButton("Up"))){
@@ -155,7 +200,8 @@ public class MovementPlatformer : MonoBehaviour
         {
             //Debug.Log("aici");
             ladderCollision = true;
-            firstBear.SetActive(true);
+            if(!continueSpeech)
+                firstBear.SetActive(true);
         }else if (collision.gameObject.CompareTag("Ladder2"))
         {
             ladder2Collision = true;
