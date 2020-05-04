@@ -21,6 +21,8 @@ public class MovementPlatformer : MonoBehaviour
     private int speechIndex = 0;
     private bool continueSpeech = false;
 
+    public Level1 scriptL1;
+
     private Collision coll;
 
     public bool canMove = false;
@@ -33,6 +35,8 @@ public class MovementPlatformer : MonoBehaviour
 
     private bool side = true;
     private bool infoSign = false;
+
+    private Vector3 respawnPosition;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +61,11 @@ public class MovementPlatformer : MonoBehaviour
 
         if(transform.position.x > 28f){
             level.LoadNextLevel();
+        }
+
+        if(transform.position.y < - 26){
+            Debug.Log("Here");
+            this.transform.position = respawnPosition;
         }
 
         Vector2 direction =  new Vector2(x, y);
@@ -223,6 +232,11 @@ public class MovementPlatformer : MonoBehaviour
         }else if(collision.gameObject.CompareTag("INFO")){
             info.SetActive(false);
             infoSign = false;
+        }else if(collision.gameObject.CompareTag("Stop")){
+            scriptL1.endRunRed = false;
+            scriptL1.animatorGreen.SetFloat("HorizontalAxis", Mathf.Abs(0));
+            canMove = true;
+            respawnPosition = this.transform.position;
         }
     }
 }

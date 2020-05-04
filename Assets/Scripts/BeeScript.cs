@@ -13,7 +13,7 @@ public class BeeScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        fly = false;
+        fly = true;
         InvokeRepeating("UpdateBeesLeft", 0.04f, 0.07f);
         InvokeRepeating("UpdateBeesRight", 0.03f, 0.06f);
     }

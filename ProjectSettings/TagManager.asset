@@ -8,6 +8,10 @@ TagManager:
   - Ladder2
   - INFO
   - Collect
+  - Object
+  - clouds
+  - sleeping_ptero
+  - Stop
   layers:
   - Default
   - TransparentFX
@@ -71,4 +75,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2979807021
+    locked: 0
+  - name: Inventory
+    uniqueID: 460160231
     locked: 0
