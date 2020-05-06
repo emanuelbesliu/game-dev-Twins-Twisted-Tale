@@ -21,6 +21,7 @@ public class BeeScript : MonoBehaviour
     // Update is called once per frame
     void UpdateBeesLeft()
     {
+        lock (beesLeft)
         if(fly){
             foreach(GameObject bee in beesLeft){
                 if(bee.transform.position.x <= -28f){
@@ -41,6 +42,7 @@ public class BeeScript : MonoBehaviour
     }
 
     void UpdateBeesRight(){
+        lock (beesRight)
         if(fly){
             foreach(GameObject bee in beesRight){
                 if(bee.transform.position.x >= 31f){

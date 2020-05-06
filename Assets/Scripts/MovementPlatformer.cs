@@ -7,6 +7,7 @@ public class MovementPlatformer : MonoBehaviour
 {
     public Animations anim;
     public Animator animator;
+
     public Rigidbody2D rb;
     public SpriteRenderer sp;
     public GameObject platform;
@@ -18,8 +19,17 @@ public class MovementPlatformer : MonoBehaviour
     public GameObject decisionLevel0;
     public GameObject[] bearSpeech;
     public GameObject cherry;
+
+    public Camera secondCamera;
+    public Camera defaultCamera;
+
     private int speechIndex = 0;
     private bool continueSpeech = false;
+
+    private float oldfieldofview;
+    private Vector3 oldposition;
+    public float panSteps = 0.5f;
+    private float currentStep;
 
     public Level1 scriptL1;
 
@@ -35,11 +45,14 @@ public class MovementPlatformer : MonoBehaviour
 
     private bool side = true;
     private bool infoSign = false;
+    private int cameraCount = 0;
 
     private Vector3 respawnPosition;
     // Start is called before the first frame update
     void Start()
     {
+        oldposition = defaultCamera.transform.position;
+        oldfieldofview = defaultCamera.fieldOfView;
         canMove = false;
         //rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 3;
@@ -209,14 +222,31 @@ public class MovementPlatformer : MonoBehaviour
         {
             //Debug.Log("aici");
             ladderCollision = true;
+            //defaultCamera.transform.position = Vector3.Lerp(secondCamera.transform.position, oldposition, panSteps);
+            //defaultCamera.GetComponent<Camera>().fieldOfView = Mathf.Lerp(secondCamera.fieldOfView, oldfieldofview,  panSteps);
             if(!continueSpeech)
                 firstBear.SetActive(true);
         }else if (collision.gameObject.CompareTag("Ladder2"))
         {
             ladder2Collision = true;
+            //Debug.Log("Hit");
+            //defaultCamera.transform.position = Vector3.Lerp(oldposition, secondCamera.transform.position, panSteps);
+            //defaultCamera.GetComponent<Camera>().fieldOfView = Mathf.Lerp(oldfieldofview, secondCamera.fieldOfView,  panSteps);
         }else if(collision.gameObject.CompareTag("INFO")){
             info.SetActive(true);
             infoSign = true;
+        }else if(collision.gameObject.CompareTag("Camera")){
+            if(cameraCount == 0){
+                cameraCount ++;
+                currentStep += Time.deltaTime;
+                defaultCamera.transform.position = Vector3.Lerp(oldposition, secondCamera.transform.position, currentStep/panSteps);
+                defaultCamera.fieldOfView = Mathf.Lerp(oldfieldofview, secondCamera.fieldOfView,  currentStep/panSteps);
+            }else if(cameraCount == 1){
+                cameraCount = 0;
+                currentStep += Time.deltaTime;
+                defaultCamera.transform.position = Vector3.Lerp(defaultCamera.transform.position, oldposition, currentStep/panSteps);
+                defaultCamera.fieldOfView = Mathf.Lerp(defaultCamera.fieldOfView , oldfieldofview,  currentStep/panSteps);
+            }
         }
 
     }
