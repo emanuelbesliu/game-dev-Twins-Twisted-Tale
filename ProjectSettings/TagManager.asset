@@ -12,6 +12,7 @@ TagManager:
   - clouds
   - sleeping_ptero
   - Stop
+  - Camera
   layers:
   - Default
   - TransparentFX
