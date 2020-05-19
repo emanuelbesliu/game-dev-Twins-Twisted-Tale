@@ -80,6 +80,7 @@
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\RedLevel0.cs" />
      <Compile Include="Assets\Scripts\Stars.cs" />
+     <Compile Include="Assets\Scripts\Timer.cs" />
      <Compile Include="Assets\Scripts\TransitionAnimation.cs" />
      <Compile Include="Assets\Scripts\scroll.cs" />
      <None Include="Assets\Asset Store\Gerald&apos;s Keys\Readme.txt" />
