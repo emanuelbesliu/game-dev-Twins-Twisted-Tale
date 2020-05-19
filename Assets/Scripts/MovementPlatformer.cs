@@ -65,7 +65,7 @@ public class MovementPlatformer : MonoBehaviour
     {
         // TIMER TIMINGS
         levelTimer.isTimerWorking = canMove;
-        
+
 
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");

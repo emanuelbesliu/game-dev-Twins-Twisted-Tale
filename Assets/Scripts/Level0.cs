@@ -17,6 +17,8 @@ public class Level0 : MonoBehaviour
     public GameObject dialogGreen;
 
     private bool run = false;
+    public bool pause = false;
+
     void Start(){
         player.canMove = false;
         StartCoroutine(InitialSpeech());
@@ -24,6 +26,10 @@ public class Level0 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(pause){
+            return;
+        }
+
         if(red.transform.position.x > 34){
             red.SetActive(false);
         }
