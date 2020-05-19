@@ -28,7 +28,7 @@ public class Pickup : ExtendedBehaviour
                 {
                     // You can add the item to the inventory
 
-                    inventory.slotsO[i] = gameObject;
+                    //inventory.slotsO[i] = gameObject;
                     inventory.isFull[i] = true;
                     Instantiate(itemButton, inventory.slots[i].transform, false);
 

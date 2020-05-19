@@ -13,6 +13,12 @@ public class BuildSystem : MonoBehaviour
     private GameObject blockTemplate;
     private SpriteRenderer currentRend;
 
+    public string keySlot;
+   
+
+    public int i;
+
+
 
     private bool buildModeOn = false;
 
@@ -25,48 +31,40 @@ public class BuildSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+       
+
     }
+
+
+
+    public void DropItem()
+    {
+        foreach (Transform child in transform)
+        {
+            child.GetComponent<Placeable>().SpawnDropItem();
+            GameObject.Destroy(child.gameObject);
+            
+
+        }
+    }
+
+  
 
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetKeyDown("e"))
+        if (transform.childCount <= 0)
         {
-            buildModeOn = !buildModeOn;
-
-            if (blockTemplate != null)
-            {
-                Destroy(blockTemplate);
-
-            }
+            inventory.isFull[i] = false;
+        }
 
 
-            if (currentBlock == null)
-            {
-                if (inventory.slotsO[currentBlockSlot] != null)
-                {
-                    currentBlock = inventory.slotsO[currentBlockSlot];
-                }
 
-            }
-
-            if (buildModeOn)
-            {
-                // Create template of to be placed block.
-                Debug.Log("Building");
-              
-
-                blockTemplate = new GameObject("currentBlockTemplate");
-
-                // Rendering the sprite of the block.
-                currentRend = blockTemplate.AddComponent<SpriteRenderer>();
-              //  currentRend.sprite = currentBlock.blockSprite;
-
-                
-
-            }
+        if (Input.GetKeyDown(keySlot))
+        {
+            DropItem();
+           
         }
 
         
