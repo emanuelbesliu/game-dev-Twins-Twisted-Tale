@@ -42,6 +42,8 @@ public class Level0Trans : MonoBehaviour
 
     private int nextLevel;
     public bool no = false;
+
+    private int step = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,7 +62,7 @@ public class Level0Trans : MonoBehaviour
         if(runGreen){
             animatorGreen.SetFloat("HorizontalAxis", Mathf.Abs(1));
 
-            if(green.transform.position.x >= 13.65f && green.transform.position.y >= -4.16f && no == true){
+            /*if(green.transform.position.x >= 13.65f && green.transform.position.y >= -4.16f && no == true){
                 animatorGreen.SetFloat("HorizontalAxis", 0);
                 animatorGreen.SetBool("isWalking", true);
                 mp.animator.SetBool("isWalking", true);
@@ -73,9 +75,11 @@ public class Level0Trans : MonoBehaviour
             }else if(green.transform.position.x >= 13.65f && green.transform.position.y >= -4.16f && no != true){
                 red.transform.position += Vector3.right * Time.deltaTime * Speed ;
                 animatorRed.SetFloat("HorizontalAxis", Mathf.Abs(1));
-                if(red.transform.position.x >= 26f){
-                    lc.FadeToLevel(nextLevel);
-                }
+
+            }*/
+            //Debug.Log(green.transform.position.x);
+            if(green.transform.position.x >= 30f){
+                lc.FadeToLevel(nextLevel);
             }
 
             if(green.transform.position.y >= -3.7f){
@@ -98,23 +102,20 @@ public class Level0Trans : MonoBehaviour
 
         }
 
-        if(text2.activeSelf && Input.GetButton("No")){
-            script.currentStep = 1;
-            runRed =  true;
-            nextLevel = SceneManager.GetActiveScene().buildIndex + 2;
-            no = true;
-        }
-
-        if(text2.activeSelf && Input.GetButton("Yes")){
+        if(step == 1){
+            textRed.SetActive(false);
+            speechRed.SetActive(false);
+            speechGreen.SetActive(false);
             StartCoroutine(ThirdSpeech());
+            step = -1;
         }
 
-        if((Input.GetButton("Yes") || Input.GetButton("No")) && text2.activeSelf){
+        /*if((Input.GetButton("Yes") || Input.GetButton("No")) && text2.activeSelf){
             text2.SetActive(false);
             textRed.SetActive(false);
             speechRed.SetActive(false);
             speechGreen.SetActive(false);
-        }
+        }*/
     }
 
     IEnumerator ThirdSpeech()
@@ -126,9 +127,10 @@ public class Level0Trans : MonoBehaviour
         speechGreen.SetActive(false);
         text4.SetActive(false);
         script.currentStep = 1;
+        runGreen = true;
+        runRed = true;
         yield return new WaitForSeconds(2f);
         green.transform.position = new Vector3(1.3f, -7.15f, 0f);
-        runGreen =  true;
         nextLevel = SceneManager.GetActiveScene().buildIndex + 1;
         no = false;
         //yield return new WaitForSeconds(6f);
@@ -156,5 +158,9 @@ public class Level0Trans : MonoBehaviour
         yield return new WaitForSeconds(4f);
         text1.SetActive(false);
         text2.SetActive(true);
+        yield return new WaitForSeconds(4f);
+        text2.SetActive(false);
+        step = 1;
+        no = false;
     }
 }
