@@ -33,7 +33,7 @@ public class MovementPlatformer : MonoBehaviour
 
     public Level1 scriptL1;
 
-    private Collision coll;
+    public Collision coll;
 
     public bool canMove = false;
     public bool wallGrab = false;
@@ -91,6 +91,8 @@ public class MovementPlatformer : MonoBehaviour
         if(ladder2Collision){
             rb.gravityScale = 3;
             platform.SetActive(true);
+            //animator.SetBool("isWalking", false);
+            //animator.SetBool("Climb", false);
         }
 
         if(platform.activeSelf && Input.GetButton("Down")){
@@ -115,11 +117,11 @@ public class MovementPlatformer : MonoBehaviour
             animator.SetBool("Climb", false);
         }
 
-        //if(ladderCollision && (!Input.GetButton("Down") && !Input.GetButton("Up"))){
-        //    animator.SetBool("isWalking", false);
-        //    if(coll.onGround) animator.SetBool("Climb", false);
+        /*if(ladderCollision && (!Input.GetButton("Down") && !Input.GetButton("Up"))){
+            animator.SetBool("isWalking", false);
+            if(coll.onGround) animator.SetBool("Climb", false);
            //Debug.Log("AICI");
-        //}
+        }*/
 
 
         if(infoSign && Input.GetButtonDown("Info")){
@@ -204,7 +206,7 @@ public class MovementPlatformer : MonoBehaviour
         {
             if(x > 0)   side = true;
             if(x < 0)   side = false;
-
+            Debug.Log("Aici");
             anim.Flip(side);
         }
 
