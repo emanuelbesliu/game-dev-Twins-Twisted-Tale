@@ -46,6 +46,7 @@ public class MovementPlatformer : MonoBehaviour
     private bool side = true;
     private bool infoSign = false;
     private int cameraCount = 0;
+    public Timer levelTimer;
 
     private Vector3 respawnPosition;
     // Start is called before the first frame update
@@ -62,6 +63,9 @@ public class MovementPlatformer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // TIMER TIMINGS
+        levelTimer.isTimerWorking = canMove;
+        
 
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
