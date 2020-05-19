@@ -7,19 +7,31 @@ public class MainMenuAnim : MonoBehaviour
 {
     public Animator animator;
     public SpriteRenderer sp;
-    public Button button;
+    public Button playButton;
+    public Button exitButton;
+    public Button settingsButton;
+    public Button backButton;
     public LoadLevel load;
+
+    public GameObject title;
+    public GameObject titleLight;
+    public GameObject settings;
+    public GameObject settingsLight;
+    public GameObject volume;
 
     public float Speed = 3f;
     public bool red;
     public bool play;
+    public bool exit;
     public bool walking;
     //private bool sleeping = false;
     // Start is called before the first frame update
     void Start()
     {
-        button.onClick.AddListener(TaskOnClick);
-
+        playButton.onClick.AddListener(TaskOnClick);
+        exitButton.onClick.AddListener(ExitOnClick);
+        settingsButton.onClick.AddListener(SettingsOnClick);
+        backButton.onClick.AddListener(BackOnClick);
         if(red){
             StartCoroutine(SleepingAnimation());
         }else{
@@ -31,7 +43,43 @@ public class MainMenuAnim : MonoBehaviour
 
 
     void TaskOnClick(){
+        playButton.gameObject.SetActive(false);
+        //exitButton.gameObject.SetActive(false);
+        settingsButton.gameObject.SetActive(false);
         play = true;
+    }
+
+    void ExitOnClick(){
+        exit = true;
+    }
+
+    void SettingsOnClick(){
+        title.SetActive(false);
+        titleLight.SetActive(false);
+
+        settings.SetActive(true);
+        settingsLight.gameObject.SetActive(true);
+        backButton.gameObject.SetActive(true);
+        volume.SetActive(true);
+
+        playButton.gameObject.SetActive(false);
+        exitButton.gameObject.SetActive(false);
+        settingsButton.gameObject.SetActive(false);
+
+    }
+
+    void BackOnClick(){
+        title.SetActive(true);
+        titleLight.SetActive(true);
+
+        settings.SetActive(false);
+        volume.SetActive(false);
+        settingsLight.gameObject.SetActive(false);
+        backButton.gameObject.SetActive(false);
+
+        playButton.gameObject.SetActive(true);
+        exitButton.gameObject.SetActive(true);
+        settingsButton.gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -51,6 +99,11 @@ public class MainMenuAnim : MonoBehaviour
             animator.SetFloat("HorizontalAxis", Mathf.Abs(1));
         }
 
+        if(exit){
+            Application.Quit();
+            exit = false;
+            Debug.Log("EXIT");
+        }
 
         if(this.transform.position.x > 30){
             load.LoadNextLevel();
@@ -88,5 +141,8 @@ public class MainMenuAnim : MonoBehaviour
         yield return new WaitForSeconds(1f);
         animator.SetBool("Sleep", false);
         animator.SetBool("isSleeping", true);
+        playButton.gameObject.SetActive(true);
+        exitButton.gameObject.SetActive(true);
+        settingsButton.gameObject.SetActive(true);
     }
 }
