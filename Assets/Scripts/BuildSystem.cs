@@ -63,6 +63,11 @@ public class BuildSystem : MonoBehaviour
         }
     }
 
+    public void HideItem()
+    {
+       if(shadowItem!= null) Destroy(shadowItem);
+    }
+
 
 
     // Update is called once per frame
@@ -90,7 +95,7 @@ public class BuildSystem : MonoBehaviour
             
         }
 
-    
+        /**
       if (Input.GetKeyDown(keySlot) && shadowItem != null)
       {
 
@@ -112,9 +117,7 @@ public class BuildSystem : MonoBehaviour
             shadowItem = null;
             DestroyItem();
         }
-
-
-
+    **/
 
 
 
