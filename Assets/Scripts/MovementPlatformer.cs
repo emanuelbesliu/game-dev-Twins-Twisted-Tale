@@ -48,6 +48,8 @@ public class MovementPlatformer : MonoBehaviour
     private int cameraCount = 0;
     public Timer levelTimer;
 
+    public bool isLeft = false;
+
     private Vector3 respawnPosition;
     // Start is called before the first frame update
     void Start()
@@ -85,7 +87,18 @@ public class MovementPlatformer : MonoBehaviour
             this.transform.position = respawnPosition;
         }
 
+        // Adding bool to check which way the player is facing.
+
         Vector2 direction =  new Vector2(x, y);
+        if (x > 0 )
+        {
+            isLeft = false;
+
+        }
+        else if (x < 0)
+        {
+            isLeft = true;
+        }
 
         Walk(direction);
 

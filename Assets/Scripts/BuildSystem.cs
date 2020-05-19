@@ -6,6 +6,7 @@ public class BuildSystem : MonoBehaviour
 {
 
     private Inventory inventory;
+    public HighlightInventory inventoryH;
 
     private int currentBlockSlot = 0;
     private GameObject currentBlock;
@@ -18,7 +19,9 @@ public class BuildSystem : MonoBehaviour
 
     public int i;
 
-
+    public GameObject shadowItem;
+    private Transform player;
+    private MovementPlatformer playerObject;
 
     private bool buildModeOn = false;
 
@@ -32,7 +35,9 @@ public class BuildSystem : MonoBehaviour
     void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
-       
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        playerObject = GameObject.FindGameObjectWithTag("Player").GetComponent<MovementPlatformer>();
+
 
     }
 
@@ -42,14 +47,21 @@ public class BuildSystem : MonoBehaviour
     {
         foreach (Transform child in transform)
         {
-            child.GetComponent<Placeable>().SpawnDropItem();
-            GameObject.Destroy(child.gameObject);
-            
+            shadowItem = child.GetComponent<Placeable>().SpawnDropItem();
 
+            
+            
+        }
+    }
+    public void DestroyItem()
+    {
+        foreach (Transform child in transform)
+        {
+            GameObject.Destroy(child.gameObject);
         }
     }
 
-  
+
 
     // Update is called once per frame
     void Update()
@@ -59,14 +71,37 @@ public class BuildSystem : MonoBehaviour
             inventory.isFull[i] = false;
         }
 
-
+        if (shadowItem != null)
+        {
+            if (playerObject.isLeft)
+            {
+                Vector2 playerPos = new Vector2(player.position.x - 3, player.position.y - 2.5f);
+                shadowItem.transform.position = playerPos;
+            }
+            else
+            {
+                Vector2 playerPos = new Vector2(player.position.x + 3, player.position.y - 2.5f);
+                shadowItem.transform.position = playerPos;
+            }
+            
+            
+        }
 
         if (Input.GetKeyDown(keySlot))
         {
             DropItem();
-           
+
         }
 
-        
+        if (Input.GetKeyDown("space") && shadowItem != null)
+        {
+            shadowItem = null;
+            DestroyItem();
+        }
+
+
     }
+
+
+
 }
