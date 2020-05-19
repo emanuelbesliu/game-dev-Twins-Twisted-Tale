@@ -28,6 +28,7 @@ public class Pickup : ExtendedBehaviour
                 {
                     // You can add the item to the inventory
 
+                    inventory.slotsO[i] = gameObject;
                     inventory.isFull[i] = true;
                     Instantiate(itemButton, inventory.slots[i].transform, false);
 
@@ -48,13 +49,19 @@ public class Pickup : ExtendedBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.CompareTag("Player")) {
 
-       
-        canBePickedUp = true;
-        inventory.highlightedObject = this;
-        collided = other;
+            canBePickedUp = true;
+            inventory.highlightedObject = this;
+            collided = other;
+        }
+
+
+        
 
     }
+    
+    
     void OnTriggerStay2D(Collider2D other)
     {
          /**
@@ -69,6 +76,7 @@ public class Pickup : ExtendedBehaviour
     }
     void OnTriggerExit2D(Collider2D other)
     {
+       
         inventory.highlightedObject = null;
         
         canBePickedUp = false;

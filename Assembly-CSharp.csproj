@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\Animations.cs" />
      <Compile Include="Assets\Scripts\BackGroundScroll.cs" />
      <Compile Include="Assets\Scripts\BeeScript.cs" />
+     <Compile Include="Assets\Scripts\BuildSystem.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CameraSettings.cs" />
      <Compile Include="Assets\Scripts\Collision.cs" />

@@ -6,6 +6,7 @@ public class Inventory : MonoBehaviour
 {
     public bool[] isFull;
     public GameObject[] slots;
+    public GameObject[] slotsO;
     public Pickup highlightedObject = null;
 
     void Update()
