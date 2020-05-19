@@ -228,31 +228,42 @@ public class MovementPlatformer : MonoBehaviour
             ladderCollision = true;
             //defaultCamera.transform.position = Vector3.Lerp(secondCamera.transform.position, oldposition, panSteps);
             //defaultCamera.GetComponent<Camera>().fieldOfView = Mathf.Lerp(secondCamera.fieldOfView, oldfieldofview,  panSteps);
-            if(!continueSpeech)
+            if (!continueSpeech)
                 firstBear.SetActive(true);
-        }else if (collision.gameObject.CompareTag("Ladder2"))
+        }
+        else if (collision.gameObject.CompareTag("Ladder2"))
         {
             ladder2Collision = true;
             //Debug.Log("Hit");
             //defaultCamera.transform.position = Vector3.Lerp(oldposition, secondCamera.transform.position, panSteps);
             //defaultCamera.GetComponent<Camera>().fieldOfView = Mathf.Lerp(oldfieldofview, secondCamera.fieldOfView,  panSteps);
-        }else if(collision.gameObject.CompareTag("INFO")){
+        }
+        else if (collision.gameObject.CompareTag("INFO"))
+        {
             info.SetActive(true);
             infoSign = true;
-        }else if(collision.gameObject.CompareTag("Camera")){
-            if(cameraCount == 0){
-                cameraCount ++;
+        }
+        else if (collision.gameObject.CompareTag("Camera"))
+        {
+            if (cameraCount == 0)
+            {
+                cameraCount++;
                 currentStep += Time.deltaTime;
-                defaultCamera.transform.position = Vector3.Lerp(oldposition, secondCamera.transform.position, currentStep/panSteps);
-                defaultCamera.fieldOfView = Mathf.Lerp(oldfieldofview, secondCamera.fieldOfView,  currentStep/panSteps);
-            }else if(cameraCount == 1){
+                defaultCamera.transform.position = Vector3.Lerp(oldposition, secondCamera.transform.position, currentStep / panSteps);
+                defaultCamera.fieldOfView = Mathf.Lerp(oldfieldofview, secondCamera.fieldOfView, currentStep / panSteps);
+            }
+            else if (cameraCount == 1)
+            {
                 cameraCount = 0;
                 currentStep += Time.deltaTime;
-                defaultCamera.transform.position = Vector3.Lerp(defaultCamera.transform.position, oldposition, currentStep/panSteps);
-                defaultCamera.fieldOfView = Mathf.Lerp(defaultCamera.fieldOfView , oldfieldofview,  currentStep/panSteps);
+                defaultCamera.transform.position = Vector3.Lerp(defaultCamera.transform.position, oldposition, currentStep / panSteps);
+                defaultCamera.fieldOfView = Mathf.Lerp(defaultCamera.fieldOfView, oldfieldofview, currentStep / panSteps);
             }
         }
+        else if (collision.gameObject.CompareTag("Collect"))
+        {
 
+        }
     }
 
     void OnTriggerExit2D(Collider2D collision)
