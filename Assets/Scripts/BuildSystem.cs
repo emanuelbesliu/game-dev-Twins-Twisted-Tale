@@ -37,6 +37,8 @@ public class BuildSystem : MonoBehaviour
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         playerObject = GameObject.FindGameObjectWithTag("Player").GetComponent<MovementPlatformer>();
+        inventoryH = GameObject.FindGameObjectWithTag("UI").GetComponent<HighlightInventory>();
+
 
 
     }
@@ -66,6 +68,7 @@ public class BuildSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (transform.childCount <= 0)
         {
             inventory.isFull[i] = false;
@@ -87,17 +90,33 @@ public class BuildSystem : MonoBehaviour
             
         }
 
-        if (Input.GetKeyDown(keySlot))
-        {
-            DropItem();
+    
+      if (Input.GetKeyDown(keySlot) && shadowItem != null)
+      {
 
-        }
+       Destroy(shadowItem);
+
+      }
+
+    
+ 
+            if (Input.GetKeyDown(keySlot) && shadowItem == null)
+            {
+                DropItem();
+
+            }
+       
 
         if (Input.GetKeyDown("space") && shadowItem != null)
         {
             shadowItem = null;
             DestroyItem();
         }
+
+
+
+
+
 
 
     }

@@ -87,8 +87,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9069570a161d9ad46a1bee6dd88a291a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryH: {fileID: 0}
   keySlot: 2
   i: 1
+  shadowItem: {fileID: 0}
 --- !u!1 &8892341857157132703
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,8 +178,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9069570a161d9ad46a1bee6dd88a291a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryH: {fileID: 0}
   keySlot: 1
   i: 0
+  shadowItem: {fileID: 0}
 --- !u!1 &8892341857541916735
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,8 +269,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9069570a161d9ad46a1bee6dd88a291a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryH: {fileID: 0}
   keySlot: 3
   i: 2
+  shadowItem: {fileID: 0}
 --- !u!1 &8892341857763447464
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,8 +360,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9069570a161d9ad46a1bee6dd88a291a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryH: {fileID: 0}
   keySlot: 4
   i: 3
+  shadowItem: {fileID: 0}
 --- !u!1 &8892341857985935712
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,6 +474,7 @@ GameObject:
   - component: {fileID: 8892341858246081582}
   - component: {fileID: 8892341858246081580}
   - component: {fileID: 8892341858246081581}
+  - component: {fileID: 9145509730231442615}
   m_Layer: 4
   m_Name: InventoryUi
   m_TagString: Untagged
@@ -533,3 +542,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &9145509730231442615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8892341858246081583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65b39a81c00d8a49bdd18d8312626b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isHighlighted: 0
+  noHighlightInventory: {fileID: 21300000, guid: 62c6ad2847f57f948a09dfd128d99159,
+    type: 3}
+  inventory1: {fileID: 21300000, guid: 0ffec1c4593231845877c1ea2c58868c, type: 3}
+  inventory2: {fileID: 21300000, guid: aa96ae6030e59e44cb524ec071637e9e, type: 3}
+  inventory3: {fileID: 21300000, guid: 3bfccf4ee03f6c544bfe18f2a7b00848, type: 3}
+  inventory4: {fileID: 21300000, guid: 93d1f7a15e6a19f4083ebf32d475f048, type: 3}
