@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pickup : MonoBehaviour
+public class Pickup : ExtendedBehaviour
 {
 
     private Inventory inventory;
     public GameObject itemButton;
+    private bool canBePickedUp = false;
+    Collider2D collided;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,9 +17,10 @@ public class Pickup : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+
+    void pickup ()
     {
-        if (other.CompareTag("Player"))
+        if (collided.CompareTag("Player") && inventory.highlightedObject == this)
         {
             for (int i = 0; i < inventory.slots.Length; i++)
             {
@@ -27,16 +30,62 @@ public class Pickup : MonoBehaviour
 
                     inventory.isFull[i] = true;
                     Instantiate(itemButton, inventory.slots[i].transform, false);
+
                     Destroy(gameObject);
-                    break;
+                
+                   break;
                 }
-            }
+            
+             }
+
+         }
+     }
+        
+    
+
+
+   
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+
+       
+        canBePickedUp = true;
+        inventory.highlightedObject = this;
+        collided = other;
+
+    }
+    void OnTriggerStay2D(Collider2D other)
+    {
+         /**
+        if (inventory.highlightedObject == null)
+        {
+            canBePickedUp = true;
+            inventory.highlightedObject = this;
+            collided = other;
         }
+    **/
+
+    }
+    void OnTriggerExit2D(Collider2D other)
+    {
+        inventory.highlightedObject = null;
+        
+        canBePickedUp = false;
+        collided = null;
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.Space) && canBePickedUp )
+            pickup();
+        if (inventory.highlightedObject != this)
+        {
+            this.GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, 1f);
+        }
+  
     }
 }
