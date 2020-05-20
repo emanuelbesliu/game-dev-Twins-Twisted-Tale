@@ -15,7 +15,6 @@ public class Level1Trans : MonoBehaviour
     public Animator redAnimator;
     public Animator greenAnimator;
 
-    public int step;
     public bool greenRun;
     public bool redRun;
 
