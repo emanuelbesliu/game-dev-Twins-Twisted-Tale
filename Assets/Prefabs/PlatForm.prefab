@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3807167808237265397}
   - component: {fileID: 644822436981654371}
   - component: {fileID: 1226947918570512957}
+  - component: {fileID: 1838508698271085324}
   m_Layer: 5
   m_Name: PlatForm
   m_TagString: Untagged
@@ -75,3 +76,17 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1838508698271085324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4454032429951278073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a482a0d7b4cd441a9a44a395062071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToDrop: {fileID: 233865620556235019, guid: 95837b0806501b34a89dcd86842225be,
+    type: 3}
