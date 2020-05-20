@@ -22,7 +22,7 @@ public class Placeable : MonoBehaviour
 
     public GameObject SpawnDropItem()
     {
-        Vector2 playerPos = new Vector2(player.position.x + 3, player.position.y);
-       return Instantiate(itemToDrop, playerPos, Quaternion.identity) as GameObject;
+        Vector2 playerPos = new Vector2(player.position.x + 3, player.position.y - 2.5f);
+        return Instantiate(itemToDrop, playerPos, Quaternion.Euler(0, 0, 90)) as GameObject;
     }
 }

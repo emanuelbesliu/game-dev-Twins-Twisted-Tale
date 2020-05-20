@@ -9,6 +9,8 @@ public class HighlightInventory : MonoBehaviour
 {
 
     public bool isHighlighted = false;
+   
+    private GameObject inventoryRef;
 
     public Sprite noHighlightInventory;
     public Sprite inventory1;
@@ -26,12 +28,13 @@ public class HighlightInventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        inventoryRef = this.gameObject;
     }
 
     // Updating the Inventory highlight
     void Update()
     {
+        
         
 
             if (Input.GetKeyDown("1"))
