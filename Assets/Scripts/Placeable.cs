@@ -5,7 +5,11 @@ using UnityEngine;
 public class Placeable : MonoBehaviour
 {
     public GameObject itemToDrop;
-   
+    public Quaternion toPlaceRotation = Quaternion.Euler(0, 0, 90);
+    public float offsetx = 3;
+    public float offsety = - 2.5f;
+
+
     private Transform player;
     // Start is called before the first frame update
     void Start()
@@ -22,7 +26,7 @@ public class Placeable : MonoBehaviour
 
     public GameObject SpawnDropItem()
     {
-        Vector2 playerPos = new Vector2(player.position.x + 3, player.position.y);
-       return Instantiate(itemToDrop, playerPos, Quaternion.identity) as GameObject;
+        Vector2 playerPos = new Vector2(player.position.x + offsetx, player.position.y +offsety);
+        return Instantiate(itemToDrop, playerPos, toPlaceRotation ) as GameObject;
     }
 }

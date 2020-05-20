@@ -6,6 +6,7 @@ public class Pickup : ExtendedBehaviour
 {
 
     private Inventory inventory;
+    public HighlightInventory inventoryH;
     public GameObject itemButton;
     private bool canBePickedUp = false;
     Collider2D collided;
@@ -13,8 +14,8 @@ public class Pickup : ExtendedBehaviour
     void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        inventoryH = GameObject.FindGameObjectWithTag("UI").GetComponent<HighlightInventory>();
 
-        
     }
 
 
@@ -50,10 +51,12 @@ public class Pickup : ExtendedBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player")) {
-
-            canBePickedUp = true;
-            inventory.highlightedObject = this;
-            collided = other;
+            if (!inventoryH.isHighlighted) {
+                canBePickedUp = true;
+                inventory.highlightedObject = this;
+                collided = other;
+            }
+            
         }
 
 
@@ -64,16 +67,28 @@ public class Pickup : ExtendedBehaviour
     
     void OnTriggerStay2D(Collider2D other)
     {
-         /**
-        if (inventory.highlightedObject == null)
+        if (inventoryH.isHighlighted)
         {
-            canBePickedUp = true;
-            inventory.highlightedObject = this;
-            collided = other;
+            inventory.highlightedObject = null;
+
+            canBePickedUp = false;
+            collided = null;
+        }
+        /**
+        else if (!inventoryH.isHighlighted)
+        {
+
+            if (inventory.highlightedObject == null)
+            {
+                canBePickedUp = true;
+                inventory.highlightedObject = this;
+                collided = other;
+            }
         }
     **/
 
-    }
+
+        }
     void OnTriggerExit2D(Collider2D other)
     {
        
