@@ -74,6 +74,7 @@
      <Compile Include="Assets\Scripts\Level1.cs" />
      <Compile Include="Assets\Scripts\Level1Trans.cs" />
      <Compile Include="Assets\Scripts\Level2Tans.cs" />
+     <Compile Include="Assets\Scripts\Level3Trans.cs" />
      <Compile Include="Assets\Scripts\LightController.cs" />
      <Compile Include="Assets\Scripts\LoadLevel.cs" />
      <Compile Include="Assets\Scripts\MainMenuAnim.cs" />
