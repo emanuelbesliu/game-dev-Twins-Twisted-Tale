@@ -74,6 +74,7 @@ public class Pickup : ExtendedBehaviour
             canBePickedUp = false;
             collided = null;
         }
+        /**
         else if (!inventoryH.isHighlighted)
         {
 
@@ -84,6 +85,7 @@ public class Pickup : ExtendedBehaviour
                 collided = other;
             }
         }
+    **/
 
 
         }

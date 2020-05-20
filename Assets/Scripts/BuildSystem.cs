@@ -6,7 +6,7 @@ public class BuildSystem : MonoBehaviour
 {
 
     private Inventory inventory;
-    public HighlightInventory inventoryH;
+    private HighlightInventory inventoryH;
 
     private int currentBlockSlot = 0;
     private GameObject currentBlock;
@@ -22,6 +22,8 @@ public class BuildSystem : MonoBehaviour
     public GameObject shadowItem;
     private Transform player;
     private MovementPlatformer playerObject;
+    private float offsetx = 3f;
+    private float offsety = -2.5f;
 
     private bool buildModeOn = false;
 
@@ -38,6 +40,7 @@ public class BuildSystem : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         playerObject = GameObject.FindGameObjectWithTag("Player").GetComponent<MovementPlatformer>();
         inventoryH = GameObject.FindGameObjectWithTag("UI").GetComponent<HighlightInventory>();
+        
 
 
 
@@ -50,9 +53,11 @@ public class BuildSystem : MonoBehaviour
         foreach (Transform child in transform)
         {
             shadowItem = child.GetComponent<Placeable>().SpawnDropItem();
+            offsetx = child.GetComponent<Placeable>().offsetx;
+            offsety = child.GetComponent<Placeable>().offsety;
 
-            
-            
+
+
         }
     }
     public void DestroyItem()
@@ -83,12 +88,12 @@ public class BuildSystem : MonoBehaviour
         {
             if (playerObject.isLeft)
             {
-                Vector2 playerPos = new Vector2(player.position.x - 3, player.position.y - 2.5f);
+                Vector2 playerPos = new Vector2(player.position.x - offsetx, player.position.y + offsety);
                 shadowItem.transform.position = playerPos;
             }
             else
             {
-                Vector2 playerPos = new Vector2(player.position.x + 3, player.position.y - 2.5f);
+                Vector2 playerPos = new Vector2(player.position.x + offsetx, player.position.y + offsety);
                 shadowItem.transform.position = playerPos;
             }
             
