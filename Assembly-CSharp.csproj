@@ -57,6 +57,7 @@
   <ItemGroup>
      <Compile Include="Assets\Asset Store\Free Asset - 2D Handcrafted Art\Scripts\CamerController.cs" />
      <Compile Include="Assets\Scripts\Animations.cs" />
+     <Compile Include="Assets\Scripts\AntScript.cs" />
      <Compile Include="Assets\Scripts\BackGroundScroll.cs" />
      <Compile Include="Assets\Scripts\BeeScript.cs" />
      <Compile Include="Assets\Scripts\BuildSystem.cs" />
