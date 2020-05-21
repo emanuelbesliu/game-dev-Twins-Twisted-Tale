@@ -53,6 +53,8 @@ public class AntScript : MonoBehaviour
             if(this.transform.position.x >= -34f && this.transform.position.y < -10f){
                 tilemap.SetTile(new Vector3Int(position.x, position.y, position.z), null);
                 position.NextTile();
+                tilemap.SetTile(new Vector3Int(position.x, position.y, position.z), null);
+                position.NextTile();
             }
         }
 

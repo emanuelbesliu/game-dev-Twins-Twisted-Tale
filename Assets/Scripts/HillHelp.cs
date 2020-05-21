@@ -10,7 +10,10 @@ public class HillHelp : MonoBehaviour
     public int z;
 
     private int tempX;
+    private int tempX1;
     private int tempY;
+
+    private bool trigger = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +22,7 @@ public class HillHelp : MonoBehaviour
         z = 0;
         tempX = x;
         tempY = y;
+        tempX1 = x;
     }
 
     // Update is called once per frame
@@ -28,17 +32,33 @@ public class HillHelp : MonoBehaviour
     }
 
     public void NextTile(){
-        if(x>=54){
-            if(y >= -29){
-                y = tempY;
-                y++;
+        if(y<=-26){
+            if(x>=54){
+                if(y <= -30 && x <= 54){
+                //trigger = true;
+                    tempX1=17;
+                    x=tempX1;
+                    y=-25;
+                    return;
+                }
+                if(y > -30){
+                    tempX++;
+                    x = tempX;
+                    y--;
+                }
             }else{
-                tempX++;
-                x = tempX;
-                y--;
+                x++;
             }
         }else{
-            x++;
+            if(x>=54){
+                    if(y < -20){
+                        tempX1++;
+                        x = tempX1;
+                        y++;
+                    }
+                }else{
+                    x++;
+                }
         }
     }
 }
