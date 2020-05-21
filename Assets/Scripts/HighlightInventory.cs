@@ -1,9 +1,6 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 
 public class HighlightInventory : MonoBehaviour
 {
@@ -17,6 +14,9 @@ public class HighlightInventory : MonoBehaviour
     public Sprite inventory2;
     public Sprite inventory3;
     public Sprite inventory4;
+
+    public float offsetxInv;
+    public float offsetyInv;
 
     public BuildSystem slot1;
     public BuildSystem slot2;
@@ -140,6 +140,7 @@ public class HighlightInventory : MonoBehaviour
             if (slot1.shadowItem != null)
             {
                 slot1.DestroyItem();
+   
                 slot1.shadowItem = null;
                 this.gameObject.GetComponentInChildren<Image>().sprite = noHighlightInventory;
                 isHighlighted = false;
@@ -149,6 +150,7 @@ public class HighlightInventory : MonoBehaviour
             if (slot2.shadowItem != null)
             {
                 slot2.DestroyItem();
+
                 slot2.shadowItem = null;
                 this.gameObject.GetComponentInChildren<Image>().sprite = noHighlightInventory;
                 isHighlighted = false;
@@ -158,6 +160,7 @@ public class HighlightInventory : MonoBehaviour
             if (slot3.shadowItem != null)
             {
                 slot3.DestroyItem();
+
                 slot3.shadowItem = null;
                 this.gameObject.GetComponentInChildren<Image>().sprite = noHighlightInventory;
                 isHighlighted = false;
@@ -167,6 +170,7 @@ public class HighlightInventory : MonoBehaviour
             if (slot4.shadowItem != null)
             {
                 slot4.DestroyItem();
+                
                 slot4.shadowItem = null;
                 this.gameObject.GetComponentInChildren<Image>().sprite = noHighlightInventory;
                 isHighlighted = false;

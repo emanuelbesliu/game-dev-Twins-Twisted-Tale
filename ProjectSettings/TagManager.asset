@@ -15,6 +15,7 @@ TagManager:
   - Camera
   - NPC
   - UI
+  - ShadowBlock
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - 
   - Ladder
   - Ground
-  - 
+  - PlaceTrigger
   - 
   - 
   - 

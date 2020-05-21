@@ -8,7 +8,7 @@ public class BuildSystem : MonoBehaviour
     private Inventory inventory;
     private HighlightInventory inventoryH;
 
-    private int currentBlockSlot = 0;
+
     private GameObject currentBlock;
 
     private GameObject blockTemplate;
@@ -25,7 +25,7 @@ public class BuildSystem : MonoBehaviour
     private float offsetx = 3f;
     private float offsety = -2.5f;
 
-    private bool buildModeOn = false;
+ 
 
     private void Awake()
     {
@@ -53,8 +53,11 @@ public class BuildSystem : MonoBehaviour
         foreach (Transform child in transform)
         {
             shadowItem = child.GetComponent<Placeable>().SpawnDropItem();
+            
             offsetx = child.GetComponent<Placeable>().offsetx;
             offsety = child.GetComponent<Placeable>().offsety;
+            inventoryH.offsetxInv = offsetx;
+            inventoryH.offsetyInv = offsety;
 
 
 
@@ -78,6 +81,8 @@ public class BuildSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+         offsetx = inventoryH.offsetxInv;
+         offsety = inventoryH.offsetyInv;
 
         if (transform.childCount <= 0)
         {
@@ -100,30 +105,7 @@ public class BuildSystem : MonoBehaviour
             
         }
 
-        /**
-      if (Input.GetKeyDown(keySlot) && shadowItem != null)
-      {
-
-       Destroy(shadowItem);
-
-      }
-
-    
- 
-            if (Input.GetKeyDown(keySlot) && shadowItem == null)
-            {
-                DropItem();
-
-            }
-       
-
-        if (Input.GetKeyDown("space") && shadowItem != null)
-        {
-            shadowItem = null;
-            DestroyItem();
-        }
-    **/
-
+   
 
 
 
