@@ -53,6 +53,7 @@ public class OffSetTrigger : MonoBehaviour
                 //Debug.Log(currentObject.id);
                 if (currentObject != null && currentObject.id == 1)
                 {
+
                 inventoryH.offsetxInv = customX;
                 inventoryH.offsetyInv = customY;
 
@@ -112,8 +113,8 @@ public class OffSetTrigger : MonoBehaviour
             inventoryH.canPlace[inventoryH.currentSlot] = true;
             if (currentObject != null)
             {
-                inventoryH.offsetxInv = savedX;
-                inventoryH.offsetyInv = savedY;
+               // inventoryH.offsetxInv = savedX;
+               // inventoryH.offsetyInv = savedY;
             }
         }
         catch { }
