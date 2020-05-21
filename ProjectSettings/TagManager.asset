@@ -17,6 +17,15 @@ TagManager:
   - UI
   - Enemy
   - EnemyStop
+  - AntUp
+  - AntDown
+  - AntLeft
+  - AntRight
+  - AntOff
+  - AntDownOff
+  - AntRightOff
+  - AntUpOff
+  - AntLeftOff
   layers:
   - Default
   - TransparentFX
