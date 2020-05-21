@@ -91,5 +91,5 @@ MonoBehaviour:
   itemToDrop: {fileID: 3467493503369261022, guid: b0ba3439a9fb07e4a89b72f5fcf85f67,
     type: 3}
   toPlaceRotation: {x: 0, y: 0, z: 0, w: 1}
-  offsetx: 3
-  offsety: -0.5
+  offsetx: 2
+  offsety: -2.5
