@@ -8,8 +8,6 @@ public class Placeable : MonoBehaviour
     public Quaternion toPlaceRotation = Quaternion.Euler(0, 0, 90);
     public float offsetx = 3;
     public float offsety = - 2.5f;
-    
-
 
 
     private Transform player;
@@ -25,7 +23,6 @@ public class Placeable : MonoBehaviour
        
        
     }
-
 
     public GameObject SpawnDropItem()
     {

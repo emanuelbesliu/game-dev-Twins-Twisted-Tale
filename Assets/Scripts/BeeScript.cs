@@ -22,70 +22,44 @@ public class BeeScript : MonoBehaviour
     void UpdateBeesLeft()
     {
         lock (beesLeft)
-            try
-            {
-                if (fly)
-                {
-                    foreach (GameObject bee in beesLeft)
-                    {
-                        if (bee.transform.position.x <= -28f)
-                        {
-                            beesLeft.Remove(bee);
-                            beesRight.Add(bee);
-                            bee.transform.Rotate(new Vector3(0, 180, 0));
-                        }
-                        else
-                        {
-                            if (bee.transform.position.y > 16f)
-                            {
-                                bee.transform.position += new Vector3(0, -4, 0);
-                                // }if(bee.transform.position.y > -10f){
-                                //    bee.transform.position += new Vector3(0, +4, 0);
-                            }
-                            else
-                            {
-                                bee.transform.position += new Vector3(Random.Range(-5.0f, -1.0f), Random.Range(-2.5f, 2.5f), 0) * Time.deltaTime * Speed;
-                            }
-                        }
+        if(fly){
+            foreach(GameObject bee in beesLeft){
+                if(bee.transform.position.x <= -28f){
+                    beesLeft.Remove(bee);
+                    beesRight.Add(bee);
+                    bee.transform.Rotate(new Vector3(0,180,0));
+                }else{
+                    if(bee.transform.position.y > 16f){
+                        bee.transform.position += new Vector3(0, -4, 0);
+                    // }if(bee.transform.position.y > -10f){
+                    //    bee.transform.position += new Vector3(0, +4, 0);
+                    }else{
+                        bee.transform.position += new Vector3(Random.Range(-5.0f, -1.0f), Random.Range(-2.5f, 2.5f), 0) * Time.deltaTime * Speed;
                     }
                 }
             }
-            catch
-        { }
-
+        }
     }
 
     void UpdateBeesRight(){
-        try
-        {
-            lock (beesRight)
-                if (fly)
-                {
-                    foreach (GameObject bee in beesRight)
-                    {
-                        if (bee.transform.position.x >= 31f)
-                        {
-                            beesRight.Remove(bee);
-                            beesLeft.Add(bee);
-                            bee.transform.Rotate(new Vector3(0, 180, 0));
-                        }
-                        else
-                        {
-                            if (bee.transform.position.y > 16f)
-                            {
-                                bee.transform.position += new Vector3(0, -4, 0);
-                                // }if(bee.transform.position.y > -10f){
-                                //    Debug.Log("here");
-                                //    bee.transform.position += new Vector3(0, +4, 0);
-                            }
-                            else
-                            {
-                                bee.transform.position += new Vector3(Random.Range(1.0f, 5.0f), Random.Range(-2.5f, 2.5f), 0) * Time.deltaTime * Speed;
-                            }
-                        }
+        lock (beesRight)
+        if(fly){
+            foreach(GameObject bee in beesRight){
+                if(bee.transform.position.x >= 31f){
+                    beesRight.Remove(bee);
+                    beesLeft.Add(bee);
+                    bee.transform.Rotate(new Vector3(0,180,0));
+                }else{
+                    if(bee.transform.position.y > 16f){
+                        bee.transform.position += new Vector3(0, -4, 0);
+                    // }if(bee.transform.position.y > -10f){
+                    //    Debug.Log("here");
+                    //    bee.transform.position += new Vector3(0, +4, 0);
+                    }else{
+                        bee.transform.position += new Vector3(Random.Range(1.0f, 5.0f), Random.Range(-2.5f, 2.5f), 0) * Time.deltaTime * Speed;
                     }
                 }
+            }
         }
-        catch { }
     }
 }

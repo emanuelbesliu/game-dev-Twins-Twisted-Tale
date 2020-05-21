@@ -223,7 +223,7 @@ public class MovementPlatformer : MonoBehaviour
         {
             if(x > 0)   side = true;
             if(x < 0)   side = false;
-         //   Debug.Log("Aici");
+            Debug.Log("Aici");
             anim.Flip(side);
         }
 
@@ -278,6 +278,10 @@ public class MovementPlatformer : MonoBehaviour
         else if (collision.gameObject.CompareTag("Collect"))
         {
 
+        }else if(collision.gameObject.CompareTag("Enemy")){
+            //Debug.Log("Attack");
+            this.transform.position = respawnPosition;
+            collision.gameObject.GetComponent<Animator>().SetTrigger("Attack");
         }
     }
 
@@ -293,9 +297,11 @@ public class MovementPlatformer : MonoBehaviour
             info.SetActive(false);
             infoSign = false;
         }else if(collision.gameObject.CompareTag("Stop")){
-            scriptL1.endRunRed = false;
-            scriptL1.animatorGreen.SetFloat("HorizontalAxis", Mathf.Abs(0));
-            canMove = true;
+            if(SceneManager.GetActiveScene().name == "Level1-1"){
+                scriptL1.endRunRed = false;
+                scriptL1.animatorGreen.SetFloat("HorizontalAxis", Mathf.Abs(0));
+                canMove = true;
+            }
             respawnPosition = this.transform.position;
         }
     }
