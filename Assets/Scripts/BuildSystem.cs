@@ -95,6 +95,7 @@ public class BuildSystem : MonoBehaviour
             {
                 Vector2 playerPos = new Vector2(player.position.x - offsetx, player.position.y + offsety);
                 shadowItem.transform.position = playerPos;
+                
             }
             else
             {

@@ -9,6 +9,8 @@ public class HighlightInventory : MonoBehaviour
    
     private GameObject inventoryRef;
 
+   // public Color currentBlockColor;
+
     public Sprite noHighlightInventory;
     public Sprite inventory1;
     public Sprite inventory2;
@@ -23,12 +25,20 @@ public class HighlightInventory : MonoBehaviour
     public BuildSystem slot3;
     public BuildSystem slot4;
 
+    public bool[] canPlace = new bool[4];
+    
+    public int currentSlot = 0;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
-        inventoryRef = this.gameObject;
+     canPlace[1] = true;
+     canPlace[2] = true;
+     canPlace[3] = true;
+     canPlace[4] = true;
+    inventoryRef = this.gameObject;
     }
 
     // Updating the Inventory highlight
@@ -57,6 +67,7 @@ public class HighlightInventory : MonoBehaviour
                 slot4.HideItem();
                 slot1.DropItem();
                 this.gameObject.GetComponentInChildren<Image>().sprite = inventory1;
+                currentSlot = 1;
                 isHighlighted = true;
             }
                 
@@ -83,6 +94,7 @@ public class HighlightInventory : MonoBehaviour
                 slot4.HideItem();
                 slot2.DropItem();
                 this.gameObject.GetComponentInChildren<Image>().sprite = inventory2;
+                currentSlot = 2;
                 isHighlighted = true;
             }
 
@@ -106,6 +118,7 @@ public class HighlightInventory : MonoBehaviour
                 slot4.HideItem();
                 slot3.DropItem();
                 this.gameObject.GetComponentInChildren<Image>().sprite = inventory3;
+                currentSlot = 3;
                 isHighlighted = true;
             }
         }
@@ -129,6 +142,7 @@ public class HighlightInventory : MonoBehaviour
                 slot1.HideItem();
                 slot4.DropItem();
                 this.gameObject.GetComponentInChildren<Image>().sprite = inventory4;
+                currentSlot = 4;
                 isHighlighted = true;
             }
 
@@ -137,17 +151,21 @@ public class HighlightInventory : MonoBehaviour
             else 
             if (Input.GetKeyDown("space"))
         {
-            if (slot1.shadowItem != null)
+            if (slot1.shadowItem != null && canPlace[1])
             {
                 slot1.DestroyItem();
-   
+
                 slot1.shadowItem = null;
                 this.gameObject.GetComponentInChildren<Image>().sprite = noHighlightInventory;
                 isHighlighted = false;
 
             }
-            else 
-            if (slot2.shadowItem != null)
+            else if (slot1.shadowItem != null && !canPlace[1])
+            {
+                Debug.Log("Cannot Place current item");
+            }
+            else
+            if (slot2.shadowItem != null && canPlace[2])
             {
                 slot2.DestroyItem();
 
@@ -156,8 +174,12 @@ public class HighlightInventory : MonoBehaviour
                 isHighlighted = false;
 
             }
-            else 
-            if (slot3.shadowItem != null)
+            
+            else if (slot2.shadowItem != null && !canPlace[2])
+            {
+                Debug.Log("Cannot Place current item");
+            }
+            else if (slot3.shadowItem != null && canPlace[3])
             {
                 slot3.DestroyItem();
 
@@ -166,15 +188,23 @@ public class HighlightInventory : MonoBehaviour
                 isHighlighted = false;
 
             }
-            else 
-            if (slot4.shadowItem != null)
+            else if (slot3.shadowItem != null && !canPlace[3])
+            {
+                Debug.Log("Cannot Place current item");
+            }
+            else
+            if (slot4.shadowItem != null && canPlace[4])
             {
                 slot4.DestroyItem();
-                
+
                 slot4.shadowItem = null;
                 this.gameObject.GetComponentInChildren<Image>().sprite = noHighlightInventory;
                 isHighlighted = false;
 
+            }
+            else if (slot4.shadowItem != null && !canPlace[4])
+            {
+                Debug.Log("Cannot Place current item");
             }
             
         }
