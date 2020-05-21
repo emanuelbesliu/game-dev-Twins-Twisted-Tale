@@ -27,6 +27,7 @@ TagManager:
   - AntUpOff
   - AntLeftOff
   - PickupAnt
+  - ShadowBlock
   layers:
   - Default
   - TransparentFX
