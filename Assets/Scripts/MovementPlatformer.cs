@@ -279,7 +279,7 @@ public class MovementPlatformer : MonoBehaviour
         {
 
         }else if(collision.gameObject.CompareTag("Enemy")){
-            Debug.Log("Attack");
+            //Debug.Log("Attack");
             this.transform.position = respawnPosition;
             collision.gameObject.GetComponent<Animator>().SetTrigger("Attack");
         }
