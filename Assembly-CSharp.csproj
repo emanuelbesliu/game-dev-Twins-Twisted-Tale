@@ -87,6 +87,7 @@
      <Compile Include="Assets\Scripts\Placeable.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\RedLevel0.cs" />
+     <Compile Include="Assets\Scripts\SlugScript.cs" />
      <Compile Include="Assets\Scripts\Stars.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
      <Compile Include="Assets\Scripts\TransitionAnimation.cs" />
