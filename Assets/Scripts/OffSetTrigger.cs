@@ -40,8 +40,8 @@ public class OffSetTrigger : MonoBehaviour
         { }
         if (playerObject.isLeft && doesLeftMatter)
         {
-           // inventoryH.offsetxInv = savedX;
-          //  inventoryH.offsetyInv = savedY;
+            inventoryH.offsetxInv = savedX;
+            inventoryH.offsetyInv = savedY;
         }
 
 
@@ -51,50 +51,42 @@ public class OffSetTrigger : MonoBehaviour
             
            
                 //Debug.Log(currentObject.id);
-                if (currentObject != null && currentObject.id == 1)
+                if (currentObject.id == 1)
                 {
-                inventoryH.offsetxInv = customX;
-                inventoryH.offsetyInv = customY;
-
-                if (!can1bePlaced)
+                    if (!can1bePlaced)
                 {
                     Debug.Log("Color Should change");
-                    
                     currentObject.GetComponent<SpriteRenderer>().color = new Color(1f, 28f/255f, 28f/255f, 1f);
                     inventoryH.canPlace[inventoryH.currentSlot] = false;
-                   
+
 
                 }
                     else
                 {
-                   
                     currentObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
                     inventoryH.canPlace[inventoryH.currentSlot] = true;
-                   
                 }
-                    
+                    inventoryH.offsetxInv = customX;
+                    inventoryH.offsetyInv = customY;
+                
             }
 
-                if (currentObject != null && currentObject.id == 2)
+                if (currentObject.id == 2)
 
 
                 {
                 if (!can2bePlaced)
                 {
                     Debug.Log("Color Should change");
-                 
                     currentObject.GetComponent<SpriteRenderer>().color = new Color(1f, 28f / 255f, 28f / 255f, 1f);
-                  
 
                 }
                 else
                 {
-                   
                     currentObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
                     inventoryH.canPlace[inventoryH.currentSlot] = true;
-                   
                 }
-                    inventoryH.offsetxInv = customX2;
+                inventoryH.offsetxInv = customX2;
                     inventoryH.offsetyInv = customY2;
                 }
 
@@ -105,19 +97,10 @@ public class OffSetTrigger : MonoBehaviour
     }
     void OnTriggerExit2D(Collider2D other)
     {
-        
-        try
-        {
-            currentObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
-            inventoryH.canPlace[inventoryH.currentSlot] = true;
-            if (currentObject != null)
-            {
-                inventoryH.offsetxInv = savedX;
-                inventoryH.offsetyInv = savedY;
-            }
-        }
-        catch { }
-        
+        inventoryH.offsetxInv = savedX;
+        inventoryH.offsetyInv = savedY;
+        currentObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+        inventoryH.canPlace[inventoryH.currentSlot] = true;
     }
 
 
