@@ -25,7 +25,7 @@ public class HighlightInventory : MonoBehaviour
     public BuildSystem slot3;
     public BuildSystem slot4;
 
-    public bool[] canPlace = new bool[4];
+    public bool[] canPlace = new bool[6];
     
     public int currentSlot = 0;
 
