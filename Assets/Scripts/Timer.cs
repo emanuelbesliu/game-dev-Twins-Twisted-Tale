@@ -24,7 +24,7 @@ public class Timer : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    { 
 
         // Timer Timings
         if (isTimerWorking && timerDelay == 0) timerDelay = Time.time;
