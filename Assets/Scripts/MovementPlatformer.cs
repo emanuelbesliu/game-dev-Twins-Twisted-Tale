@@ -46,7 +46,7 @@ public class MovementPlatformer : MonoBehaviour
     private bool side = true;
     private bool infoSign = false;
     private int cameraCount = 0;
-    public Timer levelTimer;
+   // public Timer levelTimer;
 
     public bool isLeft = false;
 
@@ -66,7 +66,7 @@ public class MovementPlatformer : MonoBehaviour
     void Update()
     {
         // TIMER TIMINGS
-        if (levelTimer != null) levelTimer.isTimerWorking = canMove;
+       // if (levelTimer != null) levelTimer.isTimerWorking = canMove;
 
 
         float x = Input.GetAxis("Horizontal");

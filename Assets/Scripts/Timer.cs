@@ -11,10 +11,11 @@ public class Timer : MonoBehaviour
     public bool isTimerWorking = false;
     private float timerDelay = 0;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
           //startTime = Time.time;
         timerText = this.GetComponent<Text>();
+        isTimerWorking = true;
         
    
 

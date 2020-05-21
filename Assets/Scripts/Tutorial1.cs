@@ -31,7 +31,7 @@ public class Tutorial1 : MonoBehaviour
         if (objectWhenToDestroyTip == null)
         {
             objectToBeDisplayed.SetActive(false);
-            afterBrokeBlock.SetActive(true);
+          if (afterBrokeBlock != null)  afterBrokeBlock.SetActive(true);
             nextTip.canBeActive = true;
             Destroy(this);
            

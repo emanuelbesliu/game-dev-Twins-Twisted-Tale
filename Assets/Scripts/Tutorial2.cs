@@ -8,7 +8,7 @@ public class Tutorial2 : MonoBehaviour
         public bool canBeActive;
         public GameObject objectTocheck;
         public GameObject optionalPreviousTutorialTip;
-        public GameObject afterBrokeBlock;
+        public GameObject nextTutorial;
 
         public GameObject objectToBeDisplayed;
 
@@ -25,6 +25,7 @@ public class Tutorial2 : MonoBehaviour
                 if (optionalPreviousTutorialTip != null) optionalPreviousTutorialTip.SetActive(false);
                 canBeActive = false;
                 objectToBeDisplayed.SetActive(true);
+                if (nextTutorial != null) nextTutorial.SetActive(true);
 
             }
                 
