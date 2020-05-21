@@ -8876,7 +8876,6 @@ MonoBehaviour:
   wallLerp: 10
   ladderCollision: 0
   ladder2Collision: 0
-  levelTimer: {fileID: 1156310273}
   isLeft: 0
 --- !u!61 &299971393
 BoxCollider2D:
@@ -10158,7 +10157,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &370849197
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15056,7 +15055,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &609877992
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16204,6 +16203,7 @@ Transform:
   - {fileID: 2023408078}
   - {fileID: 1171358373}
   - {fileID: 776408779}
+  - {fileID: 1768327118}
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20594,7 +20594,7 @@ MonoBehaviour:
   canBeActive: 0
   objectTocheck: {fileID: 1274264465}
   optionalPreviousTutorialTip: {fileID: 1425417355}
-  afterBrokeBlock: {fileID: 0}
+  nextTutorial: {fileID: 1768327117}
   objectToBeDisplayed: {fileID: 1223638669}
 --- !u!1001 &784075086
 PrefabInstance:
@@ -20704,7 +20704,7 @@ GameObject:
   - component: {fileID: 790242031}
   - component: {fileID: 790242030}
   m_Layer: 5
-  m_Name: TimerCanvas
+  m_Name: TimerCanvas & Tutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23369,7 +23369,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &887697816
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27543,7 +27543,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1223638670
 RectTransform:
   m_ObjectHideFlags: 0
@@ -40709,6 +40709,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1742816365 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9173164179689400522, guid: 6456ef0f7d1c80a4f99c3905413333d1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1795181132}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1762569391
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40804,6 +40810,57 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 532952244}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1768327117
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1768327118}
+  - component: {fileID: 1768327119}
+  m_Layer: 0
+  m_Name: FinalTutorial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1768327118
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768327117}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 660608509}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1768327119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768327117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422cc8568f9d3aa4d8b42e18ecd0af35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrayOfText:
+  - {fileID: 1223638669}
+  - {fileID: 1742816365}
+  - {fileID: 609877991}
+  - {fileID: 510685731}
+  - {fileID: 604871298}
+  - {fileID: 887697815}
+  - {fileID: 1156310269}
 --- !u!1001 &1773346271
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41391,7 +41448,7 @@ PrefabInstance:
     - target: {fileID: 9173164179689400522, guid: 6456ef0f7d1c80a4f99c3905413333d1,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6456ef0f7d1c80a4f99c3905413333d1, type: 3}
@@ -44388,6 +44445,11 @@ PrefabInstance:
       propertyPath: objectWhenToDestroyTip
       value: 
       objectReference: {fileID: 1274264465}
+    - target: {fileID: 8791488961200541887, guid: 8f62eb39c811460488297837fbfefb06,
+        type: 3}
+      propertyPath: nextTip
+      value: 
+      objectReference: {fileID: 776408780}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f62eb39c811460488297837fbfefb06, type: 3}
 --- !u!1 &2088675747
