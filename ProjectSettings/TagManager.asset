@@ -15,6 +15,7 @@ TagManager:
   - Camera
   - NPC
   - UI
+  - Enemy
   layers:
   - Default
   - TransparentFX
