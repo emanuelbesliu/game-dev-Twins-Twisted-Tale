@@ -66,7 +66,7 @@ public class MovementPlatformer : MonoBehaviour
     void Update()
     {
         // TIMER TIMINGS
-        levelTimer.isTimerWorking = canMove;
+        if (levelTimer != null) levelTimer.isTimerWorking = canMove;
 
 
         float x = Input.GetAxis("Horizontal");
@@ -79,7 +79,9 @@ public class MovementPlatformer : MonoBehaviour
         }*/
 
         if(transform.position.x > 28f){
-            level.LoadNextLevel();
+            try { level.LoadNextLevel(); }
+            catch { //Debug.Log("No Level");
+                    }
         }
 
         if(transform.position.y < - 26){
@@ -169,21 +171,25 @@ public class MovementPlatformer : MonoBehaviour
             }
            //Debug.Log("AICI");
         }
+        if (decisionLevel0 != null) {
+            if (decisionLevel0.activeSelf)
+            {
+                if (infoSign && Input.GetButtonDown("Yes"))
+                {
+                    continueSpeech = true;
+                    cherry.SetActive(true);
+                    speechIndex++;
+                    bearSpeech[speechIndex - 1].SetActive(false);
+                    bearSpeech[speechIndex].SetActive(true);
+                    decisionLevel0.SetActive(false);
+                    info.SetActive(true);
+                }
 
-        if(decisionLevel0.activeSelf){
-            if(infoSign && Input.GetButtonDown("Yes")){
-                continueSpeech = true;
-                cherry.SetActive(true);
-                speechIndex ++;
-                bearSpeech[speechIndex-1].SetActive(false);
-                bearSpeech[speechIndex].SetActive(true);
-                decisionLevel0.SetActive(false);
-                info.SetActive(true);
-            }
-
-            if(Input.GetButtonDown("No")){
-                decisionLevel0.SetActive(false);
-                info.SetActive(true);
+                if (Input.GetButtonDown("No"))
+                {
+                    decisionLevel0.SetActive(false);
+                    info.SetActive(true);
+                }
             }
         }
 
@@ -193,14 +199,19 @@ public class MovementPlatformer : MonoBehaviour
         }*/
 
         if(!Input.GetButton("Down") && !Input.GetButton("Up")){
-            if(!coll.onGround){
-                rb.velocity = new Vector2(0, rb.velocity.y);
-                animator.SetBool("Climb", true);
-                animator.SetBool("isWalking", false);
-            }else{
-                animator.SetBool("isWalking", false);
-                animator.SetBool("Climb", false);
-            }
+        
+                if (!coll.onGround)
+                {
+                    rb.velocity = new Vector2(0, rb.velocity.y);
+                    animator.SetBool("Climb", true);
+                    animator.SetBool("isWalking", false);
+                }
+                else
+                {
+                    animator.SetBool("isWalking", false);
+                    animator.SetBool("Climb", false);
+                }
+            
            // animator.Stop("idle-green");
         }else{
             if(coll.onGround && !Input.GetButton("Up")){
