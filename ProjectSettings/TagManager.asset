@@ -15,17 +15,7 @@ TagManager:
   - Camera
   - NPC
   - UI
-  - Enemy
-  - EnemyStop
-  - AntUp
-  - AntDown
-  - AntLeft
-  - AntRight
-  - AntOff
-  - AntDownOff
-  - AntRightOff
-  - AntUpOff
-  - AntLeftOff
+  - ShadowBlock
   layers:
   - Default
   - TransparentFX
@@ -37,7 +27,7 @@ TagManager:
   - 
   - Ladder
   - Ground
-  - 
+  - PlaceTrigger
   - 
   - 
   - 
