@@ -38,12 +38,31 @@ public class Timer : MonoBehaviour
             string minutes = ((int)currentTime / 60).ToString();
             string seconds = (currentTime % 60).ToString("f2");
 
+            // Coloring of the text.
+
+            if (currentTime > startTime / 2)
+            {
+                timerText.color = Color.white;
+
+            }
+            else if (currentTime > startTime / 3)
+            {
+                timerText.color = Color.yellow;
+
+
+            }
+
+      
+            else if (currentTime < 0) timerText.color = Color.red;
+
+
             timerText.text = minutes + " : " + seconds;
         }
         else
         {
             timerText.text = "";
         }
+        
 
     }
 }
