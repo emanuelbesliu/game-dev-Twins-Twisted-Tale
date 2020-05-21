@@ -10,6 +10,8 @@ public class Pickup : ExtendedBehaviour
     public GameObject itemButton;
     private bool canBePickedUp = false;
     Collider2D collided;
+
+    public int id = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +31,7 @@ public class Pickup : ExtendedBehaviour
                 {
                     // You can add the item to the inventory
 
-                    //inventory.slotsO[i] = gameObject;
+                    
                     inventory.isFull[i] = true;
                     Instantiate(itemButton, inventory.slots[i].transform, false);
 
@@ -107,8 +109,10 @@ public class Pickup : ExtendedBehaviour
             pickup();
         if (inventory.highlightedObject != this)
         {
-            this.GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, 1f);
+            Color tmp = this.GetComponent<SpriteRenderer>().color;
+            tmp.a = 1f;
+            this.GetComponent<SpriteRenderer>().color = tmp;
         }
-  
+
     }
 }

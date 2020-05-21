@@ -26,6 +26,7 @@ TagManager:
   - AntRightOff
   - AntUpOff
   - AntLeftOff
+  - ShadowBlock
   layers:
   - Default
   - TransparentFX
@@ -37,7 +38,7 @@ TagManager:
   - 
   - Ladder
   - Ground
-  - 
+  - TriggerLayer
   - 
   - 
   - 
