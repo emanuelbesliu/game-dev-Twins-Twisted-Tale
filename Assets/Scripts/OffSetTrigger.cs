@@ -21,6 +21,11 @@ public class OffSetTrigger : MonoBehaviour
     public float customX2;
     public float customY2;
 
+    public bool can3bePlaced = true;
+
+    public float customX3;
+    public float customY3;
+
     private MovementPlatformer playerObject;
 
 
@@ -97,6 +102,31 @@ public class OffSetTrigger : MonoBehaviour
                 }
                     inventoryH.offsetxInv = customX2;
                     inventoryH.offsetyInv = customY2;
+                }
+
+            
+
+                if (currentObject != null && currentObject.id == 3)
+
+
+                {
+                if (!can3bePlaced)
+                {
+                 //   Debug.Log("Color Should change");
+                 
+                    currentObject.GetComponent<SpriteRenderer>().color = new Color(1f, 28f / 255f, 28f / 255f, 1f);
+                  
+
+                }
+                else
+                {
+                   
+                    currentObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+                    inventoryH.canPlace[inventoryH.currentSlot] = true;
+                   
+                }
+                    inventoryH.offsetxInv = customX3;
+                    inventoryH.offsetyInv = customY3;
                 }
 
             

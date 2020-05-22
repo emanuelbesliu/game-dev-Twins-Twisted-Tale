@@ -151,7 +151,7 @@ public class MovementPlatformer : MonoBehaviour
                 if(speechIndex == 1 && !continueSpeech){
                     return;
                 }
-                if(firstBear.activeSelf == true){
+                if(firstBear != null && firstBear.activeSelf == true){
                     firstBear.SetActive(false);
                     speechIndex = 0;
                     bearSpeech[0].SetActive(true);
@@ -257,7 +257,8 @@ public class MovementPlatformer : MonoBehaviour
             ladderCollision = true;
             //defaultCamera.transform.position = Vector3.Lerp(secondCamera.transform.position, oldposition, panSteps);
             //defaultCamera.GetComponent<Camera>().fieldOfView = Mathf.Lerp(secondCamera.fieldOfView, oldfieldofview,  panSteps);
-            if (!continueSpeech)
+
+            if (!continueSpeech && firstBear != null)
                 firstBear.SetActive(true);
         }
         else if (collision.gameObject.CompareTag("Ladder2"))
