@@ -126,7 +126,7 @@ public class MovementPlatformer : MonoBehaviour
         if (ladderCollision && Input.GetButton("Up")){
             rb.velocity = Vector2.Lerp(rb.velocity, (new Vector2(rb.velocity.x, direction.y * speed)), wallLerp * Time.deltaTime);
             rb.velocity = new Vector2(0, rb.velocity.y);
-            rb.gravityScale = 0;
+            rb.gravityScale = 1;
             animator.SetBool("isWalking", true);
             animator.SetBool("Climb", false);
         }
