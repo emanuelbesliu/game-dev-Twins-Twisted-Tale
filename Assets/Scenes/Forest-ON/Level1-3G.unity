@@ -3538,6 +3538,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &50531170
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3950,7 +3951,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 2032600332}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &77531266
 MonoBehaviour:
@@ -3973,6 +3974,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &77531267
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4878,8 +4880,8 @@ Transform:
   m_LocalPosition: {x: -20.14, y: 6.657609, z: 526.72327}
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
-  m_Father: {fileID: 2032600332}
-  m_RootOrder: 3
+  m_Father: {fileID: 322447476}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &122828597
 MonoBehaviour:
@@ -4902,6 +4904,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 1
 --- !u!61 &122828598
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4959,7 +4962,7 @@ Animator:
   m_GameObject: {fileID: 122828595}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0420dde97667b4b938237b53878db1ce, type: 2}
+  m_Controller: {fileID: 9100000, guid: a8c0074788b0a498a8b48c77ad134e15, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5467,7 +5470,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 1137933645}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &137217658
 MonoBehaviour:
@@ -5490,6 +5493,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &137217659
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6253,7 +6257,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 1137933645}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &173803850
 MonoBehaviour:
@@ -6276,6 +6280,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &173803851
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6702,6 +6707,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &189549424
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11127,6 +11133,39 @@ MonoBehaviour:
   itemButton: {fileID: 8229600911976814708, guid: b66a4762b302e1a4a931bf6b30b465a2,
     type: 3}
   id: 0
+--- !u!1 &322447475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 322447476}
+  m_Layer: 0
+  m_Name: Help - Enemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &322447476
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322447475}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 122828596}
+  - {fileID: 1446815242}
+  - {fileID: 702510819}
+  m_Father: {fileID: 2032600332}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &326383594
 GameObject:
   m_ObjectHideFlags: 0
@@ -11160,7 +11199,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 1137933645}
-  m_RootOrder: 15
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &326383596
 MonoBehaviour:
@@ -11183,6 +11222,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &326383597
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13117,7 +13157,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 2032600332}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &440573716
 MonoBehaviour:
@@ -13140,6 +13180,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &440573717
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13474,7 +13515,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 2032600332}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &451025553
 MonoBehaviour:
@@ -13497,6 +13538,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &451025554
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15227,7 +15269,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 1137933645}
-  m_RootOrder: 16
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &555671694
 MonoBehaviour:
@@ -15250,6 +15292,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &555671695
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15514,7 +15557,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 2032600332}
-  m_RootOrder: 16
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &577768747
 MonoBehaviour:
@@ -15537,6 +15580,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &577768748
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16814,7 +16858,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 658636084}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.47, y: -1.68, z: 30.033302}
+  m_LocalPosition: {x: -6.46, y: -1.68, z: 30.033302}
   m_LocalScale: {x: 3.62689, y: 3.62689, z: 3.62689}
   m_Children: []
   m_Father: {fileID: 2045705464}
@@ -16833,7 +16877,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.04126388, y: 1.4265469}
+  m_Offset: {x: -0.04126388, y: 1.077781}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -16844,7 +16888,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5842521, y: 1.0365765}
+  m_Size: {x: 0.5842521, y: 0.33904457}
   m_EdgeRadius: 0
 --- !u!212 &658636087
 SpriteRenderer:
@@ -16929,7 +16973,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 1137933645}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &659912920
 MonoBehaviour:
@@ -16952,6 +16996,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &659912921
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17437,6 +17482,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &689658276
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17730,8 +17776,8 @@ Transform:
   m_LocalPosition: {x: -16.73, y: 6.657609, z: 526.72327}
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
-  m_Father: {fileID: 2032600332}
-  m_RootOrder: 14
+  m_Father: {fileID: 322447476}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &702510820
 MonoBehaviour:
@@ -17754,6 +17800,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 1
 --- !u!61 &702510821
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17811,7 +17858,7 @@ Animator:
   m_GameObject: {fileID: 702510818}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0420dde97667b4b938237b53878db1ce, type: 2}
+  m_Controller: {fileID: 9100000, guid: a8c0074788b0a498a8b48c77ad134e15, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -18706,6 +18753,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &760046676
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18878,6 +18926,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &769720910
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19733,7 +19782,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 2032600332}
-  m_RootOrder: 15
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &870530345
 MonoBehaviour:
@@ -19756,6 +19805,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &870530346
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23535,7 +23585,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 1137933645}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &997570416
 MonoBehaviour:
@@ -23558,6 +23608,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &997570417
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25009,12 +25060,10 @@ Transform:
   - {fileID: 689658274}
   - {fileID: 189549422}
   - {fileID: 760046674}
-  - {fileID: 2047365552}
   - {fileID: 1927684414}
   - {fileID: 137217657}
   - {fileID: 1557757644}
   - {fileID: 173803849}
-  - {fileID: 1353523106}
   - {fileID: 1301075715}
   - {fileID: 997570415}
   - {fileID: 1146310592}
@@ -25022,6 +25071,7 @@ Transform:
   - {fileID: 659912919}
   - {fileID: 326383595}
   - {fileID: 555671693}
+  - {fileID: 1966910721}
   m_Father: {fileID: 248915928}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -25263,7 +25313,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 1137933645}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1146310593
 MonoBehaviour:
@@ -25286,6 +25336,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &1146310594
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26910,7 +26961,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 2032600332}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1213339271
 MonoBehaviour:
@@ -26933,6 +26984,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &1213339272
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27119,7 +27171,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 2032600332}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1219100758
 MonoBehaviour:
@@ -27142,6 +27194,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &1219100759
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29804,7 +29857,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 2032600332}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1247187875
 MonoBehaviour:
@@ -29827,6 +29880,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &1247187876
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31266,7 +31320,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 1137933645}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1301075716
 MonoBehaviour:
@@ -31289,6 +31343,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &1301075717
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31841,7 +31896,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 2032600332}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1311377353
 MonoBehaviour:
@@ -31864,6 +31919,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &1311377354
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39926,8 +39982,8 @@ Transform:
   m_LocalPosition: {x: -21.5, y: 6.657609, z: 526.72327}
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
-  m_Father: {fileID: 1137933645}
-  m_RootOrder: 9
+  m_Father: {fileID: 1966910721}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1353523107
 MonoBehaviour:
@@ -39950,6 +40006,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 1
 --- !u!61 &1353523108
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40007,7 +40064,7 @@ Animator:
   m_GameObject: {fileID: 1353523105}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0420dde97667b4b938237b53878db1ce, type: 2}
+  m_Controller: {fileID: 9100000, guid: a8c0074788b0a498a8b48c77ad134e15, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -41152,7 +41209,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1412336886}
   m_LocalRotation: {x: -0, y: -0, z: 0.000200853, w: 1}
-  m_LocalPosition: {x: 11.11, y: -9.89, z: 99.03112}
+  m_LocalPosition: {x: 11.11, y: -10.1, z: 99.03112}
   m_LocalScale: {x: 0.23092, y: 0.22514701, z: 0.23092}
   m_Children:
   - {fileID: 1263912720}
@@ -41733,8 +41790,8 @@ Transform:
   m_LocalPosition: {x: -16.73, y: 6.657609, z: 526.72327}
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
-  m_Father: {fileID: 2032600332}
-  m_RootOrder: 8
+  m_Father: {fileID: 322447476}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1446815243
 MonoBehaviour:
@@ -41757,6 +41814,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 1
 --- !u!61 &1446815244
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41814,7 +41872,7 @@ Animator:
   m_GameObject: {fileID: 1446815241}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0420dde97667b4b938237b53878db1ce, type: 2}
+  m_Controller: {fileID: 9100000, guid: a8c0074788b0a498a8b48c77ad134e15, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -43314,7 +43372,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 1137933645}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1557757645
 MonoBehaviour:
@@ -43337,6 +43395,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &1557757646
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44066,7 +44125,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 2032600332}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1629950668
 MonoBehaviour:
@@ -44089,6 +44148,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &1629950669
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44318,7 +44378,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 2032600332}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1659442207
 MonoBehaviour:
@@ -44341,6 +44401,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &1659442208
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46968,6 +47029,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1826947976}
     m_Modifications:
+    - target: {fileID: 8130090355984428349, guid: 8b0050e354dea42028b924e7ca11e947,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 34
+      objectReference: {fileID: 0}
     - target: {fileID: 8560037771330190781, guid: 8b0050e354dea42028b924e7ca11e947,
         type: 3}
       propertyPath: tilemap
@@ -49070,6 +49136,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &1877161185
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49706,7 +49773,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 1137933645}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1927684415
 MonoBehaviour:
@@ -49729,6 +49796,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &1927684416
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50502,6 +50570,38 @@ Transform:
   m_Father: {fileID: 1396613710}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1966910720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1966910721}
+  m_Layer: 0
+  m_Name: Help - Enemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1966910721
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966910720}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2047365552}
+  - {fileID: 1353523106}
+  m_Father: {fileID: 1137933645}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1980553652
 GameObject:
   m_ObjectHideFlags: 0
@@ -50535,7 +50635,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 1137933645}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1980553654
 MonoBehaviour:
@@ -50558,6 +50658,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &1980553655
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -63772,20 +63873,18 @@ Transform:
   - {fileID: 50531168}
   - {fileID: 769720908}
   - {fileID: 1877161183}
-  - {fileID: 122828596}
   - {fileID: 1213339270}
   - {fileID: 77531265}
   - {fileID: 451025552}
   - {fileID: 1311377352}
-  - {fileID: 1446815242}
   - {fileID: 1629950667}
   - {fileID: 1247187874}
   - {fileID: 1219100757}
   - {fileID: 1659442206}
   - {fileID: 440573715}
-  - {fileID: 702510819}
   - {fileID: 870530344}
   - {fileID: 577768746}
+  - {fileID: 322447476}
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -64138,8 +64237,8 @@ Transform:
   m_LocalPosition: {x: -21.5, y: 6.657609, z: 526.72327}
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
-  m_Father: {fileID: 1137933645}
-  m_RootOrder: 4
+  m_Father: {fileID: 1966910721}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2047365553
 MonoBehaviour:
@@ -64162,6 +64261,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 1
 --- !u!61 &2047365554
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -64219,7 +64319,7 @@ Animator:
   m_GameObject: {fileID: 2047365551}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0420dde97667b4b938237b53878db1ce, type: 2}
+  m_Controller: {fileID: 9100000, guid: a8c0074788b0a498a8b48c77ad134e15, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -64830,6 +64930,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &2082786878
 BoxCollider2D:
   m_ObjectHideFlags: 0

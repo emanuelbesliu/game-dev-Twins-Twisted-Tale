@@ -788,6 +788,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &49094777
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1147,6 +1148,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &110322025
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2054,6 +2056,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &145626492
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2334,6 +2337,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &165268536
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2915,7 +2919,7 @@ PrefabInstance:
     - target: {fileID: 4097074204946363763, guid: fd3d0d75553c44486a63ab89d886157a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4097074204946363772, guid: fd3d0d75553c44486a63ab89d886157a,
         type: 3}
@@ -3433,6 +3437,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!50 &303236025
 Rigidbody2D:
   serializedVersion: 4
@@ -3978,6 +3983,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &363531076
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7051,6 +7057,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &402868576
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16236,6 +16243,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &486283984
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16996,6 +17004,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &551917262
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17249,6 +17258,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &571248477
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19122,6 +19132,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &785054470
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19753,6 +19764,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &852923618
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20210,6 +20222,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &906228846
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22392,6 +22405,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &1092473240
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29039,6 +29053,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &1209882932
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30229,6 +30244,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &1275883804
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41257,6 +41273,7 @@ MonoBehaviour:
   right: 0
   help: 0
   picked: 0
+  stopEnemy: 0
 --- !u!61 &2045891163
 BoxCollider2D:
   m_ObjectHideFlags: 0
