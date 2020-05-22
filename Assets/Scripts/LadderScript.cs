@@ -13,17 +13,20 @@ public class LadderScript : MonoBehaviour
  
     void OnTriggerExit2D (Collider2D other)
     {
-        if (!playerObject.coll.onGround)
+        if (other.CompareTag("Player"))
         {
-            playerObject.rb.velocity = new Vector2(0, playerObject.rb.velocity.y);
-            playerObject.animator.SetBool("Climb", true);
-            playerObject.animator.SetBool("isWalking", false);
-            playerObject.rb.gravityScale = 4;
-        }
-        else
-        {
-            playerObject.animator.SetBool("isWalking", false);
-            playerObject.animator.SetBool("Climb", false);
+            if (!playerObject.coll.onGround)
+            {
+                playerObject.rb.velocity = new Vector2(0, playerObject.rb.velocity.y);
+                playerObject.animator.SetBool("Climb", true);
+                playerObject.animator.SetBool("isWalking", false);
+                playerObject.rb.gravityScale = 4;
+            }
+            else
+            {
+                playerObject.animator.SetBool("isWalking", false);
+                playerObject.animator.SetBool("Climb", false);
+            }
         }
 
 
