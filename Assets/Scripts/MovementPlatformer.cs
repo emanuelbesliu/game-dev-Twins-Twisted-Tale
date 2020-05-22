@@ -306,7 +306,7 @@ public class MovementPlatformer : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Level1-2G" || SceneManager.GetActiveScene().name == "Level1-2L&N")
         { // Trigger for level 1.2.
             canMove = true;
-        } 
+        }
         if (SceneManager.GetActiveScene().name == "Level1-3G" || SceneManager.GetActiveScene().name == "Level1-3L&N")
         { // Trigger for level 1.3
             canMove = true;
@@ -325,8 +325,6 @@ public class MovementPlatformer : MonoBehaviour
             info.SetActive(false);
             infoSign = false;
         }else if(collision.gameObject.CompareTag("Stop")){
-
-
                 if (SceneManager.GetActiveScene().name == "Level1-1"){
                 scriptL1.endRunRed = false;
                 scriptL1.animatorGreen.SetFloat("HorizontalAxis", Mathf.Abs(0));
