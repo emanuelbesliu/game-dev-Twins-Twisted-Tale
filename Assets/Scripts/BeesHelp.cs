@@ -8,7 +8,7 @@ public class BeesHelp : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("Enemy");
+            //Debug.Log("Enemy");
             collision.gameObject.GetComponent<Animator>().SetBool("Stop", true);
             StartCoroutine(StopCounter(collision));
         }

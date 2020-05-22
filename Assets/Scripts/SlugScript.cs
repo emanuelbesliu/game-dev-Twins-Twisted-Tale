@@ -17,8 +17,10 @@ public class SlugScript : MonoBehaviour
     {
         if(direction == 1){
             this.transform.position += Vector3.left * Time.deltaTime * Speed ;
-        }else{
+        }else if(direction == -1){
             this.transform.position += Vector3.right * Time.deltaTime * Speed ;
+        }else{
+            return;
         }
     }
 

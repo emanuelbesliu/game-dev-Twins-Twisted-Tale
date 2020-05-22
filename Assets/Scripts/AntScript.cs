@@ -19,11 +19,16 @@ public class AntScript : MonoBehaviour
     public bool picked;
     private bool hasTurned = false;
 
+    public bool stopEnemy;
+
+    private float initialSpeed;
+
     private Vector3 initialPosition;
     // Start is called before the first frame update
     void Start()
     {
         initialPosition = this.transform.position;
+        initialSpeed = Speed;
     }
 
     // Update is called once per frame
@@ -50,6 +55,15 @@ public class AntScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.gameObject.CompareTag("Enemy") && stopEnemy && collision.gameObject.GetComponent<SlugScript>().direction != 0)
+        {
+            Speed = 0.5f;
+            collision.gameObject.GetComponent<Animator>().SetBool("Stop", true);
+            int oldD = collision.gameObject.GetComponent<SlugScript>().direction;
+            collision.gameObject.GetComponent<SlugScript>().direction = 0;
+            StartCoroutine(StopCounter(collision, oldD));
+        }
+
         if(collision.gameObject.CompareTag("PickupAnt") && help){
             picked = true;
             if(this.transform.position.x >= -34f && this.transform.position.y < -10f){
@@ -124,5 +138,19 @@ public class AntScript : MonoBehaviour
         {
             picked = false;
         }
+
+         if (collision.gameObject.CompareTag("Enemy") && stopEnemy)
+        {
+            Speed = initialSpeed;
+        }
+    }
+
+
+    IEnumerator StopCounter(Collider2D collision, int oldDirection)
+    {
+        yield return new WaitForSeconds(5f);
+        Debug.Log(oldDirection);
+        collision.gameObject.GetComponent<Animator>().SetBool("Stop", false);
+        collision.gameObject.GetComponent<SlugScript>().direction = oldDirection;
     }
 }
