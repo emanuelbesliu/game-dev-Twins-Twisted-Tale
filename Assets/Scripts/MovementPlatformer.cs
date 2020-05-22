@@ -302,7 +302,11 @@ public class MovementPlatformer : MonoBehaviour
     void OnTriggerStay2D(Collider2D collision) {
 
         if (SceneManager.GetActiveScene().name == "Level1-2G" || SceneManager.GetActiveScene().name == "Level1-2L&N")
-        {
+        { // Trigger for level 1.2.
+            canMove = true;
+        } 
+        if (SceneManager.GetActiveScene().name == "Level1-3G" || SceneManager.GetActiveScene().name == "Level1-3L&N")
+        { // Trigger for level 1.3
             canMove = true;
         }
     }

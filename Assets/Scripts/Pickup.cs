@@ -129,7 +129,9 @@ public class Pickup : ExtendedBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        try
+        {
+
             if (Input.GetKey(KeyCode.Space) && canBePickedUp)
                 pickup();
             if (inventory.highlightedObject != this)
@@ -138,6 +140,12 @@ public class Pickup : ExtendedBehaviour
                 tmp.a = 1f;
                 this.GetComponent<SpriteRenderer>().color = tmp;
             }
+
+        }
+        catch
+        {
+
+        }
         
 
     }
