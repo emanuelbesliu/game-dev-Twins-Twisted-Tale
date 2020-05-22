@@ -7,6 +7,7 @@ public class Inventory : MonoBehaviour
     public bool[] isFull;
     public GameObject[] slots;
     public Pickup highlightedObject = null;
+    public GameObject inventoryTip;
 
     public GameObject inventoryH;
     public bool isInvActive = true;
@@ -14,6 +15,7 @@ public class Inventory : MonoBehaviour
     void Start()
     {
         inventoryH = GameObject.FindGameObjectsWithTag("UI")[0];
+       
     }
 
     void Update()
@@ -27,12 +29,17 @@ public class Inventory : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown("i"))
+        if (Input.GetKeyDown("e"))
         {
             //Debug.Log("InvButtonFired");
             isInvActive = !isInvActive;
             inventoryH.SetActive(isInvActive);
-            
+            try
+            {
+                inventoryTip.SetActive(!isInvActive);
+            }
+
+            catch { }
 
         }
 
