@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -780,10 +780,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 2.1
+  tilemap: {fileID: 0}
+  position: {fileID: 0}
   up: 0
   down: 0
   left: 0
   right: 0
+  help: 0
+  picked: 0
 --- !u!61 &49094777
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1135,10 +1139,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 1.2
+  tilemap: {fileID: 0}
+  position: {fileID: 0}
   up: 0
   down: 0
   left: 0
   right: 0
+  help: 0
+  picked: 0
 --- !u!61 &110322025
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2038,10 +2046,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 1.8
+  tilemap: {fileID: 0}
+  position: {fileID: 0}
   up: 0
   down: 0
   left: 0
   right: 0
+  help: 0
+  picked: 0
 --- !u!61 &145626492
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2314,10 +2326,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 2.5
+  tilemap: {fileID: 0}
+  position: {fileID: 0}
   up: 0
   down: 0
   left: 0
   right: 0
+  help: 0
+  picked: 0
 --- !u!61 &165268536
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2899,7 +2915,7 @@ PrefabInstance:
     - target: {fileID: 4097074204946363763, guid: fd3d0d75553c44486a63ab89d886157a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4097074204946363772, guid: fd3d0d75553c44486a63ab89d886157a,
         type: 3}
@@ -3265,10 +3281,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 2
+  tilemap: {fileID: 0}
+  position: {fileID: 0}
   up: 0
   down: 0
   left: 0
   right: 0
+  help: 0
+  picked: 0
 --- !u!50 &303236025
 Rigidbody2D:
   serializedVersion: 4
@@ -3806,10 +3826,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 4.6
+  tilemap: {fileID: 0}
+  position: {fileID: 0}
   up: 0
   down: 0
   left: 0
   right: 0
+  help: 0
+  picked: 0
 --- !u!61 &363531076
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6875,10 +6899,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 1.5
+  tilemap: {fileID: 0}
+  position: {fileID: 0}
   up: 0
   down: 0
   left: 0
   right: 0
+  help: 0
+  picked: 0
 --- !u!61 &402868576
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16031,10 +16059,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 2.7
+  tilemap: {fileID: 0}
+  position: {fileID: 0}
   up: 0
   down: 0
   left: 0
   right: 0
+  help: 0
+  picked: 0
 --- !u!61 &486283984
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16753,10 +16785,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 3.2
+  tilemap: {fileID: 0}
+  position: {fileID: 0}
   up: 0
   down: 0
   left: 0
   right: 0
+  help: 0
+  picked: 0
 --- !u!61 &551917262
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17002,10 +17038,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 1.5
+  tilemap: {fileID: 0}
+  position: {fileID: 0}
   up: 0
   down: 0
   left: 0
   right: 0
+  help: 0
+  picked: 0
 --- !u!61 &571248477
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18839,10 +18879,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 4
+  tilemap: {fileID: 0}
+  position: {fileID: 0}
   up: 0
   down: 0
   left: 0
   right: 0
+  help: 0
+  picked: 0
 --- !u!61 &785054470
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19466,10 +19510,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 2.5
+  tilemap: {fileID: 0}
+  position: {fileID: 0}
   up: 0
   down: 0
   left: 0
   right: 0
+  help: 0
+  picked: 0
 --- !u!61 &852923618
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19919,10 +19967,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 3.6
+  tilemap: {fileID: 0}
+  position: {fileID: 0}
   up: 0
   down: 0
   left: 0
   right: 0
+  help: 0
+  picked: 0
 --- !u!61 &906228846
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22097,10 +22149,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 2
+  tilemap: {fileID: 0}
+  position: {fileID: 0}
   up: 0
   down: 0
   left: 0
   right: 0
+  help: 0
+  picked: 0
 --- !u!61 &1092473240
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28576,10 +28632,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 5
+  tilemap: {fileID: 0}
+  position: {fileID: 0}
   up: 0
   down: 0
   left: 0
   right: 0
+  help: 0
+  picked: 0
 --- !u!61 &1209882932
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29762,10 +29822,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 3.2
+  tilemap: {fileID: 0}
+  position: {fileID: 0}
   up: 0
   down: 0
   left: 0
   right: 0
+  help: 0
+  picked: 0
 --- !u!61 &1275883804
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40134,10 +40198,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 3.3
+  tilemap: {fileID: 0}
+  position: {fileID: 0}
   up: 0
   down: 0
   left: 0
   right: 0
+  help: 0
+  picked: 0
 --- !u!61 &2045891163
 BoxCollider2D:
   m_ObjectHideFlags: 0

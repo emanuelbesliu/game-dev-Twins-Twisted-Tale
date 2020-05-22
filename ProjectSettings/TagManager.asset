@@ -26,11 +26,8 @@ TagManager:
   - AntRightOff
   - AntUpOff
   - AntLeftOff
-<<<<<<< HEAD
   - ShadowBlock
-=======
   - PickupAnt
->>>>>>> emi
   layers:
   - Default
   - TransparentFX
