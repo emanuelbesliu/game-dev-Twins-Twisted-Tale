@@ -1,16 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Tilemaps;
 using UnityEngine;
 
 public class AntScript : MonoBehaviour
 {
     public float Speed;
 
+    public Tilemap tilemap;
+    public HillHelp position;
+
     public bool up;
     public bool down;
     public bool left;
     public bool right;
 
+    public bool help;
+    public bool picked;
     private bool hasTurned = false;
     // Start is called before the first frame update
     void Start()
@@ -21,6 +27,7 @@ public class AntScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if(up){
             this.transform.position += Vector3.up * Time.deltaTime * Speed ;
         }
@@ -41,6 +48,16 @@ public class AntScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        if(collision.gameObject.CompareTag("PickupAnt") && help){
+            picked = true;
+            if(this.transform.position.x >= -34f && this.transform.position.y < -10f){
+                tilemap.SetTile(new Vector3Int(position.x, position.y, position.z), null);
+                position.NextTile();
+                tilemap.SetTile(new Vector3Int(position.x, position.y, position.z), null);
+                position.NextTile();
+            }
+        }
+
         if (collision.gameObject.CompareTag("AntUp"))
         {
             up = true;
@@ -86,6 +103,14 @@ public class AntScript : MonoBehaviour
             down = false;
             right = false;
             left = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("PickupAnt"))
+        {
+            picked = false;
         }
     }
 }
