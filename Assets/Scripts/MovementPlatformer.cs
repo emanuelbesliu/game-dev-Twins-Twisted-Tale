@@ -66,7 +66,7 @@ public class MovementPlatformer : MonoBehaviour
     void Update()
     {
         // TIMER TIMINGS
-       // if (levelTimer != null) levelTimer.isTimerWorking = canMove;
+       // if (levelTimer != null) levelTimer.isTimerWorking = ove;
 
 
         float x = Input.GetAxis("Horizontal");
@@ -85,7 +85,7 @@ public class MovementPlatformer : MonoBehaviour
         }
 
         if(transform.position.y < - 26){
-            Debug.Log("Here");
+           // Debug.Log("Here");
             this.transform.position = respawnPosition;
         }
 
@@ -113,14 +113,17 @@ public class MovementPlatformer : MonoBehaviour
             //animator.SetBool("isWalking", false);
             //animator.SetBool("Climb", false);
         }
-
-        if(platform.activeSelf && Input.GetButton("Down")){
+        // Ghita: Commented this to fix bug.
+        
+        if(platform.activeSelf && Input.GetButton("Down") && ladderCollision){
             rb.gravityScale = 0;
             platform.SetActive(false);
-            ladderCollision = true;
+            // Ghita: Commented this to fix bug.
+            //ladderCollision = true;
         }
+        
 
-        if(ladderCollision && Input.GetButton("Up")){
+        if (ladderCollision && Input.GetButton("Up")){
             rb.velocity = Vector2.Lerp(rb.velocity, (new Vector2(rb.velocity.x, direction.y * speed)), wallLerp * Time.deltaTime);
             rb.velocity = new Vector2(0, rb.velocity.y);
             rb.gravityScale = 0;
@@ -296,6 +299,14 @@ public class MovementPlatformer : MonoBehaviour
         }
     }
 
+    void OnTriggerStay2D(Collider2D collision) {
+
+        if (SceneManager.GetActiveScene().name == "Level1-2G" || SceneManager.GetActiveScene().name == "Level1-2L&N")
+        {
+            canMove = true;
+        }
+    }
+
     void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Ladder"))
@@ -308,11 +319,14 @@ public class MovementPlatformer : MonoBehaviour
             info.SetActive(false);
             infoSign = false;
         }else if(collision.gameObject.CompareTag("Stop")){
-            if(SceneManager.GetActiveScene().name == "Level1-1"){
+            
+
+                if (SceneManager.GetActiveScene().name == "Level1-1"){
                 scriptL1.endRunRed = false;
                 scriptL1.animatorGreen.SetFloat("HorizontalAxis", Mathf.Abs(0));
                 canMove = true;
             }
+            
             respawnPosition = this.transform.position;
         }
     }

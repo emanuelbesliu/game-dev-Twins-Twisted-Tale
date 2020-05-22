@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\BuildSystem.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CameraSettings.cs" />
+     <Compile Include="Assets\Scripts\Climbable.cs" />
      <Compile Include="Assets\Scripts\Collision.cs" />
      <Compile Include="Assets\Scripts\ControllersLightController.cs" />
      <Compile Include="Assets\Scripts\ExtendedBehaviour.cs" />
@@ -70,6 +71,7 @@
      <Compile Include="Assets\Scripts\HighlightInventory.cs" />
      <Compile Include="Assets\Scripts\InGameMenu.cs" />
      <Compile Include="Assets\Scripts\Inventory.cs" />
+     <Compile Include="Assets\Scripts\LadderScript.cs" />
      <Compile Include="Assets\Scripts\Level0.cs" />
      <Compile Include="Assets\Scripts\Level0Trans.cs" />
      <Compile Include="Assets\Scripts\Level1.cs" />

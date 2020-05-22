@@ -36,10 +36,17 @@ public class BuildSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        playerObject = GameObject.FindGameObjectWithTag("Player").GetComponent<MovementPlatformer>();
-        inventoryH = GameObject.FindGameObjectWithTag("UI").GetComponent<HighlightInventory>();
+        try
+        {
+            inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+            player = GameObject.FindGameObjectWithTag("Player").transform;
+            playerObject = GameObject.FindGameObjectWithTag("Player").GetComponent<MovementPlatformer>();
+            inventoryH = GameObject.FindGameObjectWithTag("UI").GetComponent<HighlightInventory>();
+        }
+        catch
+        {
+
+        }
         
 
 
@@ -81,30 +88,34 @@ public class BuildSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         offsetx = inventoryH.offsetxInv;
-         offsety = inventoryH.offsetyInv;
-
-        if (transform.childCount <= 0)
+        try
         {
-            inventory.isFull[i] = false;
-        }
+            offsetx = inventoryH.offsetxInv;
+            offsety = inventoryH.offsetyInv;
 
-        if (shadowItem != null)
-        {
-            if (playerObject.isLeft)
+            if (transform.childCount <= 0)
             {
-                Vector2 playerPos = new Vector2(player.position.x - offsetx, player.position.y + offsety);
-                shadowItem.transform.position = playerPos;
-                
+                inventory.isFull[i] = false;
             }
-            else
+
+            if (shadowItem != null)
             {
-                Vector2 playerPos = new Vector2(player.position.x + offsetx, player.position.y + offsety);
-                shadowItem.transform.position = playerPos;
+                if (playerObject.isLeft)
+                {
+                    Vector2 playerPos = new Vector2(player.position.x - offsetx, player.position.y + offsety);
+                    shadowItem.transform.position = playerPos;
+
+                }
+                else
+                {
+                    Vector2 playerPos = new Vector2(player.position.x + offsetx, player.position.y + offsety);
+                    shadowItem.transform.position = playerPos;
+                }
+
+
             }
-            
-            
         }
+        catch { }
 
    
 
