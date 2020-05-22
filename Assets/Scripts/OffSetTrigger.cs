@@ -59,7 +59,7 @@ public class OffSetTrigger : MonoBehaviour
 
                 if (!can1bePlaced)
                 {
-                    Debug.Log("Color Should change");
+                    //Debug.Log("Color Should change");
                     
                     currentObject.GetComponent<SpriteRenderer>().color = new Color(1f, 28f/255f, 28f/255f, 1f);
                     inventoryH.canPlace[inventoryH.currentSlot] = false;
@@ -82,7 +82,7 @@ public class OffSetTrigger : MonoBehaviour
                 {
                 if (!can2bePlaced)
                 {
-                    Debug.Log("Color Should change");
+                 //   Debug.Log("Color Should change");
                  
                     currentObject.GetComponent<SpriteRenderer>().color = new Color(1f, 28f / 255f, 28f / 255f, 1f);
                   
