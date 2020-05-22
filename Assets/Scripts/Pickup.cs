@@ -81,6 +81,16 @@ public class Pickup : ExtendedBehaviour
     {
         try
         {
+            if (other.CompareTag("Player"))
+            {
+                if (!inventoryH.isHighlighted)
+                {
+                    canBePickedUp = true;
+                    inventory.highlightedObject = this;
+                    collided = other;
+                }
+
+            }
             if (inventoryH.isHighlighted)
             {
                 inventory.highlightedObject = null;
