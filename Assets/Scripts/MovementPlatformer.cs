@@ -114,14 +114,14 @@ public class MovementPlatformer : MonoBehaviour
             //animator.SetBool("Climb", false);
         }
         // Ghita: Commented this to fix bug.
-        
+
         if(platform.activeSelf && Input.GetButton("Down") && ladderCollision){
             rb.gravityScale = 0;
             platform.SetActive(false);
             // Ghita: Commented this to fix bug.
             //ladderCollision = true;
         }
-        
+
 
         if (ladderCollision && Input.GetButton("Up")){
             rb.velocity = Vector2.Lerp(rb.velocity, (new Vector2(rb.velocity.x, direction.y * speed)), wallLerp * Time.deltaTime);
@@ -202,7 +202,7 @@ public class MovementPlatformer : MonoBehaviour
         }*/
 
         if(!Input.GetButton("Down") && !Input.GetButton("Up")){
-        
+
                 if (!coll.onGround)
                 {
                     rb.velocity = new Vector2(0, rb.velocity.y);
@@ -214,7 +214,7 @@ public class MovementPlatformer : MonoBehaviour
                     animator.SetBool("isWalking", false);
                     animator.SetBool("Climb", false);
                 }
-            
+
            // animator.Stop("idle-green");
         }else{
             if(coll.onGround && !Input.GetButton("Up")){
@@ -294,8 +294,10 @@ public class MovementPlatformer : MonoBehaviour
 
         }else if(collision.gameObject.CompareTag("Enemy")){
             //Debug.Log("Attack");
-            this.transform.position = respawnPosition;
-            collision.gameObject.GetComponent<Animator>().SetTrigger("Attack");
+            if(!collision.gameObject.GetComponent<Animator>().GetBool("Stop")){
+                collision.gameObject.GetComponent<Animator>().SetTrigger("Attack");
+                this.transform.position = respawnPosition;
+            }
         }
     }
 
@@ -323,14 +325,14 @@ public class MovementPlatformer : MonoBehaviour
             info.SetActive(false);
             infoSign = false;
         }else if(collision.gameObject.CompareTag("Stop")){
-            
+
 
                 if (SceneManager.GetActiveScene().name == "Level1-1"){
                 scriptL1.endRunRed = false;
                 scriptL1.animatorGreen.SetFloat("HorizontalAxis", Mathf.Abs(0));
                 canMove = true;
             }
-            
+
             respawnPosition = this.transform.position;
         }
     }
