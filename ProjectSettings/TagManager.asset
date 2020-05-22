@@ -28,6 +28,7 @@ TagManager:
   - AntLeftOff
   - ShadowBlock
   - PickupAnt
+  - AntRespawn
   layers:
   - Default
   - TransparentFX

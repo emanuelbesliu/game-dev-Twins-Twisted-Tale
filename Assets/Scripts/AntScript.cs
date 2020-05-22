@@ -18,10 +18,12 @@ public class AntScript : MonoBehaviour
     public bool help;
     public bool picked;
     private bool hasTurned = false;
+
+    private Vector3 initialPosition;
     // Start is called before the first frame update
     void Start()
     {
-
+        initialPosition = this.transform.position;
     }
 
     // Update is called once per frame
@@ -56,6 +58,16 @@ public class AntScript : MonoBehaviour
                 tilemap.SetTile(new Vector3Int(position.x, position.y, position.z), null);
                 position.NextTile();
             }
+        }
+
+        if (collision.gameObject.CompareTag("AntRespawn"))
+        {
+            up = false;
+            down = false;
+            right = false;
+            left = false;
+
+            this.transform.position = initialPosition;
         }
 
         if (collision.gameObject.CompareTag("AntUp"))
