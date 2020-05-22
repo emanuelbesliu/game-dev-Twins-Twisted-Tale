@@ -8,7 +8,7 @@ public class BuildSystem : MonoBehaviour
     private Inventory inventory;
     private HighlightInventory inventoryH;
 
-    private int currentBlockSlot = 0;
+
     private GameObject currentBlock;
 
     private GameObject blockTemplate;
@@ -25,7 +25,7 @@ public class BuildSystem : MonoBehaviour
     private float offsetx = 3f;
     private float offsety = -2.5f;
 
-    private bool buildModeOn = false;
+ 
 
     private void Awake()
     {
@@ -36,10 +36,17 @@ public class BuildSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        playerObject = GameObject.FindGameObjectWithTag("Player").GetComponent<MovementPlatformer>();
-        inventoryH = GameObject.FindGameObjectWithTag("UI").GetComponent<HighlightInventory>();
+        try
+        {
+            inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+            player = GameObject.FindGameObjectWithTag("Player").transform;
+            playerObject = GameObject.FindGameObjectWithTag("Player").GetComponent<MovementPlatformer>();
+            inventoryH = GameObject.FindGameObjectWithTag("UI").GetComponent<HighlightInventory>();
+        }
+        catch
+        {
+
+        }
         
 
 
@@ -53,8 +60,11 @@ public class BuildSystem : MonoBehaviour
         foreach (Transform child in transform)
         {
             shadowItem = child.GetComponent<Placeable>().SpawnDropItem();
+            
             offsetx = child.GetComponent<Placeable>().offsetx;
             offsety = child.GetComponent<Placeable>().offsety;
+            inventoryH.offsetxInv = offsetx;
+            inventoryH.offsetyInv = offsety;
 
 
 
@@ -78,52 +88,36 @@ public class BuildSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (transform.childCount <= 0)
+        try
         {
-            inventory.isFull[i] = false;
-        }
+            offsetx = inventoryH.offsetxInv;
+            offsety = inventoryH.offsetyInv;
 
-        if (shadowItem != null)
-        {
-            if (playerObject.isLeft)
+            if (transform.childCount <= 0)
             {
-                Vector2 playerPos = new Vector2(player.position.x - offsetx, player.position.y + offsety);
-                shadowItem.transform.position = playerPos;
+                inventory.isFull[i] = false;
             }
-            else
+
+            if (shadowItem != null)
             {
-                Vector2 playerPos = new Vector2(player.position.x + offsetx, player.position.y + offsety);
-                shadowItem.transform.position = playerPos;
-            }
-            
-            
-        }
+                if (playerObject.isLeft)
+                {
+                    Vector2 playerPos = new Vector2(player.position.x - offsetx, player.position.y + offsety);
+                    shadowItem.transform.position = playerPos;
 
-        /**
-      if (Input.GetKeyDown(keySlot) && shadowItem != null)
-      {
+                }
+                else
+                {
+                    Vector2 playerPos = new Vector2(player.position.x + offsetx, player.position.y + offsety);
+                    shadowItem.transform.position = playerPos;
+                }
 
-       Destroy(shadowItem);
-
-      }
-
-    
- 
-            if (Input.GetKeyDown(keySlot) && shadowItem == null)
-            {
-                DropItem();
 
             }
-       
-
-        if (Input.GetKeyDown("space") && shadowItem != null)
-        {
-            shadowItem = null;
-            DestroyItem();
         }
-    **/
+        catch { }
 
+   
 
 
 

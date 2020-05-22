@@ -10,11 +10,23 @@ public class Pickup : ExtendedBehaviour
     public GameObject itemButton;
     private bool canBePickedUp = false;
     Collider2D collided;
+
+    public int id = 0;
     // Start is called before the first frame update
     void Start()
     {
-        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
-        inventoryH = GameObject.FindGameObjectWithTag("UI").GetComponent<HighlightInventory>();
+        try
+        {
+
+
+
+            inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+            inventoryH = GameObject.FindGameObjectWithTag("UI").GetComponent<HighlightInventory>();
+        }
+        catch
+        {
+
+        }
 
     }
 
@@ -29,7 +41,7 @@ public class Pickup : ExtendedBehaviour
                 {
                     // You can add the item to the inventory
 
-                    //inventory.slotsO[i] = gameObject;
+                    
                     inventory.isFull[i] = true;
                     Instantiate(itemButton, inventory.slots[i].transform, false);
 
@@ -67,35 +79,49 @@ public class Pickup : ExtendedBehaviour
     
     void OnTriggerStay2D(Collider2D other)
     {
-        if (inventoryH.isHighlighted)
+        try
         {
-            inventory.highlightedObject = null;
-
-            canBePickedUp = false;
-            collided = null;
-        }
-        /**
-        else if (!inventoryH.isHighlighted)
-        {
-
-            if (inventory.highlightedObject == null)
+            if (inventoryH.isHighlighted)
             {
-                canBePickedUp = true;
-                inventory.highlightedObject = this;
-                collided = other;
+                inventory.highlightedObject = null;
+
+                canBePickedUp = false;
+                collided = null;
             }
+            /**
+            else if (!inventoryH.isHighlighted)
+            {
+
+                if (inventory.highlightedObject == null)
+                {
+                    canBePickedUp = true;
+                    inventory.highlightedObject = this;
+                    collided = other;
+                }
+            }
+        **/
         }
-    **/
+        catch
+        {
+
+        }
 
 
         }
     void OnTriggerExit2D(Collider2D other)
     {
-       
-        inventory.highlightedObject = null;
-        
-        canBePickedUp = false;
-        collided = null;
+        try
+        {
+
+            inventory.highlightedObject = null;
+
+            canBePickedUp = false;
+            collided = null;
+        }
+        catch
+        {
+
+        }
 
 
     }
@@ -103,12 +129,21 @@ public class Pickup : ExtendedBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space) && canBePickedUp )
-            pickup();
-        if (inventory.highlightedObject != this)
+        try
         {
-            this.GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, 1f);
+            if (Input.GetKey(KeyCode.Space) && canBePickedUp)
+                pickup();
+            if (inventory.highlightedObject != this)
+            {
+                Color tmp = this.GetComponent<SpriteRenderer>().color;
+                tmp.a = 1f;
+                this.GetComponent<SpriteRenderer>().color = tmp;
+            }
         }
-  
+        catch
+        {
+
+        }
+
     }
 }

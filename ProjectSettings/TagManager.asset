@@ -26,6 +26,7 @@ TagManager:
   - AntRightOff
   - AntUpOff
   - AntLeftOff
+  - ShadowBlock
   - PickupAnt
   layers:
   - Default
@@ -38,7 +39,7 @@ TagManager:
   - 
   - Ladder
   - Ground
-  - 
+  - TriggerLayer
   - 
   - 
   - 

@@ -46,7 +46,7 @@ public class MovementPlatformer : MonoBehaviour
     private bool side = true;
     private bool infoSign = false;
     private int cameraCount = 0;
-    public Timer levelTimer;
+   // public Timer levelTimer;
 
     public bool isLeft = false;
 
@@ -66,7 +66,7 @@ public class MovementPlatformer : MonoBehaviour
     void Update()
     {
         // TIMER TIMINGS
-        levelTimer.isTimerWorking = canMove;
+       // if (levelTimer != null) levelTimer.isTimerWorking = ove;
 
 
         float x = Input.GetAxis("Horizontal");
@@ -79,11 +79,13 @@ public class MovementPlatformer : MonoBehaviour
         }*/
 
         if(transform.position.x > 28f){
-            level.LoadNextLevel();
+            try { level.LoadNextLevel(); }
+            catch { //Debug.Log("No Level");
+                    }
         }
 
         if(transform.position.y < - 26){
-            Debug.Log("Here");
+           // Debug.Log("Here");
             this.transform.position = respawnPosition;
         }
 
@@ -111,14 +113,17 @@ public class MovementPlatformer : MonoBehaviour
             //animator.SetBool("isWalking", false);
             //animator.SetBool("Climb", false);
         }
-
-        if(platform.activeSelf && Input.GetButton("Down")){
+        // Ghita: Commented this to fix bug.
+        
+        if(platform.activeSelf && Input.GetButton("Down") && ladderCollision){
             rb.gravityScale = 0;
             platform.SetActive(false);
-            ladderCollision = true;
+            // Ghita: Commented this to fix bug.
+            //ladderCollision = true;
         }
+        
 
-        if(ladderCollision && Input.GetButton("Up")){
+        if (ladderCollision && Input.GetButton("Up")){
             rb.velocity = Vector2.Lerp(rb.velocity, (new Vector2(rb.velocity.x, direction.y * speed)), wallLerp * Time.deltaTime);
             rb.velocity = new Vector2(0, rb.velocity.y);
             rb.gravityScale = 0;
@@ -169,21 +174,25 @@ public class MovementPlatformer : MonoBehaviour
             }
            //Debug.Log("AICI");
         }
+        if (decisionLevel0 != null) {
+            if (decisionLevel0.activeSelf)
+            {
+                if (infoSign && Input.GetButtonDown("Yes"))
+                {
+                    continueSpeech = true;
+                    cherry.SetActive(true);
+                    speechIndex++;
+                    bearSpeech[speechIndex - 1].SetActive(false);
+                    bearSpeech[speechIndex].SetActive(true);
+                    decisionLevel0.SetActive(false);
+                    info.SetActive(true);
+                }
 
-        if(decisionLevel0.activeSelf){
-            if(infoSign && Input.GetButtonDown("Yes")){
-                continueSpeech = true;
-                cherry.SetActive(true);
-                speechIndex ++;
-                bearSpeech[speechIndex-1].SetActive(false);
-                bearSpeech[speechIndex].SetActive(true);
-                decisionLevel0.SetActive(false);
-                info.SetActive(true);
-            }
-
-            if(Input.GetButtonDown("No")){
-                decisionLevel0.SetActive(false);
-                info.SetActive(true);
+                if (Input.GetButtonDown("No"))
+                {
+                    decisionLevel0.SetActive(false);
+                    info.SetActive(true);
+                }
             }
         }
 
@@ -193,14 +202,19 @@ public class MovementPlatformer : MonoBehaviour
         }*/
 
         if(!Input.GetButton("Down") && !Input.GetButton("Up")){
-            if(!coll.onGround){
-                rb.velocity = new Vector2(0, rb.velocity.y);
-                animator.SetBool("Climb", true);
-                animator.SetBool("isWalking", false);
-            }else{
-                animator.SetBool("isWalking", false);
-                animator.SetBool("Climb", false);
-            }
+        
+                if (!coll.onGround)
+                {
+                    rb.velocity = new Vector2(0, rb.velocity.y);
+                    animator.SetBool("Climb", true);
+                    animator.SetBool("isWalking", false);
+                }
+                else
+                {
+                    animator.SetBool("isWalking", false);
+                    animator.SetBool("Climb", false);
+                }
+            
            // animator.Stop("idle-green");
         }else{
             if(coll.onGround && !Input.GetButton("Up")){
@@ -285,6 +299,14 @@ public class MovementPlatformer : MonoBehaviour
         }
     }
 
+    void OnTriggerStay2D(Collider2D collision) {
+
+        if (SceneManager.GetActiveScene().name == "Level1-2G" || SceneManager.GetActiveScene().name == "Level1-2L&N")
+        {
+            canMove = true;
+        }
+    }
+
     void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Ladder"))
@@ -297,11 +319,14 @@ public class MovementPlatformer : MonoBehaviour
             info.SetActive(false);
             infoSign = false;
         }else if(collision.gameObject.CompareTag("Stop")){
-            if(SceneManager.GetActiveScene().name == "Level1-1"){
+            
+
+                if (SceneManager.GetActiveScene().name == "Level1-1"){
                 scriptL1.endRunRed = false;
                 scriptL1.animatorGreen.SetFloat("HorizontalAxis", Mathf.Abs(0));
                 canMove = true;
             }
+            
             respawnPosition = this.transform.position;
         }
     }
