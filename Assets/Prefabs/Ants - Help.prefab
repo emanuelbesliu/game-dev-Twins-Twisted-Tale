@@ -1,5 +1,39 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4536170802663530677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8130090355984428349}
+  m_Layer: 0
+  m_Name: Help - Enemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8130090355984428349
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4536170802663530677}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8560037772031581408}
+  - {fileID: 8560037772264076742}
+  - {fileID: 8560037771662960910}
+  - {fileID: 8560037772299596587}
+  m_Father: {fileID: 8560037773178279661}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8560037771330190783
 GameObject:
   m_ObjectHideFlags: 0
@@ -33,7 +67,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037771330190777
 SpriteRenderer:
@@ -172,6 +206,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037771417456673
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,7 +240,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 20
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037771417456667
 SpriteRenderer:
@@ -344,6 +379,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037771487312653
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,6 +552,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037771628506679
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,7 +586,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 27
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037771628506673
 SpriteRenderer:
@@ -688,6 +725,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037771638219954
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,7 +759,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037771638219948
 SpriteRenderer:
@@ -860,6 +898,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037771662960913
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,8 +931,8 @@ Transform:
   m_LocalPosition: {x: -18.22, y: 6.657609, z: 526.72327}
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
-  m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 19
+  m_Father: {fileID: 8130090355984428349}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037771662960907
 SpriteRenderer:
@@ -955,7 +994,7 @@ Animator:
   m_GameObject: {fileID: 8560037771662960913}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0420dde97667b4b938237b53878db1ce, type: 2}
+  m_Controller: {fileID: 9100000, guid: a8c0074788b0a498a8b48c77ad134e15, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1032,6 +1071,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 1
 --- !u!1 &8560037771664156101
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,7 +1105,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 17
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037771664156095
 SpriteRenderer:
@@ -1204,6 +1244,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037771668332757
 GameObject:
   m_ObjectHideFlags: 0
@@ -1237,7 +1278,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037771668332751
 SpriteRenderer:
@@ -1376,6 +1417,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037771762929641
 GameObject:
   m_ObjectHideFlags: 0
@@ -1409,7 +1451,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 22
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037771762929635
 SpriteRenderer:
@@ -1548,6 +1590,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037771886196595
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,7 +1624,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037771886196589
 SpriteRenderer:
@@ -1720,6 +1763,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037771986512837
 GameObject:
   m_ObjectHideFlags: 0
@@ -1753,7 +1797,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 23
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037771986512831
 SpriteRenderer:
@@ -1892,6 +1936,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037772029862407
 GameObject:
   m_ObjectHideFlags: 0
@@ -2064,6 +2109,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037772031581411
 GameObject:
   m_ObjectHideFlags: 0
@@ -2096,8 +2142,8 @@ Transform:
   m_LocalPosition: {x: -21.5, y: 6.657609, z: 526.72327}
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
-  m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 4
+  m_Father: {fileID: 8130090355984428349}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037772031581405
 SpriteRenderer:
@@ -2159,7 +2205,7 @@ Animator:
   m_GameObject: {fileID: 8560037772031581411}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0420dde97667b4b938237b53878db1ce, type: 2}
+  m_Controller: {fileID: 9100000, guid: a8c0074788b0a498a8b48c77ad134e15, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2236,6 +2282,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 1
 --- !u!1 &8560037772059747395
 GameObject:
   m_ObjectHideFlags: 0
@@ -2269,7 +2316,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 21
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037772059747389
 SpriteRenderer:
@@ -2408,6 +2455,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037772063380878
 GameObject:
   m_ObjectHideFlags: 0
@@ -2580,6 +2628,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037772110675370
 GameObject:
   m_ObjectHideFlags: 0
@@ -2613,7 +2662,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 18
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037772110675364
 SpriteRenderer:
@@ -2752,6 +2801,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037772112984237
 GameObject:
   m_ObjectHideFlags: 0
@@ -2785,7 +2835,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037772112984231
 SpriteRenderer:
@@ -2924,6 +2974,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037772144997102
 GameObject:
   m_ObjectHideFlags: 0
@@ -2957,7 +3008,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 15
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037772144997096
 SpriteRenderer:
@@ -3096,6 +3147,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037772175548453
 GameObject:
   m_ObjectHideFlags: 0
@@ -3268,6 +3320,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037772231565899
 GameObject:
   m_ObjectHideFlags: 0
@@ -3301,7 +3354,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037772231565893
 SpriteRenderer:
@@ -3440,6 +3493,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037772264076745
 GameObject:
   m_ObjectHideFlags: 0
@@ -3472,8 +3526,8 @@ Transform:
   m_LocalPosition: {x: -21.5, y: 6.657609, z: 526.72327}
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
-  m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 10
+  m_Father: {fileID: 8130090355984428349}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037772264076739
 SpriteRenderer:
@@ -3535,7 +3589,7 @@ Animator:
   m_GameObject: {fileID: 8560037772264076745}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0420dde97667b4b938237b53878db1ce, type: 2}
+  m_Controller: {fileID: 9100000, guid: a8c0074788b0a498a8b48c77ad134e15, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3612,6 +3666,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 1
 --- !u!1 &8560037772299596586
 GameObject:
   m_ObjectHideFlags: 0
@@ -3644,8 +3699,8 @@ Transform:
   m_LocalPosition: {x: -18.22, y: 6.657609, z: 526.72327}
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
-  m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 32
+  m_Father: {fileID: 8130090355984428349}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037772299596580
 SpriteRenderer:
@@ -3707,7 +3762,7 @@ Animator:
   m_GameObject: {fileID: 8560037772299596586}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0420dde97667b4b938237b53878db1ce, type: 2}
+  m_Controller: {fileID: 9100000, guid: a8c0074788b0a498a8b48c77ad134e15, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3784,6 +3839,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 1
 --- !u!1 &8560037772407055576
 GameObject:
   m_ObjectHideFlags: 0
@@ -3817,7 +3873,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037772407055570
 SpriteRenderer:
@@ -3956,6 +4012,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037772554553308
 GameObject:
   m_ObjectHideFlags: 0
@@ -3989,7 +4046,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 25
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037772554553302
 SpriteRenderer:
@@ -4128,6 +4185,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037772798778650
 GameObject:
   m_ObjectHideFlags: 0
@@ -4161,7 +4219,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 30
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037772798778644
 SpriteRenderer:
@@ -4300,6 +4358,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037772805659761
 GameObject:
   m_ObjectHideFlags: 0
@@ -4333,7 +4392,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 26
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037772805659755
 SpriteRenderer:
@@ -4472,6 +4531,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037772896169073
 GameObject:
   m_ObjectHideFlags: 0
@@ -4505,7 +4565,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 35
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037772896169067
 SpriteRenderer:
@@ -4644,6 +4704,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037772998793313
 GameObject:
   m_ObjectHideFlags: 0
@@ -4677,7 +4738,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037772998793307
 SpriteRenderer:
@@ -4816,6 +4877,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037773022275362
 GameObject:
   m_ObjectHideFlags: 0
@@ -4849,7 +4911,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 29
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037773022275356
 SpriteRenderer:
@@ -4988,6 +5050,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037773169511431
 GameObject:
   m_ObjectHideFlags: 0
@@ -5021,7 +5084,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 16
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037773169511425
 SpriteRenderer:
@@ -5160,6 +5223,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037773178279660
 GameObject:
   m_ObjectHideFlags: 0
@@ -5192,13 +5256,11 @@ Transform:
   - {fileID: 8560037772175548450}
   - {fileID: 8560037771487312650}
   - {fileID: 8560037772063380879}
-  - {fileID: 8560037772031581408}
   - {fileID: 8560037771668332754}
   - {fileID: 8560037772231565896}
   - {fileID: 8560037772998793310}
   - {fileID: 8560037772112984234}
   - {fileID: 8560037773285024486}
-  - {fileID: 8560037772264076742}
   - {fileID: 8560037772407055577}
   - {fileID: 8560037771886196592}
   - {fileID: 8560037771330190780}
@@ -5207,7 +5269,6 @@ Transform:
   - {fileID: 8560037773169511428}
   - {fileID: 8560037771664156098}
   - {fileID: 8560037772110675371}
-  - {fileID: 8560037771662960910}
   - {fileID: 8560037771417456670}
   - {fileID: 8560037772059747392}
   - {fileID: 8560037771762929638}
@@ -5220,11 +5281,11 @@ Transform:
   - {fileID: 8560037773022275363}
   - {fileID: 8560037772798778651}
   - {fileID: 8560037773394170767}
-  - {fileID: 8560037772299596587}
   - {fileID: 8560037773425395112}
   - {fileID: 8560037773268005614}
   - {fileID: 8560037772896169070}
   - {fileID: 8560037773219623418}
+  - {fileID: 8130090355984428349}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5276,7 +5337,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 36
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037773219623415
 SpriteRenderer:
@@ -5415,6 +5476,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037773268005617
 GameObject:
   m_ObjectHideFlags: 0
@@ -5448,7 +5510,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 34
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037773268005611
 SpriteRenderer:
@@ -5587,6 +5649,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037773285024489
 GameObject:
   m_ObjectHideFlags: 0
@@ -5620,7 +5683,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037773285024483
 SpriteRenderer:
@@ -5759,6 +5822,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037773323632526
 GameObject:
   m_ObjectHideFlags: 0
@@ -5792,7 +5856,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 24
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037773323632520
 SpriteRenderer:
@@ -5931,6 +5995,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037773325478463
 GameObject:
   m_ObjectHideFlags: 0
@@ -5964,7 +6029,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 28
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037773325478457
 SpriteRenderer:
@@ -6103,6 +6168,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037773394170766
 GameObject:
   m_ObjectHideFlags: 0
@@ -6136,7 +6202,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 31
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037773394170760
 SpriteRenderer:
@@ -6275,6 +6341,7 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
 --- !u!1 &8560037773425395115
 GameObject:
   m_ObjectHideFlags: 0
@@ -6308,7 +6375,7 @@ Transform:
   m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_Children: []
   m_Father: {fileID: 8560037773178279661}
-  m_RootOrder: 33
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8560037773425395109
 SpriteRenderer:
@@ -6447,3 +6514,4 @@ MonoBehaviour:
   right: 0
   help: 1
   picked: 0
+  stopEnemy: 0
