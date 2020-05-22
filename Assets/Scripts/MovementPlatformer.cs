@@ -237,7 +237,7 @@ public class MovementPlatformer : MonoBehaviour
         {
             if(x > 0)   side = true;
             if(x < 0)   side = false;
-            Debug.Log("Aici");
+           // Debug.Log("Aici");
             anim.Flip(side);
         }
 
