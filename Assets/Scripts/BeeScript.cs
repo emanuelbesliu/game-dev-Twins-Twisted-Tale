@@ -44,7 +44,11 @@ public class BeeScript : MonoBehaviour
                             }
                             else
                             {
-                                bee.transform.position += new Vector3(Random.Range(-5.0f, -1.0f), Random.Range(-2.5f, 2.5f), 0) * Time.deltaTime * Speed;
+                                if(!bee.CompareTag("BeeHelp")){
+                                    bee.transform.position += new Vector3(Random.Range(-5.0f, -1.0f), Random.Range(-2.5f, 2.5f), 0) * Time.deltaTime * Speed;
+                                }else{
+                                     bee.transform.position += new Vector3(Random.Range(-5.0f, -1.0f), 0, 0) * Time.deltaTime * Speed;
+                                }
                             }
                         }
                     }
@@ -79,7 +83,12 @@ public class BeeScript : MonoBehaviour
                             }
                             else
                             {
-                                bee.transform.position += new Vector3(Random.Range(1.0f, 5.0f), Random.Range(-2.5f, 2.5f), 0) * Time.deltaTime * Speed;
+                                if(!bee.CompareTag("BeeHelp")){
+                                    bee.transform.position += new Vector3(Random.Range(1.0f, 5.0f), Random.Range(-2.5f, 2.5f), 0) * Time.deltaTime * Speed;
+                                }else{
+                                     //Debug.Log("Works");
+                                     bee.transform.position += new Vector3(Random.Range(1.0f, 5.0f), 0, 0) * Time.deltaTime * Speed;
+                                }
                             }
                         }
                     }
