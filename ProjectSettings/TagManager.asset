@@ -31,6 +31,8 @@ TagManager:
   - AntRespawn
   - BeeHelp
   - Hill
+  - BrokeShovel
+  - ShovelClean
   layers:
   - Default
   - TransparentFX
