@@ -11,7 +11,10 @@ public class Timer : MonoBehaviour
     public float startTime;
     public bool isTimerWorking = false;
     private float timerDelay = 0;
-
+    public LevelTrigger levelTrigger;
+    public string levelTransitionGoodTime;
+    public string levelTransitionBadTime;
+    public string levelTransitionWorstTime;
     public GameObject leavingAnimation;
     Transform npc;
 
@@ -25,6 +28,7 @@ public class Timer : MonoBehaviour
         try
         {
             npc = GameObject.FindGameObjectWithTag("redNPC").transform;
+            levelTrigger = GameObject.FindGameObjectWithTag("levelTrigger").GetComponent<LevelTrigger>();
         }
         catch
 
@@ -44,7 +48,13 @@ public class Timer : MonoBehaviour
 
         // Update is called once per frame
         void Update()
-    { if (timerText != null)
+    {try
+        {
+            levelTrigger = GameObject.FindGameObjectWithTag("levelTrigger").GetComponent<LevelTrigger>();
+        }
+        catch { }
+        
+        if (timerText != null)
         {
 
             // Timer Timings
@@ -55,15 +65,17 @@ public class Timer : MonoBehaviour
 
 
                 float currentTime = startTime - Time.time + timerDelay;
+
                 if (currentTime < 0 )
                 {
                     if (leavingAnimation != null)
                     {
-                        if (SceneManager.GetActiveScene().name == "Level1-1")
+                        if (SceneManager.GetActiveScene().name == "Level1-1" || SceneManager.GetActiveScene().name == "Level1-2L" || SceneManager.GetActiveScene().name == "Level1-2N")
                         {
-                           // if (npc != null) npc.localEulerAngles = new Vector3(0f, 180f, 0f);
+                            // if (npc != null) npc.localEulerAngles = new Vector3(0f, 180f, 0f);
+                            leavingAnimation.SetActive(true);
                         }
-                        leavingAnimation.SetActive(true);
+                        
                     }
                 }
 
@@ -74,7 +86,11 @@ public class Timer : MonoBehaviour
 
                 if (currentTime > startTime / 2)
                 {
-                    timerText.color = Color.white;
+                    try { levelTrigger.levelToLoadWhenTriggered = levelTransitionGoodTime; }
+                    
+                    catch { }
+
+                timerText.color = Color.white;
 
                 }
                 else if (currentTime > startTime / 3)
@@ -85,7 +101,21 @@ public class Timer : MonoBehaviour
                 }
 
 
-                else if (currentTime < 0) timerText.color = Color.red;
+                else if (currentTime < 0 && currentTime > (startTime / 2) * (-1f))
+                {
+                  try {  levelTrigger.levelToLoadWhenTriggered = levelTransitionBadTime; }
+                    catch { }
+                    timerText.color = Color.red;
+                
+                }
+                else if (currentTime < (startTime / 2 ) * (-1f))
+                {
+                    timerText.color = Color.gray;
+                    try { levelTrigger.levelToLoadWhenTriggered = levelTransitionWorstTime; 
+                    }
+                    catch { }
+            }
+
 
 
                 timerText.text = minutes + " : " + seconds;

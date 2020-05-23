@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossScript : MonoBehaviour
 {
     public int hp;
+    
+    public LevelTrigger levelTrigger;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +26,9 @@ public class BossScript : MonoBehaviour
                 // Add code to happen when the boss dies.
                 this.gameObject.SetActive(false);
 
+                
+                SceneManager.LoadScene(levelTrigger.levelToLoadWhenTriggered);
+
 
             }
 
@@ -30,6 +36,7 @@ public class BossScript : MonoBehaviour
    
         }
     }
+
     // Update is called once per frame
     void Update()
     {
