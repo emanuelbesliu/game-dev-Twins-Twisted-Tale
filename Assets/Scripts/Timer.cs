@@ -10,6 +10,9 @@ public class Timer : MonoBehaviour
     public float startTime;
     public bool isTimerWorking = false;
     private float timerDelay = 0;
+
+    public GameObject leavingAnimation;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -41,6 +44,13 @@ public class Timer : MonoBehaviour
 
 
                 float currentTime = startTime - Time.time + timerDelay;
+                if (currentTime < 0 )
+                {
+                    if (leavingAnimation != null)
+                    {
+                        leavingAnimation.SetActive(true);
+                    }
+                }
 
                 string minutes = ((int)currentTime / 60).ToString();
                 string seconds = (currentTime % 60).ToString("f2");
