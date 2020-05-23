@@ -33,6 +33,7 @@ TagManager:
   - Hill
   - BrokeShovel
   - ShovelClean
+  - FlowerBoss
   layers:
   - Default
   - TransparentFX
