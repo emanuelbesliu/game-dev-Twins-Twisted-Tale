@@ -27048,9 +27048,9 @@ MonoBehaviour:
   startTime: 5
   isTimerWorking: 0
   levelTrigger: {fileID: 0}
-  levelTransitionGoodTime: TranLevel1-G
-  levelTransitionBadTime: TranLevel1-L
-  levelTransitionWorstTime: TranLevel1-N
+  levelTransitionGoodTime: TranLevel1-L
+  levelTransitionBadTime: TranLevel1-N
+  levelTransitionWorstTime: TranLevel1-G
   leavingAnimation: {fileID: 2137032093}
 --- !u!1 &1159087941 stripped
 GameObject:
