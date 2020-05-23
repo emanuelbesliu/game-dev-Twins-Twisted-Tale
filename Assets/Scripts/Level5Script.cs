@@ -16,6 +16,7 @@ public class Level5Script : MonoBehaviour
     public float SpeedGreen;
     public float CloudSpeed;
 
+    public GameObject greenSpeech;
     public GameObject momSpeech;
     public GameObject momText1;
     public GameObject momText2;
@@ -28,11 +29,11 @@ public class Level5Script : MonoBehaviour
     public bool runRed;
     public bool runGreen;
     public bool runMom;
+
     public int scenario;
     // Start is called before the first frame update
     void Start()
     {
-        startClouds = true;
         if(scenario == 1){
             StartCoroutine(InitialSpeech());
         }
@@ -41,6 +42,18 @@ public class Level5Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(green.transform.position.x >= 15f){
+            green.SetActive(false);
+        }
+
+        if(red.transform.position.x >= 15f){
+            red.SetActive(false);
+        }
+
+        if(mom.transform.position.x >= 15f){
+            mom.SetActive(false);
+        }
+
         if(runRed){
             red.transform.position += Vector3.right * Time.deltaTime * SpeedRed ;
             redAnimator.SetFloat("HorizontalAxis", Mathf.Abs(1));
@@ -51,19 +64,28 @@ public class Level5Script : MonoBehaviour
             greenAnimator.SetFloat("HorizontalAxis", Mathf.Abs(1));
         }
 
+        if(runMom){
+            mom.transform.position += Vector3.right * Time.deltaTime * SpeedGreen;
+        }
+
         if(startClouds){
             clouds.transform.position += Vector3.right * Time.deltaTime * CloudSpeed ;
         }
 
-        if(green.transform.position.x >= -4f){
+        if(green.transform.position.x >= -4f && momText1.activeSelf){
             runGreen = false;
             greenAnimator.SetFloat("HorizontalAxis", Mathf.Abs(0));
             trollspeach.SetActive(false);
+            startClouds = true;
         }
 
-        if(red.transform.position.x >= -6.5f){
+        if(red.transform.position.x >= -6.5f && momText1.activeSelf){
             runRed = false;
             redAnimator.SetFloat("HorizontalAxis", Mathf.Abs(0));
+            trollspeach.SetActive(false);
+            StartCoroutine(SecondSpeech());
+            momSpeech.SetActive(false);
+            momText1.SetActive(false);
         }
     }
 
@@ -74,9 +96,24 @@ public class Level5Script : MonoBehaviour
 
         momSpeech.SetActive(true);
         momText1.SetActive(true);
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         trollspeach.SetActive(true);
-        momText1.SetActive(false);
+    }
+
+    IEnumerator SecondSpeech(){
+        //momText2.SetActive(true);
+        greenSpeech.SetActive(true);
+        yield return new WaitForSeconds(7f);
+        greenSpeech.SetActive(false);
+        momSpeech.SetActive(true);
         momText2.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        mom.transform.Rotate(0, 180, 0);
+        momAnimator.SetBool("Running", true);
+        runMom = true;
+        runRed = true;
+        runGreen = true;
+        momSpeech.SetActive(false);
+        momText2.SetActive(false);
     }
 }
