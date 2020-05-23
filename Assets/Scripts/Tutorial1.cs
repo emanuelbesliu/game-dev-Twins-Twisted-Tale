@@ -10,6 +10,8 @@ public class Tutorial1 : MonoBehaviour
     public GameObject afterBrokeBlock;
     public Tutorial2 nextTip;
 
+    public GameObject nextTrigger;
+
 
 
     void OnTriggerEnter2D(Collider2D other)
@@ -32,7 +34,8 @@ public class Tutorial1 : MonoBehaviour
         {
             objectToBeDisplayed.SetActive(false);
           if (afterBrokeBlock != null)  afterBrokeBlock.SetActive(true);
-            nextTip.canBeActive = true;
+            if (nextTip != null) nextTip.canBeActive = true;
+           if (nextTrigger != null) nextTrigger.SetActive(true);
             Destroy(this);
            
 

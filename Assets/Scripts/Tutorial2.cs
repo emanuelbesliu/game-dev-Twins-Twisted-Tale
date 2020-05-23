@@ -20,14 +20,13 @@ public class Tutorial2 : MonoBehaviour
 
             if (objectTocheck == null && canBeActive)
             {
-                if (Input.GetKeyDown("1"))
-            {
+                
                 if (optionalPreviousTutorialTip != null) optionalPreviousTutorialTip.SetActive(false);
                 canBeActive = false;
-                objectToBeDisplayed.SetActive(true);
+               if (objectToBeDisplayed != null) objectToBeDisplayed.SetActive(true);
                 if (nextTutorial != null) nextTutorial.SetActive(true);
 
-            }
+            
                 
 
 

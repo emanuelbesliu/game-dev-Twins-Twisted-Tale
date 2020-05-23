@@ -30,6 +30,7 @@ TagManager:
   - PickupAnt
   - AntRespawn
   - BeeHelp
+  - Hill
   layers:
   - Default
   - TransparentFX
