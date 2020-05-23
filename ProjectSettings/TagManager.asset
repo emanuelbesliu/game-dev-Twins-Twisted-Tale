@@ -34,6 +34,7 @@ TagManager:
   - BrokeShovel
   - ShovelClean
   - FlowerBoss
+  - AttackBee
   layers:
   - Default
   - TransparentFX
