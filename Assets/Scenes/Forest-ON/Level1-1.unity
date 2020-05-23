@@ -45907,6 +45907,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimelineLeaving
       objectReference: {fileID: 0}
+    - target: {fileID: 971475564492489400, guid: 6dedcf4062f82a946bc84f0e5989565f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 971475564492489402, guid: 6dedcf4062f82a946bc84f0e5989565f,
         type: 3}
       propertyPath: m_SceneBindings.Array.data[0].value
