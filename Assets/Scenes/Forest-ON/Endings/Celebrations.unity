@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -5327,7 +5327,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427247471}
   m_LocalRotation: {x: 0.0011024479, y: 0.0055908095, z: 0.19346076, w: 0.9810915}
-  m_LocalPosition: {x: -15.44, y: 6.29, z: 227.33}
+  m_LocalPosition: {x: -15.44, y: 6.6, z: 227.33}
   m_LocalScale: {x: 21.826155, y: 21.826155, z: 21.826155}
   m_Children: []
   m_Father: {fileID: 1242535300}
@@ -9177,13 +9177,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1041754928}
-  m_LocalRotation: {x: -0.058410253, y: -0.9979332, z: 0.0017134261, w: 0.026733087}
+  m_LocalRotation: {x: -0.12666892, y: -0.9915833, z: 0.0035416202, w: 0.02655279}
   m_LocalPosition: {x: 6.25, y: 3.98, z: 225.8}
   m_LocalScale: {x: -13.715787, y: 13.715787, z: 13.715787}
   m_Children: []
   m_Father: {fileID: 1242535300}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0.017, y: -176.93001, z: 6.7}
+  m_LocalEulerAnglesHint: {x: 0.017, y: -176.93001, z: 14.56}
 --- !u!95 &1041754930
 Animator:
   serializedVersion: 3
@@ -15517,6 +15517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea6d17d46c0514a0fac8e10837dadadf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadlevel: {fileID: 0}
   clouds: {fileID: 475721367}
   trollspeach: {fileID: 510186227}
   red: {fileID: 620616459}
@@ -15526,6 +15527,7 @@ MonoBehaviour:
   SpeedGreen: 4
   CloudSpeed: 1
   greenSpeech: {fileID: 0}
+  redSpeech: {fileID: 0}
   momSpeech: {fileID: 0}
   momText1: {fileID: 0}
   momText2: {fileID: 0}
