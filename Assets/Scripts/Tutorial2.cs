@@ -12,26 +12,47 @@ public class Tutorial2 : MonoBehaviour
         public GameObject nextTutorial;
 
         public GameObject objectToBeDisplayed;
-       
-        
-        void Update()
+
+
+    void Update()
+    {
+        if (SceneManager.GetActiveScene().name == "Level1-1")
         {
 
-            if (objectTocheck == null && canBeActive)
+            if (objectTocheck == null && canBeActive && Input.GetKeyDown("1"))
             {
-                
+
                 if (optionalPreviousTutorialTip != null) optionalPreviousTutorialTip.SetActive(false);
                 canBeActive = false;
-               if (objectToBeDisplayed != null) objectToBeDisplayed.SetActive(true);
+                if (objectToBeDisplayed != null) objectToBeDisplayed.SetActive(true);
                 if (nextTutorial != null) nextTutorial.SetActive(true);
-  
-            
-                
+
+
+
 
 
 
             }
         }
+        else
+        {
+
+            if (objectTocheck == null && canBeActive)
+            {
+
+                if (optionalPreviousTutorialTip != null) optionalPreviousTutorialTip.SetActive(false);
+                canBeActive = false;
+                if (objectToBeDisplayed != null) objectToBeDisplayed.SetActive(true);
+                if (nextTutorial != null) nextTutorial.SetActive(true);
+
+
+
+
+
+
+            }
+        }
+    }
     
 
 

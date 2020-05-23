@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Tutorial1 : MonoBehaviour
 {
@@ -28,19 +29,25 @@ public class Tutorial1 : MonoBehaviour
 
     }
     void Update()
-    { 
+    {
+       
 
-        if (objectWhenToDestroyTip == null)
-        {
-            objectToBeDisplayed.SetActive(false);
-          if (afterBrokeBlock != null)  afterBrokeBlock.SetActive(true);
-            if (nextTip != null) nextTip.canBeActive = true;
-           if (nextTrigger != null) nextTrigger.SetActive(true);
-            Destroy(this);
-           
+     
 
 
-        }
+
+            if (objectWhenToDestroyTip == null)
+            {
+                objectToBeDisplayed.SetActive(false);
+                if (afterBrokeBlock != null) afterBrokeBlock.SetActive(true);
+                if (nextTip != null) nextTip.canBeActive = true;
+                if (nextTrigger != null) nextTrigger.SetActive(true);
+                Destroy(this);
+
+
+
+            }
+        
     }
 }
 

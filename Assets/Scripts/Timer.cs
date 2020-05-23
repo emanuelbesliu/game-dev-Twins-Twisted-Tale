@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class Timer : MonoBehaviour
     private float timerDelay = 0;
 
     public GameObject leavingAnimation;
+    Transform npc;
 
     // Start is called before the first frame update
     void Awake()
@@ -19,6 +21,15 @@ public class Timer : MonoBehaviour
           //startTime = Time.time;
         timerText = this.GetComponent<Text>();
         isTimerWorking = true;
+       
+        try
+        {
+            npc = GameObject.FindGameObjectWithTag("redNPC").transform;
+        }
+        catch
+
+        { }
+
         
    
 
@@ -48,6 +59,10 @@ public class Timer : MonoBehaviour
                 {
                     if (leavingAnimation != null)
                     {
+                        if (SceneManager.GetActiveScene().name == "Level1-1")
+                        {
+                           // if (npc != null) npc.localEulerAngles = new Vector3(0f, 180f, 0f);
+                        }
                         leavingAnimation.SetActive(true);
                     }
                 }
