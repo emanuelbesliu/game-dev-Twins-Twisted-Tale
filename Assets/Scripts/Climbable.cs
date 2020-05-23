@@ -39,7 +39,7 @@ public class Climbable : MonoBehaviour
             climbObject.isTrigger = true;
             gameObject.layer = LayerMask.NameToLayer("Default");
             // noMoreUp = true;
-            Debug.Log("Should Pass now");
+           // Debug.Log("Should Pass now");
             if (player.position.y > platformTransform.position.y - 0.2 && !Input.GetButton("Down"))
             {
                 gameObject.layer = LayerMask.NameToLayer("Ground");
@@ -53,7 +53,7 @@ public class Climbable : MonoBehaviour
         if (Input.GetButton("Down") && !noMoreDown)
         {
             gameObject.layer = LayerMask.NameToLayer("Default");
-            Debug.Log("ShouldClimbDown");
+           // Debug.Log("ShouldClimbDown");
             climbObject.isTrigger = true;
             //noMoreDown = true;
             noMoreDown = true;

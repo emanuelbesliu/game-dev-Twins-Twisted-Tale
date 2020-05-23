@@ -22,9 +22,14 @@ public class Timer : MonoBehaviour
 
 
     }
+    public void AddTime(float timeToAdd)
+    {
+        timerDelay += timeToAdd;
+    }
 
-    // Update is called once per frame
-    void Update()
+
+        // Update is called once per frame
+        void Update()
     { if (timerText != null)
         {
 

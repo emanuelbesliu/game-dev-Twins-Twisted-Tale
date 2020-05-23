@@ -59,12 +59,16 @@ public class BuildSystem : MonoBehaviour
     {
         foreach (Transform child in transform)
         {
-            shadowItem = child.GetComponent<Placeable>().SpawnDropItem();
-            
-            offsetx = child.GetComponent<Placeable>().offsetx;
-            offsety = child.GetComponent<Placeable>().offsety;
-            inventoryH.offsetxInv = offsetx;
-            inventoryH.offsetyInv = offsety;
+            try
+            {
+                shadowItem = child.GetComponent<Placeable>().SpawnDropItem();
+
+                offsetx = child.GetComponent<Placeable>().offsetx;
+                offsety = child.GetComponent<Placeable>().offsety;
+                inventoryH.offsetxInv = offsetx;
+                inventoryH.offsetyInv = offsety;
+            }
+            catch { }
 
 
 
