@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Level5Script : MonoBehaviour
 {
+    public LoadLevel loadlevel;
 
     public GameObject clouds;
     public GameObject trollspeach;
@@ -17,6 +19,7 @@ public class Level5Script : MonoBehaviour
     public float CloudSpeed;
 
     public GameObject greenSpeech;
+    public GameObject redSpeech;
     public GameObject momSpeech;
     public GameObject momText1;
     public GameObject momText2;
@@ -31,11 +34,15 @@ public class Level5Script : MonoBehaviour
     public bool runMom;
 
     public int scenario;
+
+    private bool done;
     // Start is called before the first frame update
     void Start()
     {
         if(scenario == 1){
             StartCoroutine(InitialSpeech());
+        }else if(scenario == 2){
+            StartCoroutine(InitialSpeech2());
         }
     }
 
@@ -43,10 +50,16 @@ public class Level5Script : MonoBehaviour
     void Update()
     {
         if(green.transform.position.x >= 15f){
+            if(scenario == 2){
+                loadlevel.FadeToLevel(SceneManager.GetActiveScene().buildIndex + 2);
+            }
             green.SetActive(false);
         }
 
         if(red.transform.position.x >= 15f){
+            if(scenario == 1){
+                loadlevel.FadeToLevel(SceneManager.GetActiveScene().buildIndex + 2);
+            }
             red.SetActive(false);
         }
 
@@ -72,7 +85,13 @@ public class Level5Script : MonoBehaviour
             clouds.transform.position += Vector3.right * Time.deltaTime * CloudSpeed ;
         }
 
-        if(green.transform.position.x >= -4f && momText1.activeSelf){
+        if(green.transform.position.x >= -4f && scenario == 2 && !done){
+            runGreen = false;
+            greenAnimator.SetFloat("HorizontalAxis", Mathf.Abs(0));
+            StartCoroutine(ThirdSpeech2());
+        }
+
+        if(green.transform.position.x >= -4f && momText1.activeSelf && scenario == 1){
             runGreen = false;
             greenAnimator.SetFloat("HorizontalAxis", Mathf.Abs(0));
             trollspeach.SetActive(false);
@@ -83,7 +102,12 @@ public class Level5Script : MonoBehaviour
             runRed = false;
             redAnimator.SetFloat("HorizontalAxis", Mathf.Abs(0));
             trollspeach.SetActive(false);
-            StartCoroutine(SecondSpeech());
+            if(scenario == 1){
+                StartCoroutine(SecondSpeech());
+            }else if(scenario == 2){
+                startClouds = true;
+                StartCoroutine(SecondSpeech2());
+            }
             momSpeech.SetActive(false);
             momText1.SetActive(false);
         }
@@ -98,6 +122,39 @@ public class Level5Script : MonoBehaviour
         momText1.SetActive(true);
         yield return new WaitForSeconds(3f);
         trollspeach.SetActive(true);
+    }
+
+    IEnumerator InitialSpeech2(){
+        runRed = true;
+
+        momSpeech.SetActive(true);
+        momText1.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        trollspeach.SetActive(true);
+    }
+
+    IEnumerator ThirdSpeech2(){
+         greenSpeech.SetActive(true);
+         yield return new WaitForSeconds(5f);
+         greenSpeech.SetActive(false);
+         runGreen = true;
+         done = true;
+    }
+
+    IEnumerator SecondSpeech2(){
+        redSpeech.SetActive(true);
+        yield return new WaitForSeconds(7f);
+        redSpeech.SetActive(false);
+        momSpeech.SetActive(true);
+        momText2.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        mom.transform.Rotate(0, 180, 0);
+        momAnimator.SetBool("Running", true);
+        runMom = true;
+        runRed = true;
+        runGreen = true;
+        momSpeech.SetActive(false);
+        momText2.SetActive(false);
     }
 
     IEnumerator SecondSpeech(){

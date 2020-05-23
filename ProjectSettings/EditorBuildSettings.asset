@@ -23,9 +23,9 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/Forest-ON/Level1-2L&N.unity
-    guid: 6977966473f4f48ccbfd86bf43e1fcb5
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Forest-ON/Level1-3G.unity
     guid: c1171a1ab33b74f378a6b4024dc36876
@@ -35,12 +35,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Forest-ON/Endings/Level1-5-N.unity
     guid: 33e34b10e63ff4b11aff5a487c0b356f
+  - enabled: 1
+    path: Assets/Scenes/Forest-ON/Endings/Level1-5-LG.unity
+    guid: 0bed7dedbd70a4308a1fc4bab8dc14bf
+  - enabled: 1
+    path: Assets/Scenes/Forest-ON/Endings/Celebrations.unity
+    guid: d92a8e6c93e424ba2b982348e802b5bb
+  - enabled: 1
+    path: Assets/Scenes/Forest-ON/Endings/Celebrations-LG.unity
+    guid: 8376f130a9e6742b6ab256c0a9d10f29
   - enabled: 0
-    path: Assets/Scenes/Space-OFF/Level2-1.unity
-    guid: 6c6d73a4eab003842982a9b1cd5b75c9
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/Space-OFF/Level2-2.unity
-    guid: 336ca85a1eb964e4bbd29e0354a3bc29
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
