@@ -22584,6 +22584,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &893166455 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3066952441359717145, guid: ff64cf1e3d3274146b3890a94c16d199,
+    type: 3}
+  m_PrefabInstance: {fileID: 3066952439535190412}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &893166456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893166455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e562ccd2f19d5694bb1b7f04eb4ca88f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemapGameObject: {fileID: 0}
+  shovelRadius: 10
+  tilemap: {fileID: 0}
 --- !u!1001 &893201438
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47858,7 +47879,7 @@ PrefabInstance:
     - target: {fileID: 7006285493622140987, guid: be4f6aa4faa7ee74c8675ca15ddee302,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.17002
+      value: 5.45
       objectReference: {fileID: 0}
     - target: {fileID: 7006285493622140987, guid: be4f6aa4faa7ee74c8675ca15ddee302,
         type: 3}
@@ -51190,7 +51211,7 @@ MonoBehaviour:
   inventoryH: {fileID: 0}
   itemButton: {fileID: 3407846364336329381, guid: dcde94970aa75f64a8dcaabfc63dc562,
     type: 3}
-  id: 7
+  id: 6
 --- !u!212 &1709051351
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52523,6 +52544,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemapGameObject: {fileID: 0}
+  shovelRadius: 0
+  tilemap: {fileID: 0}
 --- !u!1001 &1739290066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65909,6 +65932,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1266955052}
     m_Modifications:
+    - target: {fileID: 3066952441359717141, guid: ff64cf1e3d3274146b3890a94c16d199,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3066952441359717145, guid: ff64cf1e3d3274146b3890a94c16d199,
         type: 3}
       propertyPath: m_Name
@@ -65969,7 +65997,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3066952441359717142, guid: ff64cf1e3d3274146b3890a94c16d199, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ff64cf1e3d3274146b3890a94c16d199, type: 3}
 --- !u!1001 &3855495882014379113
 PrefabInstance:

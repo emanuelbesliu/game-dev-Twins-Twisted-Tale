@@ -75,8 +75,8 @@ void OnTriggerStay2D(Collider2D other)
            
 
 
-            //Debug.Log(currentObject.id);
-            if (currentObject != null && currentObject.id == 1)
+      
+                if (currentObject != null && currentObject.id == 1)
                 {
                
 
@@ -144,6 +144,7 @@ void OnTriggerStay2D(Collider2D other)
 
                 }
                 else
+
                 {
                    
                     currentObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
@@ -164,6 +165,7 @@ void OnTriggerStay2D(Collider2D other)
         
         try
         {
+           if ( currentObject.id != 11 )
             currentObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
             inventoryH.canPlace[inventoryH.currentSlot] = true;
             if (currentObject != null)

@@ -8,45 +8,71 @@ public class CleanArea : MonoBehaviour
     
     
     public GameObject tilemapGameObject;
+    Vector3Int pPos;
+    Vector3Int saveVector;
+    public int shovelRadius;
 
-    Tilemap tilemap;
-    // Start is called before the first frame update
+    public Tilemap tilemap;
     void Start()
     {
-         
-        if (tilemapGameObject != null)
-        {
-            tilemap = tilemapGameObject.GetComponent<Tilemap>();
-        }
-    }
-    /**
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Hill"))
-        {
-            other.gameObject.SetActive(false);
+        tilemap = this.gameObject.GetComponent<Tilemap>();
 
-        }
-    }
-    **/
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        Vector3 hitPosition = Vector3.zero;
-        foreach (ContactPoint2D hit in collision.contacts)
-        {
-            Debug.Log(hit.point);
-            hitPosition.x = hit.point.x - 0.1f;
-            hitPosition.y = hit.point.y - 0.1f;
-            tilemap.SetTile(tilemap.WorldToCell(hitPosition), null);
-        }
-        
+
     }
 
 
-
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
+        //Detecting the Grid Position of Player
+        if (collision.gameObject.name == "ShovelClean(Clone)")
+        {
+            // Destroy a square around the contanct area.
 
+            pPos = tilemap.WorldToCell(collision.rigidbody.position);
+            pPos.x += 3;
+            pPos.y -= 2;
+            Debug.Log("pPos:" + pPos);
+            tilemap.SetTile(pPos, null);
+
+            for (int i = pPos.x - shovelRadius; i < pPos.x; i++)
+            {
+                for (int j = pPos.y - shovelRadius; j < pPos.y; j++)
+                {
+                    if ((i - pPos.x) * (i - pPos.x) + (j - pPos.y) * (j - pPos.y) <= shovelRadius * shovelRadius)
+                    {
+                        int xSym = pPos.x - (i - pPos.x);
+                        int ySym = pPos.y - (j - pPos.y);
+                        saveVector.x = xSym;
+                        saveVector.y = ySym;
+
+                        tilemap.SetTile(saveVector, null);
+
+                        saveVector.x = i;
+                        saveVector.y = ySym;
+
+                        tilemap.SetTile(saveVector, null);
+
+                        saveVector.x = xSym;
+                        saveVector.y = j;
+
+                        tilemap.SetTile(saveVector, null);
+                        saveVector.x = i;
+                        saveVector.y = j;
+
+                        tilemap.SetTile(saveVector, null);
+
+
+
+                    }
+
+
+
+                }
+
+
+
+            }
+
+        }
     }
 }

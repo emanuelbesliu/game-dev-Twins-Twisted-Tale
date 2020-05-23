@@ -32,6 +32,7 @@ TagManager:
   - BeeHelp
   - Hill
   - BrokeShovel
+  - ShovelClean
   layers:
   - Default
   - TransparentFX
