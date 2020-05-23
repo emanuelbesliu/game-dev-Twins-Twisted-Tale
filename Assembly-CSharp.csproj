@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\BasicTrigger.cs" />
      <Compile Include="Assets\Scripts\BeeScript.cs" />
      <Compile Include="Assets\Scripts\BeesHelp.cs" />
+     <Compile Include="Assets\Scripts\BossScript.cs" />
      <Compile Include="Assets\Scripts\BuildSystem.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CameraSettings.cs" />

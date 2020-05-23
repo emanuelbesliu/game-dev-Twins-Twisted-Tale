@@ -1,0 +1,1016 @@
+fileFormatVersion: 2
+guid: 98030b16fac9e4043bc3b45a9ea2fd88
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1469587332468090827
+    second: girl-2-backwards_0
+  - first:
+      213: -8359613656045079502
+    second: girl-2-backwards_1
+  - first:
+      213: 530294494804053321
+    second: girl-2-backwards_2
+  - first:
+      213: -6084572292631297041
+    second: girl-2-backwards_3
+  - first:
+      213: 4031533437452595412
+    second: girl-2-backwards_4
+  - first:
+      213: 125705598660048476
+    second: girl-2-backwards_5
+  - first:
+      213: 1734403299522943883
+    second: girl-2-backwards_6
+  - first:
+      213: -4297728201991016567
+    second: girl-2-backwards_7
+  - first:
+      213: -690928888026560418
+    second: girl-2-backwards_8
+  - first:
+      213: 2911404272054477481
+    second: girl-2-backwards_9
+  - first:
+      213: 8982443066779325451
+    second: girl-2-backwards_10
+  - first:
+      213: -9067100003768433783
+    second: girl-2-backwards_11
+  - first:
+      213: 5945875630357609222
+    second: girl-2-backwards_12
+  - first:
+      213: 7010062485358724829
+    second: girl-2-backwards_13
+  - first:
+      213: 6746168810884148358
+    second: girl-2-backwards_14
+  - first:
+      213: 4390470991565489248
+    second: girl-2-backwards_15
+  - first:
+      213: -2638501336570601533
+    second: girl-2-backwards_16
+  - first:
+      213: -5644957143676325778
+    second: girl-2-backwards_17
+  - first:
+      213: 6074135985588164513
+    second: girl-2-backwards_18
+  - first:
+      213: -3767286624127599969
+    second: girl-2-backwards_19
+  - first:
+      213: 3947113234462274338
+    second: girl-2-backwards_20
+  - first:
+      213: -1297945257717661781
+    second: girl-2-backwards_21
+  - first:
+      213: 4223130722171937230
+    second: girl-2-backwards_22
+  - first:
+      213: 7701106395627595832
+    second: girl-2-backwards_23
+  - first:
+      213: 8472856407398245154
+    second: girl-2-backwards_24
+  - first:
+      213: 8127775667901665708
+    second: girl-2-backwards_25
+  - first:
+      213: 8461559480838811064
+    second: girl-2-backwards_26
+  - first:
+      213: 455042447954132730
+    second: girl-2-backwards_27
+  - first:
+      213: -6891443968684158652
+    second: girl-2-backwards_28
+  - first:
+      213: -6154019716532436036
+    second: girl-2-backwards_29
+  - first:
+      213: -3293279517690878126
+    second: girl-2-backwards_30
+  - first:
+      213: -2560227015125830778
+    second: girl-2-backwards_31
+  - first:
+      213: 6463918778899506774
+    second: girl-2-backwards_32
+  - first:
+      213: 6377844083616476709
+    second: girl-2-backwards_33
+  - first:
+      213: -57844472052966957
+    second: girl-2-backwards_34
+  - first:
+      213: 3578689104073834510
+    second: girl-2-backwards_35
+  - first:
+      213: 2559790317117421193
+    second: girl-2-backwards_36
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: girl-2-backwards_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 450
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7ac2684e5056410800000000000000
+      internalID: 1469587332468090827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 450
+        width: 51
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234bde3cbafacfb80800000000000000
+      internalID: -8359613656045079502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 450
+        width: 51
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d042d880cfb5700800000000000000
+      internalID: 530294494804053321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_3
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 450
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3078fbcb14f8ba0800000000000000
+      internalID: -6084572292631297041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_4
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 450
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d0b8772d42e2f730800000000000000
+      internalID: 4031533437452595412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_5
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 450
+        width: 51
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56f86273989eb100800000000000000
+      internalID: 125705598660048476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_6
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 377
+        width: 52
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b94559c96d11810800000000000000
+      internalID: 1734403299522943883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_7
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 376
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98fa52b78f66b54c0800000000000000
+      internalID: -4297728201991016567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_8
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 375
+        width: 61
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e580f1846d35966f0800000000000000
+      internalID: -690928888026560418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_9
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 376
+        width: 64
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2ac5992c2676820800000000000000
+      internalID: 2911404272054477481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_10
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 378
+        width: 66
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b045d82d06c08ac70800000000000000
+      internalID: 8982443066779325451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_11
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 377
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 983807c06903b2280800000000000000
+      internalID: -9067100003768433783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_12
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 302
+        width: 63
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60bfd1a126ef38250800000000000000
+      internalID: 5945875630357609222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_13
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 304
+        width: 63
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6491580beb84160800000000000000
+      internalID: 7010062485358724829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 304
+        width: 63
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ca19f6ac43f9d50800000000000000
+      internalID: 6746168810884148358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_15
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 304
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0640be8ea161eec30800000000000000
+      internalID: 4390470991565489248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_16
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 303
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cfd0568309226bd0800000000000000
+      internalID: -2638501336570601533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_17
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 303
+        width: 56
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e607ed6d26519a1b0800000000000000
+      internalID: -5644957143676325778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 228
+        width: 70
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7566a2f7aab4450800000000000000
+      internalID: 6074135985588164513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_19
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 228
+        width: 51
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a3bc976c8e7bbc0800000000000000
+      internalID: -3767286624127599969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_20
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 228
+        width: 63
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 223fd54f296f6c630800000000000000
+      internalID: 3947113234462274338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_21
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 228
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baff5d73aa5ccfde0800000000000000
+      internalID: -1297945257717661781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_22
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 227
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1e81744039b9a30800000000000000
+      internalID: 4223130722171937230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_23
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 228
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8382fd0f673dfda60800000000000000
+      internalID: 7701106395627595832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_24
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 164
+        width: 70
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2236ddbe202a59570800000000000000
+      internalID: 8472856407398245154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_25
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 161
+        width: 69
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1975b38e8abc070800000000000000
+      internalID: 8127775667901665708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_26
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 157
+        width: 69
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd6c3d348f7d6570800000000000000
+      internalID: 8461559480838811064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_27
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 155
+        width: 70
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afeb70c02b2a05600800000000000000
+      internalID: 455042447954132730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_28
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 154
+        width: 72
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4419211193cac50a0800000000000000
+      internalID: -6891443968684158652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_29
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 154
+        width: 72
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb385575ca7889aa0800000000000000
+      internalID: -6154019716532436036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_30
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 78
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25727f92abbeb42d0800000000000000
+      internalID: -3293279517690878126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_31
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 74
+        width: 43
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683f01b281f387cd0800000000000000
+      internalID: -2560227015125830778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_32
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 78
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6562841d1e374b950800000000000000
+      internalID: 6463918778899506774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_33
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 80
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e69cc1767a28850800000000000000
+      internalID: 6377844083616476709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_34
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 78
+        width: 63
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9101752ce723ff0800000000000000
+      internalID: -57844472052966957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_35
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 82
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e00c1e987ce0aa130800000000000000
+      internalID: 3578689104073834510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl-2-backwards_36
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 0
+        width: 46
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986b4472bb3368320800000000000000
+      internalID: 2559790317117421193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

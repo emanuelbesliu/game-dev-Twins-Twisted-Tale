@@ -18,7 +18,9 @@ public class Tutorial3 : MonoBehaviour
     {
         if (Input.GetKeyDown("x"))
         {
+            
             foreach (GameObject elementOfArray in arrayOfText) elementOfArray.SetActive(false);
+            arrayOfText[6].SetActive(true);
             Destroy(this);
         }
     }

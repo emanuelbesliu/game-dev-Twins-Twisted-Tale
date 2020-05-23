@@ -8,6 +8,8 @@ public class BasicTrigger : MonoBehaviour
     public GameObject toHide;
     public GameObject secondObjectToHide;
     public GameObject nextTutorial;
+    public GameObject itemToShow;
+    public bool uniqueTrigger = true;
    
     private GameObject shovelObject1;
     private GameObject shovelObject2;
@@ -27,13 +29,12 @@ public class BasicTrigger : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D other)
     {
 
         if (other.CompareTag("Player"))
         {
-            if (
-    SceneManager.GetActiveScene().name == "Level1-3G")
+            if (SceneManager.GetActiveScene().name == "Level1-3G" || SceneManager.GetActiveScene().name == "Level1-3L&N")
             {
                 try
                 {
@@ -41,6 +42,28 @@ public class BasicTrigger : MonoBehaviour
                    
                         Destroy(shovelObject1);
                         shovelObject1 = GameObject.FindGameObjectWithTag("BrokeShovel");
+
+
+                    
+                }
+                catch { }
+                
+            } 
+            
+            if (SceneManager.GetActiveScene().name == "Level1-4G" || SceneManager.GetActiveScene().name == "Level1-4L&N")
+            {
+                try
+                {
+                    shovelObject1 = GameObject.FindGameObjectWithTag("FlowerBoss");
+
+                    if (shovelObject1 != null  && !itemToShow.activeSelf) {
+                        
+                        itemToShow.SetActive(true);
+
+                        Destroy(shovelObject1);
+                    }
+                    
+                        
 
 
                     
@@ -64,7 +87,7 @@ public class BasicTrigger : MonoBehaviour
             if (nextTutorial != null) nextTutorial.SetActive(true);
             
 
-            Destroy(this.gameObject);
+           if (uniqueTrigger) Destroy(this.gameObject);
 
 
         }
