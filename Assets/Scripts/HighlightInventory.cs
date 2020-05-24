@@ -40,6 +40,25 @@ public class HighlightInventory : MonoBehaviour
      canPlace[4] = true;
     inventoryRef = this.gameObject;
     }
+    public void setAlpha(float alpha)
+    {
+        Color newColor;
+
+        Image[] childrenImg = GetComponentsInChildren<Image>();
+        foreach (Image img in childrenImg)
+        {
+            newColor = img.color;
+            newColor.a = alpha;
+            img.color = newColor;
+        }
+        Text[] childrenText = GetComponentsInChildren<Text>();
+        foreach (Text text in childrenText)
+        {
+            newColor = text.color;
+            newColor.a = alpha;
+            text.color = newColor;
+        }
+    }
 
     // Updating the Inventory highlight
     void Update()

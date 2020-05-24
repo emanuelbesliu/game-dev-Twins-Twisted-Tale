@@ -53613,6 +53613,8 @@ MonoBehaviour:
   - {fileID: 1537729409}
   highlightedObject: {fileID: 0}
   inventoryTip: {fileID: 1288229857}
+  imageInv: {fileID: 0}
+  inventoryHigh: {fileID: 0}
   inventoryH: {fileID: 0}
   isInvActive: 1
 --- !u!114 &1736043797
@@ -66743,6 +66745,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562688577340109110, guid: 75b6bd682ac186e449376f6306810063,
+        type: 3}
+      propertyPath: m_TagString
+      value: UITIP
       objectReference: {fileID: 0}
     - target: {fileID: 8892341857985935712, guid: 75b6bd682ac186e449376f6306810063,
         type: 3}

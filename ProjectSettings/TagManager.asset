@@ -37,6 +37,7 @@ TagManager:
   - AttackBee
   - redNPC
   - levelTrigger
+  - UITIP
   layers:
   - Default
   - TransparentFX
