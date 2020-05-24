@@ -828,7 +828,6 @@ MonoBehaviour:
   greenD: {fileID: 80773660}
   redAnimator: {fileID: 147161626}
   greenAnimator: {fileID: 1067136964}
-  step: 0
   greenRun: 0
   redRun: 0
   Speed: 5
@@ -8113,6 +8112,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTime: 10
   isTimerWorking: 1
+  levelTrigger: {fileID: 0}
+  levelTransitionGoodTime: 
+  levelTransitionBadTime: 
+  levelTransitionWorstTime: 
+  leavingAnimation: {fileID: 0}
 --- !u!1 &899386367
 GameObject:
   m_ObjectHideFlags: 0
@@ -20495,7 +20499,6 @@ MonoBehaviour:
   wallLerp: 10
   ladderCollision: 0
   ladder2Collision: 0
-  levelTimer: {fileID: 0}
   isLeft: 0
 --- !u!61 &1779197148
 BoxCollider2D:
