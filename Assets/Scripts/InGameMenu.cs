@@ -18,6 +18,8 @@ public class InGameMenu : MonoBehaviour
 
     public Button resume;
     public Button help;
+    public Button restart;
+    public Button exit;
     public Button settings;
     public Button mainMenu;
     public Button backHelp;
@@ -34,8 +36,18 @@ public class InGameMenu : MonoBehaviour
         mainMenu.onClick.AddListener(MainMenuOnClick);
         backHelp.onClick.AddListener(BackOnClick);
         backSettings.onClick.AddListener(BackOnClick);
+        restart.onClick.AddListener(RestartOnClick);
+        exit.onClick.AddListener(ExitOnClick);
     }
 
+    void ExitOnClick(){
+        Application.Quit();
+    }
+
+    void RestartOnClick(){
+        Time.timeScale=1;
+        this.GetComponent<LoadLevel>().RestartLevel();
+    }
 
     void ResumeOnClick(){
         Debug.Log("Click");
