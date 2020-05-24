@@ -44,13 +44,18 @@ public class RedLevel0 : MonoBehaviour
     }
 
     void Update(){
-        if(fall){
-            //if(fallingPlatform0.gravityScale == 0)
-            fallingPlatform0.gravityScale += 1f;
-        }
+        if (fallingPlatform0 != null)
+        {
+            if (fall)
+            {
+                //if(fallingPlatform0.gravityScale == 0)
+                fallingPlatform0.gravityScale += 1f;
+            }
 
-        if(fallingPlatform0.gravityScale > 8){
-            fall = false;
+            if (fallingPlatform0.gravityScale > 8)
+            {
+                fall = false;
+            }
         }
     }
 }
