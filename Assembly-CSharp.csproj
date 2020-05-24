@@ -72,6 +72,7 @@
      <Compile Include="Assets\Scripts\ControllersLightController.cs" />
      <Compile Include="Assets\Scripts\ExtendedBehaviour.cs" />
      <Compile Include="Assets\Scripts\GreenLevel0.cs" />
+     <Compile Include="Assets\Scripts\HelpScript.cs" />
      <Compile Include="Assets\Scripts\HighlightInventory.cs" />
      <Compile Include="Assets\Scripts\HillHelp.cs" />
      <Compile Include="Assets\Scripts\InGameMenu.cs" />

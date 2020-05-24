@@ -12,6 +12,7 @@ public class MakeUnMovable : MonoBehaviour
     public HighlightInventory inventoryH;
     public int idWeLookFor;
     private int currentId;
+    public bool premadeBridge = false;
 
     void Start()
     {
@@ -20,9 +21,10 @@ public class MakeUnMovable : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        this.other = other;
+        
         if (other != null && other.CompareTag("ShadowBlock"))
         {
+            this.other = other;
             slot4 = other.gameObject;
             try
             {
@@ -59,6 +61,7 @@ public class MakeUnMovable : MonoBehaviour
         
         if (Input.GetKey("space"))
         {
+            //Debug.Log("Should update platform");
 
             if (firstBridgePart != null && secondBridgePart != null)
             {
@@ -67,10 +70,11 @@ public class MakeUnMovable : MonoBehaviour
                     if (firstBridgePart.activeSelf) firstBridgePart.GetComponent<BoxCollider2D>().enabled = false;
                 }
                 else { firstBridgePart.GetComponent<BoxCollider2D>().enabled = true; }
+
                 if (other != null)
                 {
-                    if (SceneManager.GetActiveScene().name == "Level1-2G" || SceneManager.GetActiveScene().name == "Level1-2L"|| SceneManager.GetActiveScene().name == "Level1-2N")
-                    { // Trigger for level 1.3
+                    if (premadeBridge)
+                    {
                         if (other.CompareTag("Collect") && idWeLookFor == currentId)
                         {
                             slot4 = other.gameObject;
@@ -78,13 +82,38 @@ public class MakeUnMovable : MonoBehaviour
                             if (firstBridgePart.activeSelf)
                             {
                                 secondBridgePart.SetActive(true);
+                                other = null;
                             }
 
                             firstBridgePart.SetActive(true);
+                            other = null;
 
 
                         }
                     }
+                    if (other != null)
+                    {
+                        if (SceneManager.GetActiveScene().name == "Level1-2G" || SceneManager.GetActiveScene().name == "Level1-2L" || SceneManager.GetActiveScene().name == "Level1-2N")
+                        { // Trigger for level 1.3
+                            if (other.CompareTag("Collect") && idWeLookFor == currentId)
+                            {
+                                slot4 = other.gameObject;
+                                slot4.SetActive(false);
+                                if (firstBridgePart.activeSelf)
+                                {
+                                    secondBridgePart.SetActive(true);
+                                    other = null;
+                                }
+
+                                firstBridgePart.SetActive(true);
+                                other = null;
+
+
+                            }
+                        }
+
+            }
+
                 }
             }
         }

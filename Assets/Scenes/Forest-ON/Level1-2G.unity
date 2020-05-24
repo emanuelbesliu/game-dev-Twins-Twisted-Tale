@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2761,15 +2761,20 @@ PrefabInstance:
       propertyPath: idWeLookFor
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8750597737651437303, guid: 1c5a872482ad0894cbc8f8654f57f7f1,
+        type: 3}
+      propertyPath: premadeBridge
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8750597737651437320, guid: 1c5a872482ad0894cbc8f8654f57f7f1,
         type: 3}
       propertyPath: m_Offset.x
-      value: 3.3305652
+      value: 3.5093057
       objectReference: {fileID: 0}
     - target: {fileID: 8750597737651437320, guid: 1c5a872482ad0894cbc8f8654f57f7f1,
         type: 3}
       propertyPath: m_Size.x
-      value: 5.4749846
+      value: 5.8324656
       objectReference: {fileID: 0}
     - target: {fileID: 8750597737651437320, guid: 1c5a872482ad0894cbc8f8654f57f7f1,
         type: 3}
@@ -45030,7 +45035,7 @@ GameObject:
   - component: {fileID: 2017541066}
   - component: {fileID: 2017541065}
   m_Layer: 0
-  m_Name: tileset_preview_2 (4)
+  m_Name: anthelpplatform2
   m_TagString: Collect
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45247,7 +45252,7 @@ GameObject:
   - component: {fileID: 2029298073}
   - component: {fileID: 2029298072}
   m_Layer: 0
-  m_Name: tileset_preview_2 (3)
+  m_Name: anthelpplatform1
   m_TagString: Collect
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

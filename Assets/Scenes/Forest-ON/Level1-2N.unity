@@ -45036,7 +45036,7 @@ GameObject:
   - component: {fileID: 2017541066}
   - component: {fileID: 2017541065}
   m_Layer: 0
-  m_Name: tileset_preview_2 (4)
+  m_Name: anthelpplatform2
   m_TagString: Collect
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45253,7 +45253,7 @@ GameObject:
   - component: {fileID: 2029298073}
   - component: {fileID: 2029298072}
   m_Layer: 0
-  m_Name: tileset_preview_2 (3)
+  m_Name: anthelpplatform1
   m_TagString: Collect
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
