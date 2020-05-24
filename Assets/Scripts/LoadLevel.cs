@@ -16,7 +16,7 @@ public class LoadLevel : MonoBehaviour
     public void LoadNextLevel(){
         try { FadeToLevel(SceneManager.GetActiveScene().buildIndex + 1); }
         catch { }
-        
+
     }
 
     public void FadeToLevel(int levelIndex){
@@ -27,7 +27,11 @@ public class LoadLevel : MonoBehaviour
     public void OnFadeComplete(){
         try { SceneManager.LoadScene(levelToLoad); }
         catch {}
-         
+
+    }
+
+    public void RestartLevel(){
+        FadeToLevel(SceneManager.GetActiveScene().buildIndex);
     }
 }
 
