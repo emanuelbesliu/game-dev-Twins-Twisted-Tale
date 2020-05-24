@@ -21,17 +21,17 @@ public class CleanArea : MonoBehaviour
     }
 
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         //Detecting the Grid Position of Player
         if (collision.gameObject.name == "ShovelClean(Clone)")
         {
-            // Destroy a square around the contanct area.
+            // Destroy a circle around the contanct area.
 
             pPos = tilemap.WorldToCell(collision.rigidbody.position);
             pPos.x += 3;
             pPos.y -= 2;
-            Debug.Log("pPos:" + pPos);
+            //Debug.Log("pPos:" + pPos);
             tilemap.SetTile(pPos, null);
 
             for (int i = pPos.x - shovelRadius; i < pPos.x; i++)

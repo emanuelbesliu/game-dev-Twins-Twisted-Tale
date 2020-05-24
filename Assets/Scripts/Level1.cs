@@ -66,24 +66,50 @@ public class Level1 : MonoBehaviour
         }
     }
 
-    IEnumerator GuardianSpeech(){
-        guardianD.SetActive(true);
+    IEnumerator GuardianSpeech() {
+
+        if (guardianD != null)
+        {
+            guardianD.SetActive(true);
+        }
         yield return new WaitForSeconds(5f);
-        light.SetActive(false);
-        collLight.SetActive(true);
-        yield return new WaitForSeconds(5f);
-        light.SetActive(true);
-        collLight.SetActive(false);
-        guardianD.SetActive(false);
-        yield return new WaitForSeconds(15f);
-        guardianD.SetActive(true);
-        guardianText1.SetActive(false);
-        guardianText2.SetActive(true);
-        yield return new WaitForSeconds(15f);
-        guardianD.SetActive(false);
-        yield return new WaitForSeconds(20f);
-        guardianD.SetActive(true);
-        guardianText2.SetActive(false);
-        guardianText3.SetActive(true);
+        if (light != null)
+        {
+            light.SetActive(false);
+        }
+        if (collLight != null)
+        {
+            collLight.SetActive(true);
+        }
+            yield return new WaitForSeconds(5f);
+        if  (light != null)
+        {
+            light.SetActive(true);
+        }
+        if (collLight != null)
+        {
+            collLight.SetActive(false);
+        }
+        if (guardianD != null)
+        {
+            guardianD.SetActive(false);
+        }
+            yield return new WaitForSeconds(15f);
+        if (guardianD != null)
+        {
+            guardianD.SetActive(true);
+        }
+        if (guardianText1 != null)
+        {
+            guardianText1.SetActive(false);
+        }
+        if (guardianText2 != null) guardianText2.SetActive(true);
+            yield return new WaitForSeconds(15f);
+        if (guardianD != null) guardianD.SetActive(false);
+            yield return new WaitForSeconds(20f);
+        if (guardianD != null) guardianD.SetActive(true);
+        if (guardianText2 != null) guardianText2.SetActive(false);
+        if (guardianText3 != null) guardianText3.SetActive(true);
+    
     }
 }

@@ -70,11 +70,11 @@ void OnTriggerStay2D(Collider2D other)
 
 
 
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && currentObject != null && currentObject.id != 6 )
         {
            
 
-
+            // ---- Object with ID 1 offset ----
       
                 if (currentObject != null && currentObject.id == 1)
                 {
@@ -101,8 +101,11 @@ void OnTriggerStay2D(Collider2D other)
                 }
                     
             }
+            // ---- Object with ID 1 offset END ----
 
-                if (currentObject != null && currentObject.id == 2)
+
+            // ---- Object with ID 2 offset ----
+            if (currentObject != null && currentObject.id == 2)
 
 
                 {
@@ -127,9 +130,13 @@ void OnTriggerStay2D(Collider2D other)
                     inventoryH.offsetyInv = customY2;
                 }
 
-            
+            // ---- Object with ID 2 END ----
 
-                if (currentObject != null && currentObject.id == 3)
+            // ---- Object with ID 3 offset ----
+
+
+
+            if (currentObject != null && currentObject.id == 3)
 
 
                 {
@@ -155,7 +162,9 @@ void OnTriggerStay2D(Collider2D other)
                     inventoryH.offsetyInv = customY3;
                 }
 
-            
+            // ---- Object with ID 3  END ----
+
+
 
 
         }

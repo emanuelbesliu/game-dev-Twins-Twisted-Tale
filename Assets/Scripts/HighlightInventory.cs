@@ -151,10 +151,11 @@ public class HighlightInventory : MonoBehaviour
             else 
             if (Input.GetKeyDown("space"))
         {
-            if (slot1.shadowItem != null && canPlace[1])
+            if (slot1.shadowItem != null && canPlace[1] )
             {
+                slot1.shadowItem.tag = "Collect";
                 slot1.DestroyItem();
-                slot1.shadowItem.tag = "ShadowBlock";
+                
                 slot1.shadowItem = null;
                 this.gameObject.GetComponentInChildren<Image>().sprite = noHighlightInventory;
                 isHighlighted = false;
@@ -165,10 +166,10 @@ public class HighlightInventory : MonoBehaviour
                 Debug.Log("Cannot Place current item");
             }
             else
-            if (slot2.shadowItem != null && canPlace[2])
+            if (slot2.shadowItem != null && canPlace[2] )
             {
                 slot2.DestroyItem();
-                slot2.shadowItem.tag = "ShadowBlock";
+                slot2.shadowItem.tag = "Collect";
                 slot2.shadowItem = null;
                 this.gameObject.GetComponentInChildren<Image>().sprite = noHighlightInventory;
                 isHighlighted = false;
@@ -182,7 +183,7 @@ public class HighlightInventory : MonoBehaviour
             else if (slot3.shadowItem != null && canPlace[3])
             {
                 slot3.DestroyItem();
-                slot3.shadowItem.tag = "ShadowBlock";
+                slot3.shadowItem.tag = "Collect";
                 slot3.shadowItem = null;
                 this.gameObject.GetComponentInChildren<Image>().sprite = noHighlightInventory;
                 isHighlighted = false;
@@ -196,7 +197,7 @@ public class HighlightInventory : MonoBehaviour
             if (slot4.shadowItem != null && canPlace[4])
             {
                 slot4.DestroyItem();
-                slot4.shadowItem.tag = "ShadowBlock";
+                slot4.shadowItem.tag = "Collect";
                 slot4.shadowItem = null;
                 this.gameObject.GetComponentInChildren<Image>().sprite = noHighlightInventory;
                 isHighlighted = false;

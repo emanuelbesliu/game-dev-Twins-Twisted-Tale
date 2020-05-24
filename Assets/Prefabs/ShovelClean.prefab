@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7063369351094632950}
   - component: {fileID: 1787683306161041047}
   - component: {fileID: 2487408194790753013}
-  - component: {fileID: -7757167952966635761}
   m_Layer: 0
   m_Name: ShovelClean
   m_TagString: ShovelClean
@@ -74,7 +73,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: 12
   m_Sprite: {fileID: 21300000, guid: da20a98f295c37f45a640ed110f4cc95, type: 3}
-  m_Color: {r: 0.4245283, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.19215687, g: 0.028880388, b: 0.028880388, a: 0.57254905}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -130,19 +129,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!114 &-7757167952966635761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3181769743978606975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d118632189b5b2946bdf8f657483905c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventoryH: {fileID: 0}
-  itemButton: {fileID: 0}
-  id: 11
+  m_Constraints: 7
