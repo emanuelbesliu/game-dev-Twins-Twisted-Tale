@@ -16279,12 +16279,12 @@ PrefabInstance:
     - target: {fileID: 3275343789748710520, guid: 3935793174c44ef448e00aaccac962cd,
         type: 3}
       propertyPath: levelTransitionGoodTime
-      value: TranLevel3-L
+      value: TranLevel3-N
       objectReference: {fileID: 0}
     - target: {fileID: 3275343789748710520, guid: 3935793174c44ef448e00aaccac962cd,
         type: 3}
       propertyPath: levelTransitionBadTime
-      value: TranLevel3-N
+      value: TranLevel3-L
       objectReference: {fileID: 0}
     - target: {fileID: 3275343789748710520, guid: 3935793174c44ef448e00aaccac962cd,
         type: 3}
@@ -48441,7 +48441,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_TargetDisplay: 0
 --- !u!1 &1490059994
 GameObject:
