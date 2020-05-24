@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4024,7 +4024,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -157.1, y: 466.4}
+  m_AnchoredPosition: {x: -154.6, y: 466.4}
   m_SizeDelta: {x: 168, y: 61.38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &95338034
@@ -4059,11 +4059,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Maybe boxes are
-
-    not enough. You could
-
-    use platforms as well'
+  m_Text: "Maybe boxes are\nnot enough. Boards \nare good too"
 --- !u!222 &95338035
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25598,7 +25594,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1030867583
 RectTransform:
   m_ObjectHideFlags: 0
@@ -43396,7 +43392,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Holly fountain bridge collapsed. Should \nbuild one using boxed"
+  m_Text: "Holly fountain bridge collapsed. Should \nbuild one using boxes"
 --- !u!222 &1797012838
 CanvasRenderer:
   m_ObjectHideFlags: 0
