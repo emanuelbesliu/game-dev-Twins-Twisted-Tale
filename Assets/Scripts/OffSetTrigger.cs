@@ -68,7 +68,7 @@ void OnTriggerStay2D(Collider2D other)
         { }
         
 
-
+       
 
         if (other.CompareTag("Player") && currentObject != null && currentObject.id != 6 )
         {
@@ -174,9 +174,15 @@ void OnTriggerStay2D(Collider2D other)
         
         try
         {
-           if ( currentObject.id != 11 )
-            currentObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
-            inventoryH.canPlace[inventoryH.currentSlot] = true;
+            if (currentObject.id != 6)
+            {
+                currentObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+
+                inventoryH.canPlace[inventoryH.currentSlot] = true;
+            }
+
+            if (currentObject.id == 6) inventoryH.canPlace[inventoryH.currentSlot] = false;
+            
             if (currentObject != null)
             {
                // inventoryH.offsetxInv = savedX;

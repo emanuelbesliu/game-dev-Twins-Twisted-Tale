@@ -94,6 +94,7 @@
      <Compile Include="Assets\Scripts\MovementPlatformer.cs" />
      <Compile Include="Assets\Scripts\MovingObject.cs" />
      <Compile Include="Assets\Scripts\Music.cs" />
+     <Compile Include="Assets\Scripts\NoShovelPlacement.cs" />
      <Compile Include="Assets\Scripts\OffSetTrigger.cs" />
      <Compile Include="Assets\Scripts\Pickup.cs" />
      <Compile Include="Assets\Scripts\Placeable.cs" />
