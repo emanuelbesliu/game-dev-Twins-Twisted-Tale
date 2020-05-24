@@ -21,6 +21,7 @@ public class Level1Trans : MonoBehaviour
     private bool greenRunInitial;
 
     public float Speed = 5f;
+    private bool hasClimbed;
     // Start is called before the first frame update
     void Start()
     {
@@ -65,11 +66,13 @@ public class Level1Trans : MonoBehaviour
                 if(green.transform.position.x <= -1f){
                     green.transform.position += Vector3.right * Time.deltaTime * Speed ;
                     greenAnimator.SetFloat("HorizontalAxis", Mathf.Abs(1));
-                }else if (green.transform.position.x > -1f && green.transform.position.y < 4.1f){
+                }else if (green.transform.position.x > -1f && green.transform.position.y < 4.1f && !hasClimbed){
+                    //Debug.Log("Climb");
                     green.transform.position += Vector3.up * Time.deltaTime * Speed ;
                     greenAnimator.SetBool("isWalking", true);
                     greenAnimator.SetBool("Climb", false);
                 }else{
+                    hasClimbed = true;
                     greenAnimator.SetBool("isWalking", false);
                     greenAnimator.SetBool("Climb", false);
                     green.transform.position += Vector3.right * Time.deltaTime * Speed ;
