@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -16516,6 +16516,7 @@ Transform:
   - {fileID: 1171358373}
   - {fileID: 776408779}
   - {fileID: 1768327118}
+  - {fileID: 1258419131}
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16694,7 +16695,7 @@ GameObject:
   - component: {fileID: 696931598}
   m_Layer: 0
   m_Name: girl-2_0
-  m_TagString: Untagged
+  m_TagString: redNPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27044,8 +27045,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9197a5837dd2c964ca4ebbde9510a80c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTime: 10
+  startTime: 5
   isTimerWorking: 0
+  levelTrigger: {fileID: 0}
+  levelTransitionGoodTime: TranLevel1-L
+  levelTransitionBadTime: TranLevel1-N
+  levelTransitionWorstTime: TranLevel1-G
   leavingAnimation: {fileID: 2137032093}
 --- !u!1 &1159087941 stripped
 GameObject:
@@ -28495,6 +28500,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1253133434}
   m_CullTransparentMesh: 0
+--- !u!4 &1258419131 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8831831850762210979, guid: c26c1b12dba3125429278ef66fc1c499,
+    type: 3}
+  m_PrefabInstance: {fileID: 8831831849872948504}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1263682159
 GameObject:
   m_ObjectHideFlags: 0
@@ -46399,6 +46410,85 @@ PrefabInstance:
       objectReference: {fileID: 776408780}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f62eb39c811460488297837fbfefb06, type: 3}
+--- !u!1001 &8831831849872948504
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 660608509}
+    m_Modifications:
+    - target: {fileID: 8831831850762210978, guid: c26c1b12dba3125429278ef66fc1c499,
+        type: 3}
+      propertyPath: m_Name
+      value: LevelTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831831850762210978, guid: c26c1b12dba3125429278ef66fc1c499,
+        type: 3}
+      propertyPath: m_TagString
+      value: levelTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831831850762210979, guid: c26c1b12dba3125429278ef66fc1c499,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831831850762210979, guid: c26c1b12dba3125429278ef66fc1c499,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -14.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831831850762210979, guid: c26c1b12dba3125429278ef66fc1c499,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831831850762210979, guid: c26c1b12dba3125429278ef66fc1c499,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831831850762210979, guid: c26c1b12dba3125429278ef66fc1c499,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831831850762210979, guid: c26c1b12dba3125429278ef66fc1c499,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831831850762210979, guid: c26c1b12dba3125429278ef66fc1c499,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831831850762210979, guid: c26c1b12dba3125429278ef66fc1c499,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831831850762210979, guid: c26c1b12dba3125429278ef66fc1c499,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831831850762210979, guid: c26c1b12dba3125429278ef66fc1c499,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831831850762210979, guid: c26c1b12dba3125429278ef66fc1c499,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831831850762210980, guid: c26c1b12dba3125429278ef66fc1c499,
+        type: 3}
+      propertyPath: levelToLoadWhenTriggered
+      value: TranLevel1-G
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c26c1b12dba3125429278ef66fc1c499, type: 3}
 --- !u!1001 &8937882326626351959
 PrefabInstance:
   m_ObjectHideFlags: 0

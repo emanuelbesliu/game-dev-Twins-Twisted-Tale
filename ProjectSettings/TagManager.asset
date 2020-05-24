@@ -35,6 +35,8 @@ TagManager:
   - ShovelClean
   - FlowerBoss
   - AttackBee
+  - redNPC
+  - levelTrigger
   layers:
   - Default
   - TransparentFX

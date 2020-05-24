@@ -20,18 +20,60 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Forest-ON/Level1-1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Forest-ON/T-Level1/TranLevel1-G.unity
+    guid: 652cdfb6a324c4cfdb5a1eac0e02be5f
+  - enabled: 1
+    path: Assets/Scenes/Forest-ON/Level1-2G.unity
+    guid: 78531db533e7daf46a011983bc6c7686
+  - enabled: 1
+    path: Assets/Scenes/Forest-ON/T-Level1/TranLevel1-L.unity
+    guid: 6369d05a2c4c24c94a06fcc34a7605ad
+  - enabled: 1
+    path: Assets/Scenes/Forest-ON/Level1-2L.unity
+    guid: 5e11fe5e3bbda0a43b2efe69520f8584
+  - enabled: 1
+    path: Assets/Scenes/Forest-ON/T-Level1/TranLevel1-N.unity
+    guid: 2024a6ae64403419ea978a17355030b7
+  - enabled: 1
+    path: Assets/Scenes/Forest-ON/Level1-2N.unity
+    guid: 3aba289df2a2ba5439715038374baf41
+  - enabled: 1
+    path: Assets/Scenes/Forest-ON/T-Level2/TranLevel2-L.unity
+    guid: 174aeeeb4b0904348a99976f232bf4a7
+  - enabled: 1
+    path: Assets/Scenes/Forest-ON/Level1-3L.unity
+    guid: 146b9007aabbac043819fffd16b72a7f
+  - enabled: 1
+    path: Assets/Scenes/Forest-ON/T-Level2/TranLevel2-N.unity
+    guid: e4bf231f3f9364609ac9a3257e9f649f
+  - enabled: 1
+    path: Assets/Scenes/Forest-ON/Level1-3N.unity
+    guid: 21d9a08b746dd4b43973b05dbf7740db
+  - enabled: 1
+    path: Assets/Scenes/Forest-ON/T-Level2/TranLevel2-G.unity
+    guid: 2f0fad01f693b4be4810435e42e31a05
   - enabled: 1
     path: Assets/Scenes/Forest-ON/Level1-3G.unity
     guid: c1171a1ab33b74f378a6b4024dc36876
   - enabled: 1
-    path: Assets/Scenes/Forest-ON/Level1-4L&N.unity
-    guid: 9d6efedf31c864ee18064637403fe22d
+    path: Assets/Scenes/Forest-ON/T-Level3/TranLevel3-L.unity
+    guid: 5f422fd15d04c4a33aaac109cf8d9912
+  - enabled: 1
+    path: Assets/Scenes/Forest-ON/Level1-4L.unity
+    guid: 4150b6ee7e493fa45aeb7a937b1e74c7
+  - enabled: 1
+    path: Assets/Scenes/Forest-ON/T-Level3/TranLevel3-N.unity
+    guid: acec6bfcbe94f45bd8d22376162314a9
+  - enabled: 1
+    path: Assets/Scenes/Forest-ON/Level1-4N.unity
+    guid: 8c75b2381ccf2f04c913175a393c80e6
+  - enabled: 1
+    path: Assets/Scenes/Forest-ON/T-Level3/TranLevel3-G.unity
+    guid: 6f546f7ddceae4a79bb43f260df84685
+  - enabled: 1
+    path: Assets/Scenes/Forest-ON/Level1-4G.unity
+    guid: 2c63cd2331029f04b84d5f51d23bfea8
   - enabled: 1
     path: Assets/Scenes/Forest-ON/Endings/Level1-5-N.unity
     guid: 33e34b10e63ff4b11aff5a487c0b356f
@@ -44,13 +86,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Forest-ON/Endings/Celebrations-LG.unity
     guid: 8376f130a9e6742b6ab256c0a9d10f29
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   m_configObjects: {}
