@@ -62,6 +62,7 @@ public class Pickup : ExtendedBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+
         if (other.CompareTag("Player")) {
             if (!inventoryH.isHighlighted) {
                 canBePickedUp = true;
@@ -139,6 +140,18 @@ public class Pickup : ExtendedBehaviour
     // Update is called once per frame
     void Update()
     {
+        try
+        {
+
+
+
+            inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+            inventoryH = GameObject.FindGameObjectWithTag("UI").GetComponent<HighlightInventory>();
+        }
+        catch
+        {
+
+        }
         try
         {
 
