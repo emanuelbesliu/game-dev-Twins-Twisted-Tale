@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4459756388099373642}
   m_Layer: 0
   m_Name: flower 2
-  m_TagString: Collect
+  m_TagString: FlowerBoss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

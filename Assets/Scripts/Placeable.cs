@@ -8,6 +8,7 @@ public class Placeable : MonoBehaviour
     public Quaternion toPlaceRotation = Quaternion.Euler(0, 0, 90);
     public float offsetx = 3;
     public float offsety = - 2.5f;
+    public int personalid = 0;
     
 
 
@@ -22,7 +23,7 @@ public class Placeable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+      
        
     }
 

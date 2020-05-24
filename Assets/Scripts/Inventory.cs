@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class Inventory : MonoBehaviour
     public GameObject[] slots;
     public Pickup highlightedObject = null;
     public GameObject inventoryTip;
+    public  Image imageInv;
+    public HighlightInventory inventoryHigh;
+    // public Image imageInvTip;
 
     public GameObject inventoryH;
     public bool isInvActive = true;
@@ -15,9 +19,13 @@ public class Inventory : MonoBehaviour
     void Start()
     {
         inventoryH = GameObject.FindGameObjectsWithTag("UI")[0];
-       
+        inventoryHigh = GameObject.FindGameObjectWithTag("UI").GetComponent<HighlightInventory>();
+        imageInv = inventoryH.GetComponent<Image>();
+        //imageInvTip = inventoryTip.GetComponent<Image>();
+
     }
 
+    
     void Update()
     {
         if (highlightedObject != null)
@@ -29,17 +37,45 @@ public class Inventory : MonoBehaviour
 
         }
 
+
+        // inventoryH.SetActive(isInvActive);
+        try
+        {
+            imageInv = inventoryH.GetComponent<Image>();
+            var tempColor = imageInv.color;
+            if (isInvActive)
+            {
+                tempColor.a = 1f;
+                inventoryHigh.setAlpha(1f);
+                inventoryTip.SetActive(false);
+
+
+            }
+            else
+            {
+                tempColor.a = 0f; inventoryHigh.setAlpha(0f);
+                 inventoryTip.SetActive(true);
+            }
+
+            imageInv.color = tempColor;
+
+
+
+        }
+
+        catch { }
+
         if (Input.GetKeyDown("e"))
         {
             //Debug.Log("InvButtonFired");
             isInvActive = !isInvActive;
-            inventoryH.SetActive(isInvActive);
-            try
-            {
-                inventoryTip.SetActive(!isInvActive);
-            }
-
-            catch { }
+           
+ 
+            
+ 
+            
+            
+           
 
         }
 

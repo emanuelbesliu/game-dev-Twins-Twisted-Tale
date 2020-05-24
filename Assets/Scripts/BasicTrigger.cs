@@ -34,7 +34,7 @@ public class BasicTrigger : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            if (SceneManager.GetActiveScene().name == "Level1-3G" || SceneManager.GetActiveScene().name == "Level1-3L&N")
+            if (SceneManager.GetActiveScene().name == "Level1-3G" || SceneManager.GetActiveScene().name == "Level1-3L"|| SceneManager.GetActiveScene().name == "Level1-3N")
             {
                 try
                 {
@@ -50,7 +50,7 @@ public class BasicTrigger : MonoBehaviour
                 
             } 
             
-            if (SceneManager.GetActiveScene().name == "Level1-4G" || SceneManager.GetActiveScene().name == "Level1-4L&N")
+            if (SceneManager.GetActiveScene().name == "Level1-4G" || SceneManager.GetActiveScene().name == "Level1-4L"|| SceneManager.GetActiveScene().name == "Level1-4N")
             {
                 try
                 {

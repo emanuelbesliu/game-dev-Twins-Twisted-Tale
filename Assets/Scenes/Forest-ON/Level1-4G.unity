@@ -6951,6 +6951,52 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1612835699}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &344759325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 344759326}
+  - component: {fileID: 344759327}
+  m_Layer: 0
+  m_Name: BearHElper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &344759326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344759325}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1000063893}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &344759327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344759325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74ce62b699f30114483aaad38cb7d3d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  helpscript: {fileID: 0}
+  ifHelped: {fileID: 1228586351}
+  ifNotHelped: {fileID: 0}
 --- !u!1 &348191360
 GameObject:
   m_ObjectHideFlags: 0
@@ -16797,6 +16843,8 @@ MonoBehaviour:
   - {fileID: 1617050732}
   highlightedObject: {fileID: 0}
   inventoryTip: {fileID: 343005472}
+  imageInv: {fileID: 0}
+  inventoryHigh: {fileID: 0}
   inventoryH: {fileID: 0}
   isInvActive: 1
 --- !u!1 &473291854
@@ -28887,6 +28935,7 @@ Transform:
   - {fileID: 371533729}
   - {fileID: 1579785490}
   - {fileID: 2092795917}
+  - {fileID: 344759326}
   m_Father: {fileID: 0}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -33989,7 +34038,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1228586352
 Animator:
   serializedVersion: 3

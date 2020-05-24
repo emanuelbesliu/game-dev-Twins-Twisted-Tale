@@ -115,7 +115,7 @@ public class MovementPlatformer : MonoBehaviour
         }
         // Ghita: Commented this to fix bug.
 
-        if(platform.activeSelf && Input.GetButton("Down") && ladderCollision){
+        if(platform != null && platform.activeSelf && Input.GetButton("Down") && ladderCollision){
             rb.gravityScale = 1;
             platform.SetActive(false);
             // Ghita: Commented this to fix bug.
@@ -200,8 +200,11 @@ public class MovementPlatformer : MonoBehaviour
             animator.SetBool("isWalking", false);
             animator.SetBool("Climb", false);
         }*/
+        try
+        {
+            if (!Input.GetButton("Down") && !Input.GetButton("Up"))
+            {
 
-        if(!Input.GetButton("Down") && !Input.GetButton("Up")){
 
                 if (!coll.onGround)
                 {
@@ -215,23 +218,30 @@ public class MovementPlatformer : MonoBehaviour
                     animator.SetBool("Climb", false);
                 }
 
-           // animator.Stop("idle-green");
-        }else{
-            if(coll.onGround && !Input.GetButton("Up")){
-                animator.SetBool("isWalking", false);
-                animator.SetBool("Climb", false);
+                // animator.Stop("idle-green");
             }
+            else
+            {
+                if (coll.onGround && !Input.GetButton("Up"))
+                {
+                    animator.SetBool("isWalking", false);
+                    animator.SetBool("Climb", false);
+                }
 
-            if(coll.onGround && Input.GetButton("Up") && ladder2Collision){
-                animator.SetBool("isWalking", false);
-                animator.SetBool("Climb", false);
-            }
+                if (coll.onGround && Input.GetButton("Up") && ladder2Collision)
+                {
+                    animator.SetBool("isWalking", false);
+                    animator.SetBool("Climb", false);
+                }
 
-            if(coll.onGround && Input.GetButton("Down") && ladderCollision){
-                animator.SetBool("isWalking", false);
-                animator.SetBool("Climb", false);
+                if (coll.onGround && Input.GetButton("Down") && ladderCollision)
+                {
+                    animator.SetBool("isWalking", false);
+                    animator.SetBool("Climb", false);
+                }
             }
         }
+        catch { }
 
         if ((x < 0 || x > 0) && canMove)
         {
@@ -304,15 +314,15 @@ public class MovementPlatformer : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D collision) {
 
-        if (SceneManager.GetActiveScene().name == "Level1-2G" || SceneManager.GetActiveScene().name == "Level1-2L&N")
+        if (SceneManager.GetActiveScene().name == "Level1-2G" || SceneManager.GetActiveScene().name == "Level1-2L"|| SceneManager.GetActiveScene().name == "Level1-2N")
         { // Trigger for level 1.2.
             canMove = true;
         }
-        if (SceneManager.GetActiveScene().name == "Level1-3G" || SceneManager.GetActiveScene().name == "Level1-3L&N")
+        if (SceneManager.GetActiveScene().name == "Level1-3G" || SceneManager.GetActiveScene().name == "Level1-3L"|| SceneManager.GetActiveScene().name == "Level1-3N")
         { // Trigger for level 1.3
             canMove = true;
         }
-        if (SceneManager.GetActiveScene().name == "Level1-4G" || SceneManager.GetActiveScene().name == "Level1-4L&N")
+        if (SceneManager.GetActiveScene().name == "Level1-4G" || SceneManager.GetActiveScene().name == "Level1-4N"|| SceneManager.GetActiveScene().name == "Level1-4L")
         { // Trigger for level 1.3
             canMove = true;
         }
