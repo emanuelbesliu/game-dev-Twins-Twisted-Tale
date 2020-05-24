@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4083,7 +4083,7 @@ MonoBehaviour:
   exitButton: {fileID: 163338620}
   settingsButton: {fileID: 862093711}
   backButton: {fileID: 1764752061}
-  load: {fileID: 2146065730}
+  load: {fileID: 4097074204431027384}
   title: {fileID: 1825635030}
   titleLight: {fileID: 1744832382}
   settings: {fileID: 346899825}
@@ -4427,7 +4427,7 @@ MonoBehaviour:
   exitButton: {fileID: 163338620}
   settingsButton: {fileID: 862093711}
   backButton: {fileID: 1764752061}
-  load: {fileID: 2146065730}
+  load: {fileID: 4097074204431027384}
   title: {fileID: 1825635030}
   titleLight: {fileID: 1744832382}
   settings: {fileID: 346899825}
@@ -6399,18 +6399,6 @@ Transform:
   m_Father: {fileID: 122408791}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2146065730 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1754239826088248127, guid: fd3d0d75553c44486a63ab89d886157a,
-    type: 3}
-  m_PrefabInstance: {fileID: 4097074204431027381}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4097074204431027382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42e51d54335d348fdb725d8debaa7890, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4097074204431027381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6526,6 +6514,18 @@ MonoBehaviour:
   soundtrack:
   - {fileID: 8300000, guid: fc38b0ba2c940489b835c622d0b14dd9, type: 3}
   volumeSlider: {fileID: 11675943}
+--- !u!114 &4097074204431027384 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1754239826088248127, guid: fd3d0d75553c44486a63ab89d886157a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4097074204431027381}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4097074204431027382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e51d54335d348fdb725d8debaa7890, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!82 &4097074204431027386
 AudioSource:
   m_ObjectHideFlags: 0
