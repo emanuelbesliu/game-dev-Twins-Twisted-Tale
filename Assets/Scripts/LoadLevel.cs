@@ -12,6 +12,10 @@ public class LoadLevel : MonoBehaviour
 
     private int levelToLoad;
 
+    void Start(){
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 
     public void LoadNextLevel(){
         try { FadeToLevel(SceneManager.GetActiveScene().buildIndex + 1); }
