@@ -32308,6 +32308,7 @@ MonoBehaviour:
   helpMenu: {fileID: 1847028447}
   settingsMenu: {fileID: 815746481}
   level: {fileID: 1204769415}
+  volumeSlider: {fileID: 1314154152}
   light: {fileID: 1256861160}
   script: {fileID: 0}
   resume: {fileID: 457248048}

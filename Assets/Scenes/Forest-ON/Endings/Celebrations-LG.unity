@@ -19803,6 +19803,7 @@ MonoBehaviour:
   helpMenu: {fileID: 370903722}
   settingsMenu: {fileID: 705631662}
   level: {fileID: 1766925966}
+  volumeSlider: {fileID: 2094799819}
   light: {fileID: 1551524182}
   script: {fileID: 0}
   resume: {fileID: 1516497512}
