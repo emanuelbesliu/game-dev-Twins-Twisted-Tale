@@ -26,6 +26,7 @@ public class Level0 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if(pause){
             return;
         }

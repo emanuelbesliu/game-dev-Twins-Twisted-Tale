@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,8 @@ public class MainMenuAnim : MonoBehaviour
     public Button settingsButton;
     public Button backButton;
     public LoadLevel load;
+
+    public Slider volumeSlider;
 
     public GameObject title;
     public GameObject titleLight;
@@ -57,6 +60,7 @@ public class MainMenuAnim : MonoBehaviour
         title.SetActive(false);
         titleLight.SetActive(false);
 
+        EventSystem.current.SetSelectedGameObject(backButton.gameObject);
         settings.SetActive(true);
         settingsLight.gameObject.SetActive(true);
         backButton.gameObject.SetActive(true);
@@ -65,7 +69,8 @@ public class MainMenuAnim : MonoBehaviour
         playButton.gameObject.SetActive(false);
         exitButton.gameObject.SetActive(false);
         settingsButton.gameObject.SetActive(false);
-
+        backButton.Select ();
+        backButton.OnSelect (null);
     }
 
     void BackOnClick(){
@@ -80,11 +85,23 @@ public class MainMenuAnim : MonoBehaviour
         playButton.gameObject.SetActive(true);
         exitButton.gameObject.SetActive(true);
         settingsButton.gameObject.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(playButton.gameObject, new BaseEventData(EventSystem.current));
+        playButton.Select ();
+        playButton.OnSelect (null);
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if(settings.activeSelf){
+            if(Input.GetButtonDown("Left")){
+                volumeSlider.value -= 0.05f;
+            }else if(Input.GetButtonDown("Right")){
+                volumeSlider.value += 0.05f;
+            }
+        }
         //float h = Input.GetAxis("Horizontal");
         //Debug.Log(h);
 
@@ -144,5 +161,9 @@ public class MainMenuAnim : MonoBehaviour
         playButton.gameObject.SetActive(true);
         exitButton.gameObject.SetActive(true);
         settingsButton.gameObject.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(playButton.gameObject, new BaseEventData(EventSystem.current));
+        playButton.Select ();
+        playButton.OnSelect (null);
     }
 }

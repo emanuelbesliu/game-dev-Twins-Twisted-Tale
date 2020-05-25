@@ -9787,6 +9787,7 @@ MonoBehaviour:
   helpMenu: {fileID: 1233357237}
   settingsMenu: {fileID: 201922316}
   level: {fileID: 688451173}
+  volumeSlider: {fileID: 1372905867}
   light: {fileID: 1047801545}
   script: {fileID: 0}
   resume: {fileID: 864814944}
