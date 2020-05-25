@@ -24243,7 +24243,7 @@ MonoBehaviour:
   imageInv: {fileID: 0}
   inventoryHigh: {fileID: 0}
   inventoryH: {fileID: 394517748}
-  isInvActive: 1
+  isInvActive: 0
 --- !u!1 &1177546113
 GameObject:
   m_ObjectHideFlags: 0

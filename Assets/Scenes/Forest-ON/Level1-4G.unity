@@ -14080,7 +14080,7 @@ MonoBehaviour:
   imageInv: {fileID: 0}
   inventoryHigh: {fileID: 0}
   inventoryH: {fileID: 0}
-  isInvActive: 1
+  isInvActive: 0
 --- !u!1 &474199126 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8791488961200541858, guid: 8f62eb39c811460488297837fbfefb06,
