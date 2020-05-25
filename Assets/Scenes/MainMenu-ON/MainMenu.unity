@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3439,7 +3439,7 @@ GameObject:
   - component: {fileID: 470933683}
   m_Layer: 0
   m_Name: Music
-  m_TagString: Untagged
+  m_TagString: Music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3471,8 +3471,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundtrack:
+<<<<<<< HEAD
+  - {fileID: 8300000, guid: fc38b0ba2c940489b835c622d0b14dd9, type: 3}
+  volumeSlider: {fileID: 0}
+  audioSource: {fileID: 0}
+=======
   - {fileID: 8300000, guid: 04f6dc147dfb1544d8a8775a3bf5b552, type: 3}
   volumeSlider: {fileID: 11675943}
+>>>>>>> e624b46798b20495f33f390914111192a2f2a41a
 --- !u!82 &470933683
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6581,6 +6587,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4097074204946363763, guid: fd3d0d75553c44486a63ab89d886157a,
+        type: 3}
+      propertyPath: m_TagString
+      value: LevelChanger
+      objectReference: {fileID: 0}
     - target: {fileID: 4097074204946363772, guid: fd3d0d75553c44486a63ab89d886157a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6657,10 +6668,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6596432647141962545, guid: 3802d8a10f530475fb70317c5b112cce,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596432647141962545, guid: 3802d8a10f530475fb70317c5b112cce,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596432647368746255, guid: 3802d8a10f530475fb70317c5b112cce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596432647368746255, guid: 3802d8a10f530475fb70317c5b112cce,
+        type: 3}
+      propertyPath: m_Name
+      value: CanvasSlider
+      objectReference: {fileID: 0}
     - target: {fileID: 6596432647907381336, guid: 3802d8a10f530475fb70317c5b112cce,
         type: 3}
       propertyPath: m_Name
       value: Grid
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596432647907381336, guid: 3802d8a10f530475fb70317c5b112cce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6596432647907381338, guid: 3802d8a10f530475fb70317c5b112cce,
         type: 3}
@@ -6717,10 +6753,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6596432648463499329, guid: 3802d8a10f530475fb70317c5b112cce,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596432648463499329, guid: 3802d8a10f530475fb70317c5b112cce,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596432648463499329, guid: 3802d8a10f530475fb70317c5b112cce,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6596432648698126788, guid: 3802d8a10f530475fb70317c5b112cce,
         type: 3}
       propertyPath: m_TagString
       value: Slider
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596432649033584016, guid: 3802d8a10f530475fb70317c5b112cce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Settings
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596432649033584016, guid: 3802d8a10f530475fb70317c5b112cce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3802d8a10f530475fb70317c5b112cce, type: 3}
