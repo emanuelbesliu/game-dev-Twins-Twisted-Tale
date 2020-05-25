@@ -93,6 +93,7 @@ public class InGameMenu : MonoBehaviour
                 light.SetActive(true);
             }else{
                 //script.pause = false;
+                //EventSystem.current.SetSelectedGameObject(resume.gameObject);
                 block.SetActive(true);
                 light.SetActive(false);
                 if(menu.activeSelf){
