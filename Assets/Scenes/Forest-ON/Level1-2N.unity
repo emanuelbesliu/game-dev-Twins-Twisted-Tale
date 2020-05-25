@@ -7984,6 +7984,7 @@ MonoBehaviour:
   inventoryH: {fileID: 0}
   itemButton: {fileID: 8229600911976814708, guid: 6b56d0f3f7e365e42bfaed5698428b91,
     type: 3}
+  soundpickup: {fileID: 0}
   id: 1
 --- !u!1 &370711975
 GameObject:
@@ -17374,6 +17375,7 @@ MonoBehaviour:
   inventoryH: {fileID: 0}
   itemButton: {fileID: 8229600911976814708, guid: 6b56d0f3f7e365e42bfaed5698428b91,
     type: 3}
+  soundpickup: {fileID: 0}
   id: 1
 --- !u!1001 &605528108
 PrefabInstance:
@@ -17654,6 +17656,7 @@ MonoBehaviour:
   inventoryH: {fileID: 0}
   itemButton: {fileID: 5526419191463677896, guid: ef80f3080ba2e2a47b867a364b63fcd3,
     type: 3}
+  soundpickup: {fileID: 0}
   id: 2
 --- !u!1 &660568330
 GameObject:
@@ -18104,6 +18107,7 @@ MonoBehaviour:
   inventoryH: {fileID: 0}
   itemButton: {fileID: 5526419191463677896, guid: ef80f3080ba2e2a47b867a364b63fcd3,
     type: 3}
+  soundpickup: {fileID: 0}
   id: 2
 --- !u!1 &701198477
 GameObject:
@@ -26680,6 +26684,7 @@ MonoBehaviour:
   inventoryH: {fileID: 0}
   itemButton: {fileID: 8229600911976814708, guid: b66a4762b302e1a4a931bf6b30b465a2,
     type: 3}
+  soundpickup: {fileID: 0}
   id: 1
 --- !u!61 &1146620714
 BoxCollider2D:
@@ -26992,6 +26997,7 @@ MonoBehaviour:
   ladderCollision: 0
   ladder2Collision: 0
   isLeft: 0
+  soundDamage: {fileID: 0}
 --- !u!61 &1173723735
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27076,6 +27082,7 @@ MonoBehaviour:
   inventoryTip: {fileID: 1662690752}
   imageInv: {fileID: 0}
   inventoryHigh: {fileID: 0}
+  soundinventoryOpen: {fileID: 0}
   inventoryH: {fileID: 394517748}
   isInvActive: 0
 --- !u!1 &1177546113
@@ -35100,7 +35107,7 @@ PrefabInstance:
     - target: {fileID: 3275343789748710520, guid: 3935793174c44ef448e00aaccac962cd,
         type: 3}
       propertyPath: levelTransitionGoodTime
-      value: TranLevel2-N
+      value: TranLevel2-L
       objectReference: {fileID: 0}
     - target: {fileID: 3275343789748710520, guid: 3935793174c44ef448e00aaccac962cd,
         type: 3}
@@ -35110,7 +35117,7 @@ PrefabInstance:
     - target: {fileID: 3275343789748710520, guid: 3935793174c44ef448e00aaccac962cd,
         type: 3}
       propertyPath: levelTransitionBadTime
-      value: TranLevel2-L
+      value: TranLevel2-N
       objectReference: {fileID: 0}
     - target: {fileID: 3275343789748710520, guid: 3935793174c44ef448e00aaccac962cd,
         type: 3}
@@ -42856,6 +42863,7 @@ MonoBehaviour:
   inventoryH: {fileID: 0}
   itemButton: {fileID: 8229600911976814708, guid: b66a4762b302e1a4a931bf6b30b465a2,
     type: 3}
+  soundpickup: {fileID: 0}
   id: 1
 --- !u!61 &1716802016
 BoxCollider2D:
@@ -44521,6 +44529,75 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1832760689
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7603623137095556478, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603623137095556479, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.431195
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603623137095556479, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.1152265
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603623137095556479, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -388.6241
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603623137095556479, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603623137095556479, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603623137095556479, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603623137095556479, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603623137095556479, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603623137095556479, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603623137095556479, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603623137095556479, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d840507ffecd5e848bf3466dd6468d83, type: 3}
 --- !u!1 &1836263078
 GameObject:
   m_ObjectHideFlags: 0
@@ -45313,6 +45390,7 @@ MonoBehaviour:
   inventoryH: {fileID: 0}
   itemButton: {fileID: 5526419191463677896, guid: ef80f3080ba2e2a47b867a364b63fcd3,
     type: 3}
+  soundpickup: {fileID: 0}
   id: 2
 --- !u!1 &1872626433
 GameObject:
@@ -46026,6 +46104,7 @@ MonoBehaviour:
   inventoryH: {fileID: 0}
   itemButton: {fileID: 8229600911976814708, guid: 6b56d0f3f7e365e42bfaed5698428b91,
     type: 3}
+  soundpickup: {fileID: 0}
   id: 1
 --- !u!61 &1943608086
 BoxCollider2D:

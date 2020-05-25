@@ -10,6 +10,7 @@ public class Pickup : ExtendedBehaviour
     public GameObject itemButton;
     private bool canBePickedUp = false;
     Collider2D collided;
+    public AudioSource soundpickup;
 
     public int id = 0;
     // Start is called before the first frame update
@@ -19,7 +20,7 @@ public class Pickup : ExtendedBehaviour
         {
 
 
-
+            soundpickup = GameObject.Find("PickupSound").GetComponent<AudioSource>();
             inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
             inventoryH = GameObject.FindGameObjectWithTag("UI").GetComponent<HighlightInventory>();
         }
@@ -44,7 +45,7 @@ public class Pickup : ExtendedBehaviour
                     
                     inventory.isFull[i] = true;
                     Instantiate(itemButton, inventory.slots[i].transform, false);
-
+                    if (soundpickup != null) soundpickup.Play();
                     Destroy(gameObject);
                 
                    break;

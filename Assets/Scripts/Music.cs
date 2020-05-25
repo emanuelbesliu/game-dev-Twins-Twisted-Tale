@@ -11,6 +11,10 @@ public class Music : MonoBehaviour
     public AudioSource audioSource;
 
 
+  public string currentLevel;
+    public  bool isMusicPlaying=false;
+
+
     void Awake()
     {
         DontDestroyOnLoad(transform.gameObject);
@@ -23,7 +27,6 @@ public class Music : MonoBehaviour
             catch { }
         }
 
-        
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -32,7 +35,8 @@ public class Music : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        
+        currentLevel = SceneManager.GetActiveScene().name;
+
         audioSource = GetComponent<AudioSource>();
         //Debug.Log(audioSource.volume);
         audioSource.volume = 0.5f;
@@ -48,19 +52,84 @@ public class Music : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(SceneManager.GetActiveScene().name);
-        if (SceneManager.GetActiveScene().name == "Level0")
+     
+        if (currentLevel != SceneManager.GetActiveScene().name)
         {
-            audioSource.clip = soundtrack[1];
-            Debug.Log("Changed music");
-            
-            audioSource.Play();
+            isMusicPlaying = false;
+            currentLevel = SceneManager.GetActiveScene().name;
+        }
+        if (!isMusicPlaying)
+        {
+            // Music needs updating
+
+            if (SceneManager.GetActiveScene().name == "Level0")
+            {
+                audioSource.clip = soundtrack[6];
+                Debug.Log("Changed music");
+
+                audioSource.Play();
+                isMusicPlaying = true;
+
+            }
+             if (SceneManager.GetActiveScene().name == "Level1-1")
+            {
+                audioSource.clip = soundtrack[1];
+                Debug.Log("Changed music");
+
+                audioSource.Play();
+                isMusicPlaying = true;
+
+            }
+
+            if (SceneManager.GetActiveScene().name == "Level1-2G" || SceneManager.GetActiveScene().name == "Level1-2L" || SceneManager.GetActiveScene().name == "Level1-2N")
+            {
+                audioSource.clip = soundtrack[2];
+                Debug.Log("Changed music");
+
+                audioSource.Play();
+                isMusicPlaying = true;
+
+            }
+            if (SceneManager.GetActiveScene().name == "Level1-3G" || SceneManager.GetActiveScene().name == "Level1-3L" || SceneManager.GetActiveScene().name == "Level1-3N")
+            {
+                audioSource.clip = soundtrack[3];
+                Debug.Log("Changed music");
+
+                audioSource.Play();
+                isMusicPlaying = true;
+
+            }
+            if (SceneManager.GetActiveScene().name == "Level1-4G" || SceneManager.GetActiveScene().name == "Level1-4L" || SceneManager.GetActiveScene().name == "Level1-4N")
+            {
+                audioSource.clip = soundtrack[4];
+                Debug.Log("Changed music");
+
+                audioSource.Play();
+                isMusicPlaying = true;
+
+            }
+             if (SceneManager.GetActiveScene().name == "Level1-5-N" || SceneManager.GetActiveScene().name == "Level1-5-LG")
+            {
+                audioSource.clip = soundtrack[5];
+                Debug.Log("Changed music");
+
+                audioSource.Play();
+                isMusicPlaying = true;
+
+            }
+
+
 
         }
+       
 
 
         if (volumeSlider == null){
-            volumeSlider = GameObject.FindGameObjectWithTag("LevelChanger").GetComponent<InGameMenu>().volumeSlider;
+            try { volumeSlider = GameObject.FindGameObjectWithTag("LevelChanger").GetComponent<InGameMenu>().volumeSlider; }
+            catch
+            {
+
+            }
         }else{
             volumeSlider.value = audioSource.volume;
         }
@@ -74,6 +143,7 @@ public class Music : MonoBehaviour
 
     void OnEnable()
     {
+       
         //Register Slider Events
         volumeSlider.onValueChanged.AddListener(delegate { changeVolume(volumeSlider.value); });
     }

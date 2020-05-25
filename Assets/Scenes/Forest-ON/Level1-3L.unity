@@ -4371,7 +4371,7 @@ Transform:
   m_LocalScale: {x: 0.64407754, y: 0.64407754, z: 0.64407754}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &112440521 stripped
 GameObject:
@@ -4402,6 +4402,7 @@ MonoBehaviour:
   nextTutorial: {fileID: 1551715990}
   itemToShow: {fileID: 0}
   uniqueTrigger: 1
+  beeSound: {fileID: 0}
 --- !u!1 &112665980
 GameObject:
   m_ObjectHideFlags: 0
@@ -4720,7 +4721,7 @@ Transform:
   - {fileID: 2010119572}
   - {fileID: 1961634242}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &127766201
 GameObject:
@@ -6232,6 +6233,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 173860246}
+  - component: {fileID: 173860247}
   m_Layer: 0
   m_Name: Shovel Dialogue
   m_TagString: Untagged
@@ -6256,6 +6258,102 @@ Transform:
   m_Father: {fileID: 274822244}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &173860247
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173860245}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b43d102aac6b145468dcaa94a5cccae1, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &177257247
 GameObject:
   m_ObjectHideFlags: 0
@@ -8132,7 +8230,7 @@ Transform:
   - {fileID: 1137933645}
   - {fileID: 1849084840}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &251642164
 GameObject:
@@ -11444,6 +11542,7 @@ MonoBehaviour:
   inventoryH: {fileID: 0}
   itemButton: {fileID: 8229600911976814708, guid: b66a4762b302e1a4a931bf6b30b465a2,
     type: 3}
+  soundpickup: {fileID: 0}
   id: 0
 --- !u!1 &325100974
 GameObject:
@@ -13292,6 +13391,7 @@ MonoBehaviour:
   inventoryH: {fileID: 0}
   itemButton: {fileID: 4454032429951278073, guid: a48682b5d9cea8e49b7e5bf1de042699,
     type: 3}
+  soundpickup: {fileID: 0}
   id: 2
 --- !u!1 &409153761
 GameObject:
@@ -14306,7 +14406,7 @@ Transform:
   - {fileID: 548238655}
   - {fileID: 2096552037}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &465222628
 PrefabInstance:
@@ -14595,7 +14695,7 @@ Transform:
   - {fileID: 1479335826}
   - {fileID: 985539636}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &480759075
 GameObject:
@@ -15575,7 +15675,7 @@ PrefabInstance:
     - target: {fileID: 3275343789370190728, guid: 3935793174c44ef448e00aaccac962cd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3275343789370190728, guid: 3935793174c44ef448e00aaccac962cd,
         type: 3}
@@ -15650,12 +15750,12 @@ PrefabInstance:
     - target: {fileID: 3275343789748710520, guid: 3935793174c44ef448e00aaccac962cd,
         type: 3}
       propertyPath: levelTransitionGoodTime
-      value: TranLevel3-N
+      value: TranLevel3-L
       objectReference: {fileID: 0}
     - target: {fileID: 3275343789748710520, guid: 3935793174c44ef448e00aaccac962cd,
         type: 3}
       propertyPath: levelTransitionBadTime
-      value: TranLevel3-L
+      value: TranLevel3-N
       objectReference: {fileID: 0}
     - target: {fileID: 3275343789748710520, guid: 3935793174c44ef448e00aaccac962cd,
         type: 3}
@@ -16979,6 +17079,7 @@ MonoBehaviour:
   inventoryH: {fileID: 0}
   itemButton: {fileID: 4454032429951278073, guid: a48682b5d9cea8e49b7e5bf1de042699,
     type: 3}
+  soundpickup: {fileID: 0}
   id: 2
 --- !u!61 &582890367
 BoxCollider2D:
@@ -18943,7 +19044,7 @@ Transform:
   - {fileID: 986485408}
   - {fileID: 97345626}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &698323027
 GameObject:
@@ -20645,6 +20746,7 @@ MonoBehaviour:
   inventoryH: {fileID: 0}
   itemButton: {fileID: 4454032429951278073, guid: a48682b5d9cea8e49b7e5bf1de042699,
     type: 3}
+  soundpickup: {fileID: 0}
   id: 2
 --- !u!1 &787474376
 GameObject:
@@ -21953,6 +22055,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 865695610}
   m_CullTransparentMesh: 0
+--- !u!1001 &866016948
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7603623137095556478, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603623137095556479, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.431195
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603623137095556479, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.1152265
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603623137095556479, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -388.6241
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603623137095556479, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603623137095556479, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603623137095556479, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603623137095556479, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603623137095556479, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603623137095556479, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603623137095556479, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603623137095556479, guid: d840507ffecd5e848bf3466dd6468d83,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d840507ffecd5e848bf3466dd6468d83, type: 3}
 --- !u!1 &875536067
 GameObject:
   m_ObjectHideFlags: 0
@@ -22632,7 +22803,7 @@ Transform:
   m_LocalScale: {x: 0.85877, y: 0.85877, z: 0.85877}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &902468670
 GameObject:
@@ -22961,7 +23132,7 @@ Transform:
   - {fileID: 1851638272}
   - {fileID: 1797326285}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &931988753
 GameObject:
@@ -24952,6 +25123,7 @@ MonoBehaviour:
   inventoryH: {fileID: 0}
   itemButton: {fileID: 8229600911976814708, guid: b66a4762b302e1a4a931bf6b30b465a2,
     type: 3}
+  soundpickup: {fileID: 0}
   id: 0
 --- !u!1 &1043660990
 GameObject:
@@ -28738,7 +28910,7 @@ Transform:
   - {fileID: 843205161}
   - {fileID: 1372340894}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1114619819
 GameObject:
@@ -28951,6 +29123,7 @@ MonoBehaviour:
   nextTutorial: {fileID: 1239618312}
   itemToShow: {fileID: 0}
   uniqueTrigger: 1
+  beeSound: {fileID: 0}
 --- !u!4 &1116216309 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8791488961200541857, guid: 8f62eb39c811460488297837fbfefb06,
@@ -31882,6 +32055,7 @@ MonoBehaviour:
   nextTutorial: {fileID: 1797455393}
   itemToShow: {fileID: 0}
   uniqueTrigger: 1
+  beeSound: {fileID: 0}
 --- !u!4 &1239618315 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8791488961200541857, guid: 8f62eb39c811460488297837fbfefb06,
@@ -32354,6 +32528,7 @@ MonoBehaviour:
   inventoryH: {fileID: 0}
   itemButton: {fileID: 4454032429951278073, guid: a48682b5d9cea8e49b7e5bf1de042699,
     type: 3}
+  soundpickup: {fileID: 0}
   id: 2
 --- !u!61 &1265858508
 BoxCollider2D:
@@ -33618,7 +33793,7 @@ Transform:
   - {fileID: 181820723}
   - {fileID: 155528588}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1306968679
 GameObject:
@@ -42925,6 +43100,7 @@ MonoBehaviour:
   inventoryH: {fileID: 0}
   itemButton: {fileID: 8229600911976814708, guid: b66a4762b302e1a4a931bf6b30b465a2,
     type: 3}
+  soundpickup: {fileID: 0}
   id: 0
 --- !u!1 &1372340893
 GameObject:
@@ -43909,7 +44085,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1412336886
 GameObject:
@@ -44273,6 +44449,7 @@ MonoBehaviour:
   inventoryH: {fileID: 0}
   itemButton: {fileID: 5911754051122080201, guid: 149ab99743957d149b166131f02e75f1,
     type: 3}
+  soundpickup: {fileID: 0}
   id: 9
 --- !u!1 &1428134252
 GameObject:
@@ -45439,6 +45616,7 @@ MonoBehaviour:
   inventoryH: {fileID: 0}
   itemButton: {fileID: 8340438694329823896, guid: 8a82255436d93334b81866a6af96f688,
     type: 3}
+  soundpickup: {fileID: 0}
   id: 9
 --- !u!1 &1474459469
 GameObject:
@@ -45600,7 +45778,7 @@ Transform:
   m_LocalScale: {x: 2.9564476, y: 2.9564476, z: 2.9564476}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1479335825
 GameObject:
@@ -46029,6 +46207,7 @@ MonoBehaviour:
   nextTutorial: {fileID: 1789196911}
   itemToShow: {fileID: 0}
   uniqueTrigger: 1
+  beeSound: {fileID: 0}
 --- !u!4 &1496335218 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8791488961200541857, guid: 8f62eb39c811460488297837fbfefb06,
@@ -46794,6 +46973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9197a5837dd2c964ca4ebbde9510a80c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  extratimerText: {fileID: 0}
   startTime: 10
   isTimerWorking: 1
   levelTrigger: {fileID: 0}
@@ -47185,7 +47365,7 @@ Transform:
   - {fileID: 429342912}
   - {fileID: 264354819}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1552145999
 GameObject:
@@ -48782,7 +48962,7 @@ Transform:
   - {fileID: 1643904176}
   - {fileID: 759867137}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1643904175
 GameObject:
@@ -52581,6 +52761,7 @@ MonoBehaviour:
   inventoryH: {fileID: 0}
   itemButton: {fileID: 3407846364336329381, guid: dcde94970aa75f64a8dcaabfc63dc562,
     type: 3}
+  soundpickup: {fileID: 0}
   id: 6
 --- !u!212 &1709051351
 SpriteRenderer:
@@ -53079,6 +53260,7 @@ MonoBehaviour:
   inventoryH: {fileID: 0}
   itemButton: {fileID: 6169821440640232158, guid: 1b821c32099eb0044a6082e4ecb7f5c4,
     type: 3}
+  soundpickup: {fileID: 0}
   id: 7
 --- !u!61 &1720600416
 BoxCollider2D:
@@ -53687,6 +53869,7 @@ MonoBehaviour:
   ladderCollision: 0
   ladder2Collision: 0
   isLeft: 0
+  soundDamage: {fileID: 0}
 --- !u!61 &1736043793
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53771,6 +53954,7 @@ MonoBehaviour:
   inventoryTip: {fileID: 1288229857}
   imageInv: {fileID: 0}
   inventoryHigh: {fileID: 0}
+  soundinventoryOpen: {fileID: 0}
   inventoryH: {fileID: 0}
   isInvActive: 0
 --- !u!114 &1736043797
@@ -54557,6 +54741,7 @@ MonoBehaviour:
   nextTutorial: {fileID: 1116216306}
   itemToShow: {fileID: 0}
   uniqueTrigger: 1
+  beeSound: {fileID: 0}
 --- !u!4 &1789196914 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8791488961200541857, guid: 8f62eb39c811460488297837fbfefb06,
@@ -55170,6 +55355,7 @@ MonoBehaviour:
   nextTutorial: {fileID: 0}
   itemToShow: {fileID: 0}
   uniqueTrigger: 1
+  beeSound: {fileID: 0}
 --- !u!1 &1824752726
 GameObject:
   m_ObjectHideFlags: 0
@@ -55232,7 +55418,7 @@ Transform:
   - {fileID: 578097422}
   - {fileID: 1955958139}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1830820571
 GameObject:
@@ -56078,7 +56264,7 @@ Transform:
   - {fileID: 849875853}
   - {fileID: 1761374653}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1851970839
 PrefabInstance:
@@ -66873,6 +67059,7 @@ MonoBehaviour:
   inventoryH: {fileID: 0}
   itemButton: {fileID: 7075137620313331235, guid: e8aa9f4ad7e9050419464727991100ac,
     type: 3}
+  soundpickup: {fileID: 0}
   id: 9
 --- !u!1 &2086483573
 GameObject:

@@ -11,6 +11,7 @@ public class Inventory : MonoBehaviour
     public GameObject inventoryTip;
     public  Image imageInv;
     public HighlightInventory inventoryHigh;
+    public AudioSource soundinventoryOpen;
     // public Image imageInvTip;
 
     public GameObject inventoryH;
@@ -22,7 +23,7 @@ public class Inventory : MonoBehaviour
         inventoryHigh = GameObject.FindGameObjectWithTag("UI").GetComponent<HighlightInventory>();
         imageInv = inventoryH.GetComponent<Image>();
         //imageInvTip = inventoryTip.GetComponent<Image>();
-
+        soundinventoryOpen  = GameObject.Find("InventoryHide").GetComponent<AudioSource>();
     }
 
     
@@ -69,6 +70,7 @@ public class Inventory : MonoBehaviour
         {
             //Debug.Log("InvButtonFired");
             isInvActive = !isInvActive;
+            if (soundinventoryOpen != null) soundinventoryOpen.Play();
            
  
             

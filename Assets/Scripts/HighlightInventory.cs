@@ -25,6 +25,11 @@ public class HighlightInventory : MonoBehaviour
     public BuildSystem slot3;
     public BuildSystem slot4;
 
+    public AudioSource soundSelectItem;
+    public AudioSource soundDeselectItem;
+    public AudioSource soundbuild;
+    public AudioSource soundbuildNot;
+
     public bool[] canPlace = new bool[6];
     
     public int currentSlot = 0;
@@ -58,6 +63,11 @@ public class HighlightInventory : MonoBehaviour
             newColor.a = alpha;
             text.color = newColor;
         }
+
+        soundSelectItem = GameObject.Find("InventorySelect").GetComponent<AudioSource>();
+        soundSelectItem = GameObject.Find("InventoryDeselect").GetComponent<AudioSource>();
+        soundbuild = GameObject.Find("BuildSound").GetComponent<AudioSource>();
+        soundbuildNot = GameObject.Find("InventoryNotAllowed").GetComponent<AudioSource>();
     }
 
     // Updating the Inventory highlight
@@ -75,6 +85,7 @@ public class HighlightInventory : MonoBehaviour
                 this.gameObject.GetComponentInChildren<Image>().sprite = noHighlightInventory;
                 isHighlighted = false;
                 slot1.HideItem();
+                if (soundDeselectItem != null) soundDeselectItem.Play();
             }
 
        
@@ -85,6 +96,7 @@ public class HighlightInventory : MonoBehaviour
                 slot3.HideItem();
                 slot4.HideItem();
                 slot1.DropItem();
+                if (soundSelectItem != null) soundSelectItem.Play();
                 this.gameObject.GetComponentInChildren<Image>().sprite = inventory1;
                 currentSlot = 1;
                 isHighlighted = true;
@@ -98,6 +110,7 @@ public class HighlightInventory : MonoBehaviour
             {
             if (isHighlighted && this.gameObject.GetComponentInChildren<Image>().sprite == inventory2)
             {
+                if (soundDeselectItem != null) soundDeselectItem.Play();
 
                 slot2.HideItem();
                 this.gameObject.GetComponentInChildren<Image>().sprite = noHighlightInventory;
@@ -112,6 +125,7 @@ public class HighlightInventory : MonoBehaviour
                 slot3.HideItem();
                 slot4.HideItem();
                 slot2.DropItem();
+                if (soundSelectItem != null) soundSelectItem.Play();
                 this.gameObject.GetComponentInChildren<Image>().sprite = inventory2;
                 currentSlot = 2;
                 isHighlighted = true;
@@ -123,6 +137,7 @@ public class HighlightInventory : MonoBehaviour
             {
             if (isHighlighted && this.gameObject.GetComponentInChildren<Image>().sprite == inventory3)
             {
+                if (soundDeselectItem != null) soundDeselectItem.Play();
                 slot3.HideItem();
                 this.gameObject.GetComponentInChildren<Image>().sprite = noHighlightInventory;
                 isHighlighted = false;
@@ -136,6 +151,7 @@ public class HighlightInventory : MonoBehaviour
                 slot1.HideItem();
                 slot4.HideItem();
                 slot3.DropItem();
+                if (soundSelectItem != null) soundSelectItem.Play();
                 this.gameObject.GetComponentInChildren<Image>().sprite = inventory3;
                 currentSlot = 3;
                 isHighlighted = true;
@@ -147,6 +163,7 @@ public class HighlightInventory : MonoBehaviour
 
             if (isHighlighted && this.gameObject.GetComponentInChildren<Image>().sprite == inventory4)
             {
+                if (soundDeselectItem != null) soundDeselectItem.Play();
                 slot4.HideItem();
                 this.gameObject.GetComponentInChildren<Image>().sprite = noHighlightInventory;
                 isHighlighted = false;
@@ -160,6 +177,7 @@ public class HighlightInventory : MonoBehaviour
                 slot3.HideItem();
                 slot1.HideItem();
                 slot4.DropItem();
+                if (soundSelectItem != null) soundSelectItem.Play();
                 this.gameObject.GetComponentInChildren<Image>().sprite = inventory4;
                 currentSlot = 4;
                 isHighlighted = true;
@@ -172,6 +190,7 @@ public class HighlightInventory : MonoBehaviour
         {
             if (slot1.shadowItem != null && canPlace[1] )
             {
+                if (soundbuild != null) soundbuild.Play();
                 slot1.shadowItem.tag = "Collect";
                 slot1.DestroyItem();
                 
@@ -182,11 +201,13 @@ public class HighlightInventory : MonoBehaviour
             }
             else if (slot1.shadowItem != null && !canPlace[1])
             {
+                if (soundbuildNot != null) soundbuildNot.Play();
                 Debug.Log("Cannot Place current item");
             }
             else
             if (slot2.shadowItem != null && canPlace[2] )
             {
+                if (soundbuild != null) soundbuild.Play();
                 slot2.DestroyItem();
                 slot2.shadowItem.tag = "Collect";
                 slot2.shadowItem = null;
@@ -197,10 +218,12 @@ public class HighlightInventory : MonoBehaviour
             
             else if (slot2.shadowItem != null && !canPlace[2])
             {
+                if (soundbuildNot != null) soundbuildNot.Play();
                 Debug.Log("Cannot Place current item");
             }
             else if (slot3.shadowItem != null && canPlace[3])
             {
+                if (soundbuild != null) soundbuild.Play();
                 slot3.DestroyItem();
                 slot3.shadowItem.tag = "Collect";
                 slot3.shadowItem = null;
@@ -210,11 +233,13 @@ public class HighlightInventory : MonoBehaviour
             }
             else if (slot3.shadowItem != null && !canPlace[3])
             {
+                if (soundbuildNot != null) soundbuildNot.Play();
                 Debug.Log("Cannot Place current item");
             }
             else
             if (slot4.shadowItem != null && canPlace[4])
             {
+                if (soundbuild != null) soundbuild.Play();
                 slot4.DestroyItem();
                 slot4.shadowItem.tag = "Collect";
                 slot4.shadowItem = null;
@@ -224,6 +249,7 @@ public class HighlightInventory : MonoBehaviour
             }
             else if (slot4.shadowItem != null && !canPlace[4])
             {
+                if (soundbuildNot != null) soundbuildNot.Play();
                 Debug.Log("Cannot Place current item");
             }
             

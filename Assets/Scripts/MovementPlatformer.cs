@@ -50,10 +50,13 @@ public class MovementPlatformer : MonoBehaviour
 
     public bool isLeft = false;
 
+    public AudioSource soundDamage;
+
     private Vector3 respawnPosition;
     // Start is called before the first frame update
     void Start()
     {
+        
         oldposition = defaultCamera.transform.position;
         oldfieldofview = defaultCamera.fieldOfView;
         canMove = false;
@@ -65,6 +68,7 @@ public class MovementPlatformer : MonoBehaviour
         {
             respawnPosition = this.transform.position;
         }
+        soundDamage = GameObject.Find("SoundDamage").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -312,6 +316,8 @@ public class MovementPlatformer : MonoBehaviour
             //Debug.Log("Attack");
             if(!collision.gameObject.GetComponent<Animator>().GetBool("Stop")){
                 collision.gameObject.GetComponent<Animator>().SetTrigger("Attack");
+
+              if (soundDamage != null)  soundDamage.Play();
                 this.transform.position = respawnPosition;
             }
         }
