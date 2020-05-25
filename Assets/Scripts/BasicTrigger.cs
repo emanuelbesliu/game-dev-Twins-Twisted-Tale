@@ -32,7 +32,7 @@ public class BasicTrigger : MonoBehaviour
     void OnTriggerStay2D(Collider2D other)
     {
 
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") || other.CompareTag("FlowerBoss"))
         {
             if (SceneManager.GetActiveScene().name == "Level1-3G" || SceneManager.GetActiveScene().name == "Level1-3L"|| SceneManager.GetActiveScene().name == "Level1-3N")
             {
@@ -57,7 +57,7 @@ public class BasicTrigger : MonoBehaviour
                     shovelObject1 = GameObject.FindGameObjectWithTag("FlowerBoss");
 
                     if (shovelObject1 != null  && !itemToShow.activeSelf) {
-                        
+                        Debug.Log("Fired");
                         itemToShow.SetActive(true);
 
                         Destroy(shovelObject1);
