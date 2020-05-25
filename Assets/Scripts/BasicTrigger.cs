@@ -15,6 +15,8 @@ public class BasicTrigger : MonoBehaviour
     private GameObject shovelObject2;
     private GameObject shovelObject3;
 
+    public AudioSource beeSound;
+
 
     void Awake()
     {
@@ -57,6 +59,7 @@ public class BasicTrigger : MonoBehaviour
                     shovelObject1 = GameObject.FindGameObjectWithTag("FlowerBoss");
 
                     if (shovelObject1 != null  && !itemToShow.activeSelf) {
+
                         Debug.Log("Fired");
                         itemToShow.SetActive(true);
 
