@@ -62,18 +62,28 @@ public class InGameMenu : MonoBehaviour
         settingsMenu.SetActive(false);
         helpMenu.SetActive(false);
         menu.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(resume.gameObject);
+        resume.Select ();
+        resume.OnSelect (null);
     }
 
     void HelpOnClick(){
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(backHelp.gameObject, new BaseEventData(EventSystem.current));
         settingsMenu.SetActive(false);
         menu.SetActive(false);
         helpMenu.SetActive(true);
+        backHelp.Select ();
+        backHelp.OnSelect (null);
     }
 
     void SettingsOnClick(){
+        EventSystem.current.SetSelectedGameObject(backSettings.gameObject);
         menu.SetActive(false);
         helpMenu.SetActive(false);
         settingsMenu.SetActive(true);
+        backSettings.Select ();
+        backSettings.OnSelect (null);
     }
 
     void MainMenuOnClick(){
@@ -84,6 +94,11 @@ public class InGameMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (EventSystem.current.currentSelectedGameObject == null)
+         {
+             Debug.Log("Reselecting first input");
+             EventSystem.current.SetSelectedGameObject(EventSystem.current.firstSelectedGameObject);
+         }
 
         if(Input.GetButtonDown("ESC")){
             if(block.activeSelf){
@@ -93,7 +108,8 @@ public class InGameMenu : MonoBehaviour
                 light.SetActive(true);
             }else{
                 //script.pause = false;
-                //EventSystem.current.SetSelectedGameObject(resume.gameObject);
+                EventSystem.current.SetSelectedGameObject(null);
+                EventSystem.current.SetSelectedGameObject(resume.gameObject, new BaseEventData(EventSystem.current));
                 block.SetActive(true);
                 light.SetActive(false);
                 if(menu.activeSelf){
@@ -102,6 +118,9 @@ public class InGameMenu : MonoBehaviour
 
                 }
                 Time.timeScale=0;
+
+                resume.Select ();
+                resume.OnSelect (null);
             }
         }
 
