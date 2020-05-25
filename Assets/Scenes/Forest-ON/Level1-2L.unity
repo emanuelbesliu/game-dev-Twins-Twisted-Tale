@@ -32233,6 +32233,11 @@ PrefabInstance:
       propertyPath: levelTrigger
       value: 
       objectReference: {fileID: 289509176}
+    - target: {fileID: 3275343789748710520, guid: 3935793174c44ef448e00aaccac962cd,
+        type: 3}
+      propertyPath: startTime
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 3275343789748710791, guid: 3935793174c44ef448e00aaccac962cd,
         type: 3}
       propertyPath: m_AnchoredPosition.x
