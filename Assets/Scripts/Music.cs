@@ -13,6 +13,8 @@ public class Music : MonoBehaviour
     void Awake()
     {
         DontDestroyOnLoad(transform.gameObject);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Use this for initialization

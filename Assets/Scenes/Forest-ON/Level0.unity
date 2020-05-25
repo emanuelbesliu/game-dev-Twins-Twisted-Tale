@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -11783,14 +11783,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 6
     m_SelectOnUp: {fileID: 1631180067}
     m_SelectOnDown: {fileID: 1221865636}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.5, g: 0.017067172, b: 0.0070754588, a: 1}
     m_PressedColor: {r: 0.3773585, g: 0.005339969, b: 0.005339969, a: 1}
     m_SelectedColor: {r: 0.5660378, g: 0, b: 0, a: 1}
@@ -11826,7 +11826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -12078,10 +12078,10 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.59
-  m_Color: {r: 0.8018868, g: 0.4540994, b: 0.04160734, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.2
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 5ff50ec0
+  m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -12163,7 +12163,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.5, g: 0.017067172, b: 0.0070754588, a: 1}
     m_PressedColor: {r: 0.3773585, g: 0.005339969, b: 0.005339969, a: 1}
     m_SelectedColor: {r: 0.5660378, g: 0, b: 0, a: 1}
@@ -12199,7 +12199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -12333,12 +12333,12 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Thank you, little girl
 
-
     Your kindness will be
 
-    paid back one
-    day...
+    paid back one day...
 
+    (PRESS
+    I)
 
 '
 --- !u!222 &1131980492
@@ -13530,7 +13530,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -91, y: 75.3}
+  m_AnchoredPosition: {x: -22.1, y: 227.8}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1325568130
@@ -14395,7 +14395,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425651439}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.92, y: 4.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1093296964}
@@ -15208,9 +15208,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: '
 
-    I''m soo hungry...
-
-'
+    I''m soo hungry...'
 --- !u!222 &1514780164
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16813,7 +16811,7 @@ MonoBehaviour:
     That green light looks
 
     so
-    suspicious.'
+    suspicious. (PRESS I)'
 --- !u!222 &1637424834
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19157,7 +19155,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "I've got trapped here...\n\nI could escape If only \nI was in power\n"
+  m_Text: "I've got trapped here...\n\nI could escape If only \nI was in power (PRESS
+    I)\n"
 --- !u!222 &1870275855
 CanvasRenderer:
   m_ObjectHideFlags: 0
