@@ -60,6 +60,11 @@ public class MovementPlatformer : MonoBehaviour
         //rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 3;
         coll = GetComponentInParent<Collision>();
+
+        if (SceneManager.GetActiveScene().name == "Level1-4G" || SceneManager.GetActiveScene().name == "Level1-4N"|| SceneManager.GetActiveScene().name == "Level1-4L")
+        {
+            respawnPosition = this.transform.position;
+        }
     }
 
     // Update is called once per frame

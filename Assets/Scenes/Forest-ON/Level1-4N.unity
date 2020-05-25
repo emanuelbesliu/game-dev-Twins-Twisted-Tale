@@ -20540,6 +20540,7 @@ MonoBehaviour:
   helpMenu: {fileID: 452024302}
   settingsMenu: {fileID: 1091982807}
   level: {fileID: 645777032}
+  volumeSlider: {fileID: 0}
   light: {fileID: 829452211}
   script: {fileID: 0}
   resume: {fileID: 758277069}
@@ -36397,7 +36398,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1252521085}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.98, y: -9.71, z: 30.033302}
+  m_LocalPosition: {x: -12.37, y: -3.05, z: 30.033302}
   m_LocalScale: {x: 3.62689, y: 3.62689, z: 3.62689}
   m_Children: []
   m_Father: {fileID: 1250979029}
@@ -36416,7 +36417,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.04126388, y: 1.4265469}
+  m_Offset: {x: 0.11881451, y: 1.096062}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -36427,7 +36428,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5842521, y: 1.0365765}
+  m_Size: {x: 1.2348939, y: 0.375607}
   m_EdgeRadius: 0
 --- !u!212 &1252521088
 SpriteRenderer:
