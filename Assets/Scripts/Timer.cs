@@ -7,7 +7,8 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
 
-    private Text timerText;
+    private Text timerText; 
+    public Text extratimerText;
     public float startTime;
     public bool isTimerWorking = false;
     private float timerDelay = 0;
@@ -24,6 +25,7 @@ public class Timer : MonoBehaviour
           //startTime = Time.time;
         timerText = this.GetComponent<Text>();
         isTimerWorking = true;
+        //ExtraTime(10);
        
         try
         {
@@ -42,8 +44,27 @@ public class Timer : MonoBehaviour
     }
     public void AddTime(float timeToAdd)
     {
+        StartCoroutine(ExtraTime(timeToAdd));
+        //Debug.Log("Extra time show");
         timerDelay += timeToAdd;
+        
     }
+
+    IEnumerator ExtraTime(float delay)
+    
+    {
+       // Debug.Log("Extra time show")
+        string seconds = (delay % 60).ToString("f0");
+
+       
+        extratimerText.text =" + " + seconds;
+
+        yield return new WaitForSeconds(2);
+       // Debug.Log("Extra time hide");
+        extratimerText.text = " ";
+
+    }
+
 
 
         // Update is called once per frame
