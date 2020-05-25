@@ -102,8 +102,10 @@ public class MainMenuAnim : MonoBehaviour
         if(settings.activeSelf){
             if(Input.GetButtonDown("Left")){
                 volumeSlider.value -= 0.05f;
+                GameObject.FindGameObjectWithTag("Music").GetComponent<Music>().changeVolume(volumeSlider.value);
             }else if(Input.GetButtonDown("Right")){
                 volumeSlider.value += 0.05f;
+                GameObject.FindGameObjectWithTag("Music").GetComponent<Music>().changeVolume(volumeSlider.value);
             }
         }
         //float h = Input.GetAxis("Horizontal");
