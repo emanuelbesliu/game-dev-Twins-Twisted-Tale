@@ -27,6 +27,15 @@ public class Music : MonoBehaviour
             catch { }
         }
 
+        if (SceneManager.GetActiveScene().name == "MainMenu")
+        {
+            audioSource.clip = soundtrack[0];
+            Debug.Log("Changed music");
+
+            audioSource.Play();
+            isMusicPlaying = true;
+
+        }
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -52,7 +61,7 @@ public class Music : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     
+
         if (currentLevel != SceneManager.GetActiveScene().name)
         {
             isMusicPlaying = false;
@@ -121,7 +130,6 @@ public class Music : MonoBehaviour
 
 
         }
-       
 
 
         if (volumeSlider == null){
@@ -143,7 +151,7 @@ public class Music : MonoBehaviour
 
     void OnEnable()
     {
-       
+
         //Register Slider Events
         volumeSlider.onValueChanged.AddListener(delegate { changeVolume(volumeSlider.value); });
     }
@@ -158,11 +166,11 @@ public class Music : MonoBehaviour
     {
         //Un-Register Slider Events
         volumeSlider.onValueChanged.RemoveAllListeners();
-       
+
       //  if (SceneManager.GetActiveScene().name == "Level1-3G" || SceneManager.GetActiveScene().name == "Level1-3L" || SceneManager.GetActiveScene().name == "Level1-3N")
           //  if (SceneManager.GetActiveScene().name == "Level1-3G" || SceneManager.GetActiveScene().name == "Level1-3L" || SceneManager.GetActiveScene().name == "Level1-3N")
            //     if (SceneManager.GetActiveScene().name == "Level1-3G" || SceneManager.GetActiveScene().name == "Level1-3L" || SceneManager.GetActiveScene().name == "Level1-3N")
-                    
+
 
 
     }
