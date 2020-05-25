@@ -3471,13 +3471,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundtrack:
-  - {fileID: 8300000, guid: 04f6dc147dfb1544d8a8775a3bf5b552, type: 3}
-  - {fileID: 8300000, guid: ecb57703d4df9a449865d87485cb27fc, type: 3}
-  - {fileID: 8300000, guid: 2a1c5a33ad6500a47af4ed6d9a0cedc1, type: 3}
-  - {fileID: 8300000, guid: 92f729eac30e38048b19656072741861, type: 3}
-  - {fileID: 8300000, guid: 9f8c755820988f440a2a9ddb2024c106, type: 3}
+  - {fileID: 8300000, guid: 85be9af6fe5104ea7a1b43ed1761b604, type: 3}
+  - {fileID: 8300000, guid: d6f38596ddb5d4914b6c840005147737, type: 3}
+  - {fileID: 8300000, guid: 6c2989b47e6274ef48cfcccf3bab0021, type: 3}
+  - {fileID: 8300000, guid: 6ba278b13b4f9410592b475fe395ecfb, type: 3}
+  - {fileID: 8300000, guid: d3c40447e7fcf461aa7f5bb8b8fc2ac3, type: 3}
   - {fileID: 8300000, guid: 24b73476f149b9c4a8d4f7c760f6652b, type: 3}
-  - {fileID: 8300000, guid: 100c26022f1c262449f1c1caef3e59ce, type: 3}
+  - {fileID: 8300000, guid: 3529052bee39e407289df774571f2f29, type: 3}
   volumeSlider: {fileID: 11675943}
   audioSource: {fileID: 470933683}
   currentLevel: 

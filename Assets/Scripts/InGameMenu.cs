@@ -88,6 +88,7 @@ public class InGameMenu : MonoBehaviour
     }
 
     void MainMenuOnClick(){
+        Destroy(GameObject.FindGameObjectWithTag("Music"));
         level.FadeToLevel(0);
         Time.timeScale=1;
     }
