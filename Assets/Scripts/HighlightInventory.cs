@@ -66,7 +66,7 @@ public class HighlightInventory : MonoBehaviour
 
         soundSelectItem = GameObject.Find("InventorySelect").GetComponent<AudioSource>();
         soundSelectItem = GameObject.Find("InventoryDeselect").GetComponent<AudioSource>();
-        soundbuild = GameObject.Find("BuildBlock").GetComponent<AudioSource>();
+        soundbuild = GameObject.Find("BuildSound").GetComponent<AudioSource>();
         soundbuildNot = GameObject.Find("InventoryNotAllowed").GetComponent<AudioSource>();
     }
 
