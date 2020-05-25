@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -11890,12 +11890,12 @@ PrefabInstance:
     - target: {fileID: 8831831850762210979, guid: c26c1b12dba3125429278ef66fc1c499,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.9522
+      value: 25.29
       objectReference: {fileID: 0}
     - target: {fileID: 8831831850762210979, guid: c26c1b12dba3125429278ef66fc1c499,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -17.201324
+      value: -17.32
       objectReference: {fileID: 0}
     - target: {fileID: 8831831850762210979, guid: c26c1b12dba3125429278ef66fc1c499,
         type: 3}
@@ -21752,7 +21752,7 @@ MonoBehaviour:
   imageInv: {fileID: 0}
   inventoryHigh: {fileID: 0}
   inventoryH: {fileID: 394517748}
-  isInvActive: 1
+  isInvActive: 0
 --- !u!1 &1177546113
 GameObject:
   m_ObjectHideFlags: 0
@@ -32233,6 +32233,11 @@ PrefabInstance:
       propertyPath: levelTrigger
       value: 
       objectReference: {fileID: 289509176}
+    - target: {fileID: 3275343789748710520, guid: 3935793174c44ef448e00aaccac962cd,
+        type: 3}
+      propertyPath: startTime
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 3275343789748710791, guid: 3935793174c44ef448e00aaccac962cd,
         type: 3}
       propertyPath: m_AnchoredPosition.x

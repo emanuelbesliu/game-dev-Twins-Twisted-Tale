@@ -12095,7 +12095,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0016959906, y: 0}
+  m_Offset: {x: 0.017833173, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -12106,7 +12106,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.28268808, y: 0.21}
+  m_Size: {x: 0.17152071, y: 0.21}
   m_EdgeRadius: 0
 --- !u!114 &301639168
 MonoBehaviour:
@@ -13358,7 +13358,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.010175958, y: 0}
+  m_Offset: {x: 0.011759695, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -13369,7 +13369,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.25894418, y: 0.21}
+  m_Size: {x: 0.18609214, y: 0.21}
   m_EdgeRadius: 0
 --- !u!114 &360007282
 MonoBehaviour:
@@ -16944,6 +16944,11 @@ PrefabInstance:
         type: 3}
       propertyPath: levelTransitionWorstTime
       value: TranLevel3-G
+      objectReference: {fileID: 0}
+    - target: {fileID: 3275343789748710520, guid: 3935793174c44ef448e00aaccac962cd,
+        type: 3}
+      propertyPath: startTime
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 3275343789748710791, guid: 3935793174c44ef448e00aaccac962cd,
         type: 3}
@@ -26985,7 +26990,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &928327333
 Transform:
   m_ObjectHideFlags: 0
@@ -33843,12 +33848,12 @@ PrefabInstance:
     - target: {fileID: 4071709347793050333, guid: 25f2687163ffdcf4880993ee684b3454,
         type: 3}
       propertyPath: m_Offset.y
-      value: -0.0063374043
+      value: -0.0030977726
       objectReference: {fileID: 0}
     - target: {fileID: 4071709347793050333, guid: 25f2687163ffdcf4880993ee684b3454,
         type: 3}
       propertyPath: m_Size.y
-      value: 1.0124192
+      value: 1.0188985
       objectReference: {fileID: 0}
     - target: {fileID: 4378918632260183334, guid: 25f2687163ffdcf4880993ee684b3454,
         type: 3}
@@ -33923,12 +33928,12 @@ PrefabInstance:
     - target: {fileID: 4598706439246887904, guid: 25f2687163ffdcf4880993ee684b3454,
         type: 3}
       propertyPath: m_Offset.x
-      value: -0.27301884
+      value: -0.5888691
       objectReference: {fileID: 0}
     - target: {fileID: 4598706439246887904, guid: 25f2687163ffdcf4880993ee684b3454,
         type: 3}
       propertyPath: m_Size.x
-      value: 1.4803715
+      value: 0.4770832
       objectReference: {fileID: 0}
     - target: {fileID: 4598706439246887910, guid: 25f2687163ffdcf4880993ee684b3454,
         type: 3}
@@ -51192,12 +51197,12 @@ PrefabInstance:
     - target: {fileID: 4598706439246887904, guid: 25f2687163ffdcf4880993ee684b3454,
         type: 3}
       propertyPath: m_Offset.x
-      value: -0.27301884
+      value: -0.52632904
       objectReference: {fileID: 0}
     - target: {fileID: 4598706439246887904, guid: 25f2687163ffdcf4880993ee684b3454,
         type: 3}
       propertyPath: m_Size.x
-      value: 1.4803715
+      value: 0.32896423
       objectReference: {fileID: 0}
     - target: {fileID: 4598706439246887910, guid: 25f2687163ffdcf4880993ee684b3454,
         type: 3}
@@ -51687,7 +51692,7 @@ MonoBehaviour:
   imageInv: {fileID: 0}
   inventoryHigh: {fileID: 0}
   inventoryH: {fileID: 0}
-  isInvActive: 1
+  isInvActive: 0
 --- !u!114 &1736043797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66046,7 +66051,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2063631295
 Transform:
   m_ObjectHideFlags: 0
@@ -66143,7 +66148,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.008479983, y: 0}
+  m_Offset: {x: 0.00847999, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -66154,7 +66159,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.28268814, y: 0.21}
+  m_Size: {x: 0.20773087, y: 0.21}
   m_EdgeRadius: 0
 --- !u!114 &2063631299
 MonoBehaviour:
