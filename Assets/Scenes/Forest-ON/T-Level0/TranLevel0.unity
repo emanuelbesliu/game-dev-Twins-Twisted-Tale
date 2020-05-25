@@ -946,7 +946,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   script: {fileID: 80758676}
   mp: {fileID: 197138630}
-  lc: {fileID: 0}
+  lc: {fileID: 272812206}
   speechGreen: {fileID: 1175285212}
   speechGreen2: {fileID: 1616153028}
   speechRed: {fileID: 685118147}

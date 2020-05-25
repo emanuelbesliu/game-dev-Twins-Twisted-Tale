@@ -14254,7 +14254,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1375798771}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -15717,7 +15717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea6d17d46c0514a0fac8e10837dadadf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadlevel: {fileID: 0}
+  loadlevel: {fileID: 876575768}
   clouds: {fileID: 475721367}
   trollspeach: {fileID: 510186227}
   red: {fileID: 620616459}
