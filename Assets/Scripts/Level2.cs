@@ -10,6 +10,7 @@ public class Level2 : MonoBehaviour
     public GameObject guardianText1;
     public GameObject guardianText2;
     public GameObject guardianText3;
+    public GameObject guardianText4;
 
     public GameObject antsD;
     public GameObject antsInfo;
@@ -47,17 +48,21 @@ public class Level2 : MonoBehaviour
 
     IEnumerator GuardianSpeech(){
         guardianD.SetActive(true);
-        yield return new WaitForSeconds(15f);
+        yield return new WaitForSeconds(10f);
         guardianD.SetActive(false);
-        yield return new WaitForSeconds(25f);
+        yield return new WaitForSeconds(15f);
         guardianD.SetActive(true);
         guardianText1.SetActive(false);
         guardianText2.SetActive(true);
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(7f);
         guardianD.SetActive(false);
-        yield return new WaitForSeconds(30f);
+        yield return new WaitForSeconds(5f);
         guardianD.SetActive(true);
         guardianText2.SetActive(false);
+        guardianText4.SetActive(true);
+        yield return new WaitForSeconds(20f);
+        guardianD.SetActive(true);
+        guardianText4.SetActive(false);
         guardianText3.SetActive(true);
     }
 }

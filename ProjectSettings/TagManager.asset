@@ -38,6 +38,7 @@ TagManager:
   - redNPC
   - levelTrigger
   - UITIP
+  - Slider
   layers:
   - Default
   - TransparentFX
