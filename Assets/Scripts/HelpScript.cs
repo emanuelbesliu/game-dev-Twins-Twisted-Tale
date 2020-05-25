@@ -30,7 +30,7 @@ public class HelpScript : MonoBehaviour
             {
                platformBee1 = GameObject.Find("beehelpplatform1");
                 platformBee2 = GameObject.Find("beehelpplatform2");
-               
+
 
             }
             if (SceneManager.GetActiveScene().name == "Level1-2G" || SceneManager.GetActiveScene().name == "Level1-2L" || SceneManager.GetActiveScene().name == "Level1-2N")
@@ -50,7 +50,7 @@ public class HelpScript : MonoBehaviour
         }
         if (platformBee1 != null && platformBee2 !=null)
         {
-            
+
             if (platformBee1.activeSelf && platformBee2.activeSelf)
             {
                 if (SceneManager.GetActiveScene().name == "Level1-1") beeHelp = true;
@@ -58,6 +58,5 @@ public class HelpScript : MonoBehaviour
 
             }
         }
-        
     }
 }
