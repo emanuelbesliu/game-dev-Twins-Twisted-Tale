@@ -58,6 +58,10 @@ public class OffSetTrigger : MonoBehaviour
         }
         return closest;
     }
+    void Update()
+    {
+        if (currentObject != null && currentObject.id == 6) inventoryH.canPlace[inventoryH.currentSlot] = false;
+    }
 
 // Trigger the changing of the offset variables to proper sizes;
 
