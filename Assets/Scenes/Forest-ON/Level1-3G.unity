@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -17372,12 +17372,12 @@ PrefabInstance:
     - target: {fileID: 3275343789748710520, guid: 3935793174c44ef448e00aaccac962cd,
         type: 3}
       propertyPath: levelTransitionGoodTime
-      value: TranLevel3-N
+      value: TranLevel3-L
       objectReference: {fileID: 0}
     - target: {fileID: 3275343789748710520, guid: 3935793174c44ef448e00aaccac962cd,
         type: 3}
       propertyPath: levelTransitionBadTime
-      value: TranLevel3-L
+      value: TranLevel3-N
       objectReference: {fileID: 0}
     - target: {fileID: 3275343789748710520, guid: 3935793174c44ef448e00aaccac962cd,
         type: 3}

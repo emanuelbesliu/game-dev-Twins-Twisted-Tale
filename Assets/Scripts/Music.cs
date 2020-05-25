@@ -108,7 +108,7 @@ public class Music : MonoBehaviour
                 isMusicPlaying = true;
 
             }
-             if (SceneManager.GetActiveScene().name == "Level1-5N" || SceneManager.GetActiveScene().name == "Level1-5LG")
+             if (SceneManager.GetActiveScene().name == "Level1-5-N" || SceneManager.GetActiveScene().name == "Level1-5-LG")
             {
                 audioSource.clip = soundtrack[5];
                 Debug.Log("Changed music");

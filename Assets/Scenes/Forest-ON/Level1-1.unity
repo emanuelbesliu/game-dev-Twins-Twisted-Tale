@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -8955,6 +8955,7 @@ MonoBehaviour:
   ladderCollision: 0
   ladder2Collision: 0
   isLeft: 0
+  soundDamage: {fileID: 0}
 --- !u!61 &299971393
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27356,8 +27357,8 @@ MonoBehaviour:
   startTime: 60
   isTimerWorking: 0
   levelTrigger: {fileID: 0}
-  levelTransitionGoodTime: TranLevel1-N
-  levelTransitionBadTime: TranLevel1-L
+  levelTransitionGoodTime: TranLevel1-L
+  levelTransitionBadTime: TranLevel1-N
   levelTransitionWorstTime: TranLevel1-G
   leavingAnimation: {fileID: 2137032093}
 --- !u!1 &1159087941 stripped
