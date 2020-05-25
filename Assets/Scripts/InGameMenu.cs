@@ -12,6 +12,7 @@ public class InGameMenu : MonoBehaviour
     public GameObject settingsMenu;
 
     public LoadLevel level;
+    public Slider volumeSlider;
 
     public GameObject light;
     public Level0 script;
@@ -96,8 +97,16 @@ public class InGameMenu : MonoBehaviour
     {
         if (EventSystem.current.currentSelectedGameObject == null)
          {
-             Debug.Log("Reselecting first input");
+             //Debug.Log("Reselecting first input");
              EventSystem.current.SetSelectedGameObject(EventSystem.current.firstSelectedGameObject);
+         }
+
+         if(settingsMenu.activeSelf){
+            if(Input.GetButtonDown("Left")){
+                volumeSlider.value -= 0.05f;
+            }else if(Input.GetButtonDown("Right")){
+                volumeSlider.value += 0.05f;
+            }
          }
 
         if(Input.GetButtonDown("ESC")){

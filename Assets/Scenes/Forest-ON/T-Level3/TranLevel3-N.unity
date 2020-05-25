@@ -6760,6 +6760,7 @@ MonoBehaviour:
   helpMenu: {fileID: 369359171}
   settingsMenu: {fileID: 1517650123}
   level: {fileID: 569161192}
+  volumeSlider: {fileID: 996762896}
   light: {fileID: 343781434}
   script: {fileID: 0}
   resume: {fileID: 519067113}

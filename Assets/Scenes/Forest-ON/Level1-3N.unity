@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -55025,6 +55025,7 @@ MonoBehaviour:
   helpMenu: {fileID: 875299050}
   settingsMenu: {fileID: 1177377848}
   level: {fileID: 1822030577}
+  volumeSlider: {fileID: 1583124667}
   light: {fileID: 1256861160}
   script: {fileID: 0}
   resume: {fileID: 2015326450}

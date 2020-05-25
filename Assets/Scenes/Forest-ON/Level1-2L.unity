@@ -2653,6 +2653,7 @@ MonoBehaviour:
   helpMenu: {fileID: 1194216032}
   settingsMenu: {fileID: 1654935730}
   level: {fileID: 156792323}
+  volumeSlider: {fileID: 996824945}
   light: {fileID: 237585183}
   script: {fileID: 0}
   resume: {fileID: 478404400}

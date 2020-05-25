@@ -11980,6 +11980,7 @@ MonoBehaviour:
   helpMenu: {fileID: 1097918518}
   settingsMenu: {fileID: 1519879470}
   level: {fileID: 1178960080}
+  volumeSlider: {fileID: 1899861671}
   light: {fileID: 1282175884}
   script: {fileID: 0}
   resume: {fileID: 451573037}
