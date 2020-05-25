@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -13037,6 +13037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9197a5837dd2c964ca4ebbde9510a80c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  extratimerText: {fileID: 0}
   startTime: 10
   isTimerWorking: 1
   levelTrigger: {fileID: 0}
@@ -31276,7 +31277,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -783.4, y: -193.6}
+  m_AnchoredPosition: {x: -780.7, y: 29.1}
   m_SizeDelta: {x: 168, y: 61.38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1216247569
@@ -38666,7 +38667,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606883098}
   m_LocalRotation: {x: 0.023087217, y: -0.99937457, z: -0.00047248634, w: 0.026782352}
-  m_LocalPosition: {x: -17.7, y: -14.55, z: 5006.3906}
+  m_LocalPosition: {x: -17.7, y: -8.27, z: 5006.3906}
   m_LocalScale: {x: 5.260459, y: 5.26045, z: 5.26046}
   m_Children:
   - {fileID: 458656623}
@@ -38789,7 +38790,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 348821225
   m_SortingLayer: 4
-  m_SortingOrder: 11
+  m_SortingOrder: 120
   m_Sprite: {fileID: 21300000, guid: b44ad350aab99416da042ed03d420869, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
