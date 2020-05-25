@@ -15,9 +15,15 @@ public class Music : MonoBehaviour
     {
         DontDestroyOnLoad(transform.gameObject);
         if(SceneManager.GetActiveScene().name == "MainMenu" || SceneManager.GetActiveScene().name == "TranMainMenu"){
-            volumeSlider = GameObject.FindGameObjectWithTag("Slider").GetComponent<Slider>();
-            GameObject.FindGameObjectWithTag("Settings").SetActive(false);
+            try
+            {
+                volumeSlider = GameObject.FindGameObjectWithTag("Slider").GetComponent<Slider>();
+                GameObject.FindGameObjectWithTag("Settings").SetActive(false);
+            }
+            catch { }
         }
+
+        
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -26,7 +32,7 @@ public class Music : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        
         audioSource = GetComponent<AudioSource>();
         //Debug.Log(audioSource.volume);
         audioSource.volume = 0.5f;
@@ -42,7 +48,18 @@ public class Music : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(volumeSlider == null){
+        Debug.Log(SceneManager.GetActiveScene().name);
+        if (SceneManager.GetActiveScene().name == "Level0")
+        {
+            audioSource.clip = soundtrack[1];
+            Debug.Log("Changed music");
+            
+            audioSource.Play();
+
+        }
+
+
+        if (volumeSlider == null){
             volumeSlider = GameObject.FindGameObjectWithTag("LevelChanger").GetComponent<InGameMenu>().volumeSlider;
         }else{
             volumeSlider.value = audioSource.volume;
@@ -71,5 +88,12 @@ public class Music : MonoBehaviour
     {
         //Un-Register Slider Events
         volumeSlider.onValueChanged.RemoveAllListeners();
+       
+      //  if (SceneManager.GetActiveScene().name == "Level1-3G" || SceneManager.GetActiveScene().name == "Level1-3L" || SceneManager.GetActiveScene().name == "Level1-3N")
+          //  if (SceneManager.GetActiveScene().name == "Level1-3G" || SceneManager.GetActiveScene().name == "Level1-3L" || SceneManager.GetActiveScene().name == "Level1-3N")
+           //     if (SceneManager.GetActiveScene().name == "Level1-3G" || SceneManager.GetActiveScene().name == "Level1-3L" || SceneManager.GetActiveScene().name == "Level1-3N")
+                    
+
+
     }
 }
