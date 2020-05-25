@@ -12,6 +12,7 @@ public class RedLevel0 : MonoBehaviour
     public GameObject rocket2;
 
     private bool fall = false;
+    private bool firstCollision = false;
     void OnTriggerEnter2D(Collider2D collision)
     { try
         {
@@ -31,8 +32,9 @@ public class RedLevel0 : MonoBehaviour
                 rocket1.gameObject.SetActive(false);
                 rocket2.gameObject.SetActive(true);
             }
-            else if (collision.gameObject.CompareTag("Stop"))
+            else if (collision.gameObject.CompareTag("Stop") && !firstCollision)
             {
+                firstCollision = true;
                 scriptL1.redRun = false;
                 scriptL1.animatorRed.SetFloat("HorizontalAxis", Mathf.Abs(0));
                 GetComponent<SpriteRenderer>().flipX = true;
