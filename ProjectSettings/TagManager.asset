@@ -39,6 +39,10 @@ TagManager:
   - levelTrigger
   - UITIP
   - Slider
+  - Settings
+  - LevelChanger
+  - Menu
+  - Music
   layers:
   - Default
   - TransparentFX

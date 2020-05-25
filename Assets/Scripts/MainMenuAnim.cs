@@ -50,6 +50,10 @@ public class MainMenuAnim : MonoBehaviour
         //exitButton.gameObject.SetActive(false);
         settingsButton.gameObject.SetActive(false);
         play = true;
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(exitButton.gameObject, new BaseEventData(EventSystem.current));
+        exitButton.Select ();
+        exitButton.OnSelect (null);
     }
 
     void ExitOnClick(){

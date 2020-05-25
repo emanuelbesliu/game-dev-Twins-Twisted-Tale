@@ -1,18 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Music : MonoBehaviour
 {
     public AudioClip[] soundtrack;
     public Slider volumeSlider;
 
-    AudioSource audioSource;
+    public AudioSource audioSource;
 
 
     void Awake()
     {
         DontDestroyOnLoad(transform.gameObject);
+        if(SceneManager.GetActiveScene().name == "MainMenu" || SceneManager.GetActiveScene().name == "TranMainMenu"){
+            volumeSlider = GameObject.FindGameObjectWithTag("Slider").GetComponent<Slider>();
+            GameObject.FindGameObjectWithTag("Settings").SetActive(false);
+        }else{
+            volumeSlider = null;
+        }
+
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -20,6 +28,7 @@ public class Music : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
         audioSource = GetComponent<AudioSource>();
         //Debug.Log(audioSource.volume);
         audioSource.volume = 0.5f;
@@ -35,6 +44,10 @@ public class Music : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(volumeSlider == null){
+            volumeSlider = GameObject.FindGameObjectWithTag("LevelChanger").GetComponent<InGameMenu>().volumeSlider;
+        }
+
         if (!audioSource.isPlaying)
         {
             audioSource.clip = soundtrack[Random.Range(0, soundtrack.Length)];
@@ -49,7 +62,7 @@ public class Music : MonoBehaviour
     }
 
     //Called when Slider is moved
-    void changeVolume(float sliderValue)
+    public void changeVolume(float sliderValue)
     {
         audioSource.volume = sliderValue;
     }
