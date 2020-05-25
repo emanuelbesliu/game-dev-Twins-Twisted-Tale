@@ -17,8 +17,6 @@ public class Music : MonoBehaviour
         if(SceneManager.GetActiveScene().name == "MainMenu" || SceneManager.GetActiveScene().name == "TranMainMenu"){
             volumeSlider = GameObject.FindGameObjectWithTag("Slider").GetComponent<Slider>();
             GameObject.FindGameObjectWithTag("Settings").SetActive(false);
-        }else{
-            volumeSlider = null;
         }
 
         Cursor.visible = false;
@@ -46,6 +44,8 @@ public class Music : MonoBehaviour
     {
         if(volumeSlider == null){
             volumeSlider = GameObject.FindGameObjectWithTag("LevelChanger").GetComponent<InGameMenu>().volumeSlider;
+        }else{
+            volumeSlider.value = audioSource.volume;
         }
 
         if (!audioSource.isPlaying)
