@@ -46000,7 +46000,7 @@ MonoBehaviour:
   helpMenu: {fileID: 1581574577}
   settingsMenu: {fileID: 1214466291}
   level: {fileID: 1836262387}
-  volumeSlider: {fileID: 0}
+  volumeSlider: {fileID: 784302130}
   light: {fileID: 829452211}
   script: {fileID: 0}
   resume: {fileID: 777660216}

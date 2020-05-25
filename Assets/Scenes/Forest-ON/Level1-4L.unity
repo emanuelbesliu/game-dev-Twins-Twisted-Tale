@@ -48570,7 +48570,7 @@ MonoBehaviour:
   helpMenu: {fileID: 1808116037}
   settingsMenu: {fileID: 1515476475}
   level: {fileID: 2050029584}
-  volumeSlider: {fileID: 0}
+  volumeSlider: {fileID: 140962633}
   light: {fileID: 829452211}
   script: {fileID: 0}
   resume: {fileID: 347636574}
