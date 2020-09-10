@@ -3,7 +3,7 @@
 The story engine has two main foci: the relationship between the two protagonists and the helping of animals. Taking inspiration from "Snow White and Rose Red", with elements from "The Queen Bee" we decided to tackle the journey of the two sisters trying to come back home, after one of their "outdoors sleeping" session. We opted to conserve the personalities presented in the reference story thus Red being the character which rushes ahead, more extroverted, confident, and impatient and tries to do things as quick as possible. Her sister, white, being shyer and more introverted, being the one which is most of the times left behind by her sister. Because of that, we chose white to be the playable character in our game as it allows for the motivation behind plot points, room for character development (trying to be like her sister) and also implementing both a narrative perspective for the gameplay of the game.
 
 ## Features
-- move, collect and drop items, help animals and watch the timer in order to meet your sister again.
+- Move, collect and drop items, help animals and watch the timer in order to meet your sister again.
 - Five complete levels, each offering a challenge and incremented difficulty.
 - The last level offers an extremly difficult challenge, combining all the mechanics and features.
 
